@@ -3,9 +3,15 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                brandBlue: '#1E3A8A',
-                brandPurple: '#7C3AED',
-                brandPink: '#EC4899',
+                dark: {
+                    primary: '#0F172A',    // Very dark blue
+                    secondary: '#1E293B',  // Dark blue-gray
+                    accent: '#3B82F6',     // Bright blue for accents
+                },
+                text: {
+                    primary: '#F8FAFC',    // Almost white
+                    secondary: '#94A3B8',  // Light gray
+                }
             },
         },
     },
