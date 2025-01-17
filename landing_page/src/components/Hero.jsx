@@ -2,18 +2,34 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-20 px-8">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
-                <div className="text-center md:text-left">
+        <div className="bg-dark-primary text-white py-40 px-8">
+            <div className="max-w-7xl mx-auto flex flex-col items-center justify-center">
+                <div className="text-center max-w-3xl">
+                    {/* YC Badge - Centered */}
+                    <div className="flex justify-center items-center mb-8">
+                        <div className="flex items-center bg-white rounded-md px-4 py-2">
+                            <img 
+                                src="https://cdn.prod.website-files.com/678080d1d91280220934c40e/6780878659cebb397e97a57f_YClogo.svg" 
+                                loading="lazy" 
+                                width="21" 
+                                alt="Y Combinator Logo" 
+                                className="mr-2"
+                            />
+                            <p className="text-black text-sm font-medium">
+                                Backed by Y Combinator
+                            </p>
+                        </div>
+                    </div>
+
                     <h1 
-                        className="text-5xl font-bold leading-tight"
+                        className="text-5xl font-bold leading-tight text-text-primary"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
                         Turning Invisible Work into Institutional Wisdom
                     </h1>
                     <p 
-                        className="mt-6 text-lg"
+                        className="mt-6 text-lg text-text-secondary"
                         data-aos="fade-up"
                         data-aos-delay="200"
                     >
@@ -24,16 +40,9 @@ const Hero = () => {
                         data-aos="fade-up"
                         data-aos-delay="300"
                     >
-                        {/* buttons */}
+                        {/* Button placeholder */}
                     </div>
                 </div>
-                <img 
-                    src="/hero-illustration.svg" 
-                    alt="Hero Illustration" 
-                    className="w-2/3 md:w-1/2 mt-10 md:mt-0"
-                    data-aos="fade-left"
-                    data-aos-delay="400"
-                />
             </div>
         </div>
     );

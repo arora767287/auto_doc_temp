@@ -8,10 +8,10 @@ const Navbar = () => {
                 <div className="space-x-6">
                     <a href="#problem" className="text-gray-600 hover:text-blue-600">Problem</a>
                     <a href="#solution" className="text-gray-600 hover:text-blue-600">Solution</a>
-                    <a href="#pricing" className="text-gray-600 hover:text-blue-600">Pricing</a>
-                    <button className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
-                        Get Started
-                    </button>
+                    {/* <a href="#pricing" className="text-gray-600 hover:text-blue-600">Pricing</a> */}
+                    <a href="https://calendly.com/nitya-meeting-times/10-minute-meeting-with-nitya" className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+                        Book a Demo
+                    </a>
                 </div>
             </div>
         </nav>

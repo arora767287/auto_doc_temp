@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProblemSection = () => {
     return (
-        <div id="problem" className="bg-dark-primary py-16 px-8">
+        <div id="problem" className="bg-dark-primary py-40 px-8">
             <div className="max-w-7xl mx-auto">
                 <h2 
                     className="text-3xl font-bold text-text-primary text-center"

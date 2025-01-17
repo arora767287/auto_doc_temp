@@ -26,7 +26,7 @@ const Home = () => {
             <ProblemSection />
             <SolutionSection />
             <Features />
-            <UseCaseSection />
+            {/* <UseCaseSection /> */}
             <Pricing />
             <Footer />
         </div>

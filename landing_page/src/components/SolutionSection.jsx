@@ -1,6 +1,7 @@
 import React from 'react';
 import productivityTools from './productivity_tools.png';
 import processingTools from './processing_tools.png';
+import documentationUpdate from './documentation_update.gif';
 
 
 const SolutionSection = () => {
@@ -54,8 +55,8 @@ const SolutionSection = () => {
                             <p className="mt-2 text-text-secondary">Generates AI clone of your employee while creating onboarding guides, automatic documentation updates, decision histories and workflow summaries.</p>
                         </div>
                         <div className="md:w-2/3 p-6 bg-dark-secondary rounded-lg">
-                            <div className="h-48 transparent rounded-lg flex items-center justify-center">
-                                <img src={processingTools} alt="Processing Tools" style={{borderRadius: 10, width: 300}}/>
+                            <div className="h-48 transparent rounded-lg flex items-center justify-center" style={{padding:100}}>
+                                <img src={documentationUpdate} alt="Documentation Update" style={{borderRadius: 10, width: 400}}/>
                             </div>
                         </div>
                     </div>

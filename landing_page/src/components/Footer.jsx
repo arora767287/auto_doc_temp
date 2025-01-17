@@ -6,9 +6,9 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto text-center">
                 <p className="text-sm">© 2025 Peppr AI. All rights reserved.</p>
                 <div className="mt-4 flex justify-center space-x-6">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+                    {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
                         <i className="fab fa-linkedin"></i> LinkedIn
-                    </a>
+                    </a> */}
                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
                         <i className="fab fa-twitter"></i> Twitter
                     </a>
