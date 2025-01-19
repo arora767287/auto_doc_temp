@@ -15,15 +15,29 @@ ATLASSIAN_CLIENT_ID = "PcV8HgR90kqRJS12euBLoYhJ8J7jt1TO"
 ATLASSIAN_CLIENT_SECRET = "ATOAylK_hlX9dbtyvg9tYHIV0t9IFjkPH8t2_7Z0SjtyeljhX5b64fSWKBbWaZm-MkG0520FF758"
 ATLASSIAN_REDIRECT_URI = os.getenv("ATLASSIAN_REDIRECT_URI", "https://127.0.0.1:5000/atlassian_callback")
 
+GITHUB_CLIENT_ID = "your_github_client_id"
+GITHUB_CLIENT_SECRET = "your_github_client_secret"
+GITHUB_REDIRECT_URI = os.getenv("GITHUB_REDIRECT_URI", "https://127.0.0.1:5000/github_callback")
+GITHUB_API_BASE_URL = "https://api.github.com"
+
 # Temporary storage for tokens. Replace with a database in production.
 tokens = {}
 workspaces = {}
+
+# Unified data structure
+def structure_data(source, content_type, content):
+    return {
+        "source": source,
+        "content_type": content_type,
+        "content": content
+    }
 
 @app.route('/')
 def home():
     return '''
         <a href="/auth">Sign in with Slack</a><br>
         <a href="/atlassian_auth">Sign in with Jira/Confluence</a><br>
+        <a href="/github_auth">Sign in with GitHub</a><br>
         <a href="/request_access/user">Request Access to Another User's Atlassian Account</a>
     '''
 
@@ -88,12 +102,10 @@ def fetch_messages():
 
     # Fetch list of all channels
     channels_response = requests.get(f"{BASE_URL}/conversations.list", headers=headers)
-    print(channels_response.json())
     if channels_response.status_code != 200:
         return "Error: Failed to fetch channels.", 500
 
     channels_data = channels_response.json()
-
     if not channels_data.get("ok"):
         return f"Error fetching channels: {channels_data.get('error')}", 400
 
@@ -104,11 +116,9 @@ def fetch_messages():
 
         # Auto-join the channel if the bot is not a member
         if not is_member:
-            print(channel_id)
             join_response = requests.post(f"{BASE_URL}/conversations.join", headers=headers, json={"channel": channel_id})
             join_data = join_response.json()
             if not join_data.get("ok"):
-                print(f"Failed to join channel {channel_id}: {join_data.get('error')}")
                 continue
 
         # Fetch message history
@@ -117,17 +127,16 @@ def fetch_messages():
             continue
 
         history_data = history_response.json()
-
         if not history_data.get("ok"):
             continue
 
         for message in history_data.get("messages", []):
-            messages.append({
+            messages.append(structure_data("Slack", "message", {
                 "channel": channel_id,
                 "user": message.get("user"),
                 "text": message.get("text"),
                 "timestamp": message.get("ts")
-            })
+            }))
 
     return jsonify(messages)
 
@@ -197,33 +206,19 @@ def atlassian_callback():
         session['atlassian_access_token'] = access_token
         session['atlassian_refresh_token'] = refresh_token
         session['cloud_id'] = cloud_id
-
-    # Debugging granted scopes
-    print("Granted scopes during callback:", granted_scopes)
+    print("Current Tokens")
+    print(tokens)
 
     return "Atlassian authentication successful! Access token and cloud_id stored."
 
-@app.route('/request_access/<target_user>', methods=['GET'])
-def request_access(target_user):
-    query_params = {
-        "client_id": ATLASSIAN_CLIENT_ID,
-        "redirect_uri": f"{ATLASSIAN_REDIRECT_URI}?requester={target_user}",
-        "response_type": "code",
-        "scope": "read:jira-work read:jira-user read:confluence-space.summary read:confluence-content.all offline_access",
-        "state": "random_state_string"
-    }
-    auth_url = f"https://auth.atlassian.com/authorize?{urlencode(query_params)}"
-    return redirect(auth_url)
-
-@app.route('/jira/projects/<user>', methods=['GET'])
-def fetch_jira_projects_for_user(user):
+@app.route('/fetch_jira_issues/<user>', methods=['GET'])
+def fetch_jira_issues(user):
     user_data = tokens.get(user)
     if not user_data:
         return f"Error: No data available for user {user}.", 404
 
     access_token = user_data.get("access_token")
     cloud_id = user_data.get("cloud_id")
-    granted_scopes = user_data.get("granted_scopes")  # Retrieve granted scopes for debugging
     if not access_token or not cloud_id:
         return "Error: User not authenticated with Atlassian.", 403
 
@@ -232,29 +227,31 @@ def fetch_jira_projects_for_user(user):
         "Accept": "application/json"
     }
 
-    response = requests.get(f"https://api.atlassian.com/ex/jira/{cloud_id}/rest/api/3/project", headers=headers)
-    if response.status_code == 401:  # Token expired, try refreshing
-        access_token = refresh_atlassian_token(user)
-        if not access_token:
-            return "Error: Unable to refresh access token.", 403
-
-        headers["Authorization"] = f"Bearer {access_token}"
-        response = requests.get(f"https://api.atlassian.com/ex/jira/{cloud_id}/rest/api/3/project", headers=headers)
-
+    response = requests.get(f"https://api.atlassian.com/ex/jira/{cloud_id}/rest/api/3/search", headers=headers)
     if response.status_code != 200:
-        return f"Error fetching Jira projects: {response.text}", response.status_code
+        return f"Error fetching Jira issues: {response.text}", response.status_code
 
-    return jsonify(response.json())
+    issues = response.json()
+    structured_issues = [
+        structure_data("Jira", "issue", {
+            "id": issue.get("id"),
+            "key": issue.get("key"),
+            "summary": issue.get("fields", {}).get("summary"),
+            "description": issue.get("fields", {}).get("description")
+        })
+        for issue in issues.get("issues", [])
+    ]
 
-@app.route('/confluence/pages/<user>', methods=['GET'])
-def fetch_confluence_pages_for_user(user):
+    return jsonify(structured_issues)
+
+@app.route('/fetch_confluence_pages/<user>', methods=['GET'])
+def fetch_confluence_pages(user):
     user_data = tokens.get(user)
     if not user_data:
         return f"Error: No data available for user {user}.", 404
 
     access_token = user_data.get("access_token")
     cloud_id = user_data.get("cloud_id")
-    granted_scopes = user_data.get("granted_scopes")  # Retrieve granted scopes
     if not access_token or not cloud_id:
         return "Error: User not authenticated with Atlassian.", 403
 
@@ -262,72 +259,62 @@ def fetch_confluence_pages_for_user(user):
         "Authorization": f"Bearer {access_token}",
         "Accept": "application/json"
     }
-
-    # Debug cloud_id and access token
-    print(f"Using cloud_id: {cloud_id}")
-    print(f"Using access_token: {access_token}")
 
     response = requests.get(f"https://api.atlassian.com/ex/confluence/{cloud_id}/rest/api/content", headers=headers)
     if response.status_code != 200:
-        # Debugging scope mismatch error
-        print(f"Error fetching Confluence pages: {response.text}")
-        print("Expected scopes: read:confluence-content.all, read:confluence-space.summary")
-        print(f"Granted scopes: {granted_scopes}")
         return f"Error fetching Confluence pages: {response.text}", response.status_code
 
-    return jsonify(response.json())
+    pages = response.json()
+    structured_pages = [
+        structure_data("Confluence", "page", {
+            "id": page.get("id"),
+            "title": page.get("title"),
+            "body": page.get("body", {}).get("storage", {}).get("value")
+        })
+        for page in pages.get("results", [])
+    ]
 
-@app.route('/debug/sites', methods=['GET'])
-def debug_sites():
-    access_token = session.get('atlassian_access_token')
+    return jsonify(structured_pages)
+
+@app.route('/fetch_github_issues/<user>', methods=['GET'])
+def fetch_github_issues(user):
+    access_token = tokens.get(user)
     if not access_token:
-        return "Error: Access token not available.", 403
+        return f"Error: No token available for user {user}.", 404
 
-    headers = {
-        "Authorization": f"Bearer {access_token}",
-        "Accept": "application/json"
-    }
+    headers = {"Authorization": f"Bearer {access_token}"}
 
-    response = requests.get("https://api.atlassian.com/oauth/token/accessible-resources", headers=headers)
-    if response.status_code != 200:
-        return f"Error fetching accessible resources: {response.text}", response.status_code
+    issues_response = requests.get(f"{GITHUB_API_BASE_URL}/issues", headers=headers)
+    if issues_response.status_code != 200:
+        return f"Error fetching issues: {issues_response.text}", issues_response.status_code
 
-    return jsonify(response.json())
+    issues = issues_response.json()
+    structured_issues = [
+        structure_data("GitHub", "issue", issue)
+        for issue in issues
+    ]
 
-def refresh_atlassian_token(user):
-    user_data = tokens.get(user)
-    if not user_data:
-        return None
+    return jsonify(structured_issues)
 
-    refresh_token = user_data.get("refresh_token")
-    if not refresh_token:
-        return None
+@app.route('/fetch_github_commits/<user>/<repo>', methods=['GET'])
+def fetch_github_commits(user, repo):
+    access_token = tokens.get(user)
+    if not access_token:
+        return f"Error: No token available for user {user}.", 404
 
-    response = requests.post(
-        "https://auth.atlassian.com/oauth/token",
-        headers={"Content-Type": "application/json"},
-        json={
-            "grant_type": "refresh_token",
-            "client_id": ATLASSIAN_CLIENT_ID,
-            "client_secret": ATLASSIAN_CLIENT_SECRET,
-            "refresh_token": refresh_token
-        }
-    )
+    headers = {"Authorization": f"Bearer {access_token}"}
 
-    if response.status_code != 200:
-        print(f"Error refreshing token: {response.text}")
-        return None
+    commits_response = requests.get(f"{GITHUB_API_BASE_URL}/repos/{user}/{repo}/commits", headers=headers)
+    if commits_response.status_code != 200:
+        return f"Error fetching commits: {commits_response.text}", commits_response.status_code
 
-    data = response.json()
-    tokens[user] = {
-        "access_token": data.get("access_token"),
-        "refresh_token": data.get("refresh_token"),
-        "cloud_id": user_data.get("cloud_id"),
-        "granted_scopes": data.get("scope")  # Store granted scopes for debugging
-    }
+    commits = commits_response.json()
+    structured_commits = [
+        structure_data("GitHub", "commit", commit)
+        for commit in commits
+    ]
 
-    print("Granted scopes during token refresh:", data.get("scope"))
-    return tokens[user]["access_token"]
+    return jsonify(structured_commits)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000, ssl_context=('cert.pem', 'key.pem'))
