@@ -1,0 +1,197 @@
+id,title,content,tags,last_updated
+Relevant Notes 18079e96c7a180df93a5ed1dc9c45769,Relevant Notes 18079e96c7a180df93a5ed1dc9c45769,"# Relevant Notes
+
+[Project Alignment for Q1](Relevant%20Notes%2018079e96c7a180df93a5ed1dc9c45769/Project%20Alignment%20for%20Q1%2018079e96c7a1800182ddff091c82542a.md)
+
+[Brainstorming Session Notes](Relevant%20Notes%2018079e96c7a180df93a5ed1dc9c45769/Brainstorming%20Session%20Notes%2018079e96c7a18041bc91c4ed8d88cfb5.md)
+
+[Weekly Project Tracker](Relevant%20Notes%2018079e96c7a180df93a5ed1dc9c45769/Weekly%20Project%20Tracker%2018079e96c7a180f69794dd5f08426f6e.md)
+
+[Autonomous Vehicles: Weekly Progress Update](Relevant%20Notes%2018079e96c7a180df93a5ed1dc9c45769/Autonomous%20Vehicles%20Weekly%20Progress%20Update%2018079e96c7a18022affad519ef6a8855.md)
+
+[Deepfake Detection Pipeline Enhancements](Relevant%20Notes%2018079e96c7a180df93a5ed1dc9c45769/Deepfake%20Detection%20Pipeline%20Enhancements%2018079e96c7a18084b40bcef8c47d70f0.md)
+
+[Face Recognition Model Tuning](Relevant%20Notes%2018079e96c7a180df93a5ed1dc9c45769/Face%20Recognition%20Model%20Tuning%2018079e96c7a180309cbae20144930b39.md)
+
+[Retail Safety Analytics Brainstorm](Relevant%20Notes%2018079e96c7a180df93a5ed1dc9c45769/Retail%20Safety%20Analytics%20Brainstorm%2018079e96c7a18053a05cd132fb3347a0.md)
+
+[Trials](Relevant%20Notes%2018079e96c7a180df93a5ed1dc9c45769/Trials%2018079e96c7a1802ba082c9aa6bc2f91f.md)
+
+[Notes](Relevant%20Notes%2018079e96c7a180df93a5ed1dc9c45769/Notes%2018079e96c7a180a7bb99dd03fa5134b0.md)
+
+[Overall Updates on Week 5](Relevant%20Notes%2018079e96c7a180df93a5ed1dc9c45769/Overall%20Updates%20on%20Week%205%2018079e96c7a18060b987dac36b185061.md)
+
+[Heatmaps](Relevant%20Notes%2018079e96c7a180df93a5ed1dc9c45769/Heatmaps%2018079e96c7a180f98e97ef05e56b8835.md)
+
+[Edge Cases AV](Relevant%20Notes%2018079e96c7a180df93a5ed1dc9c45769/Edge%20Cases%20AV%2018079e96c7a1801eb415ee1645bea5d1.md)",[],
+Project Alignment for Q1 18079e96c7a1800182ddff091c82542a,Project Alignment for Q1 18079e96c7a1800182ddff091c82542a,"# Project Alignment for Q1
+
+- **Main Projects**:
+    1. Deepfake Detection:
+        - Goal: Improve real-time detection accuracy for videos under 60 seconds.
+        - Challenges: Noise in compressed formats causing false positives.
+    2. Person Detection:
+        - Status: Successfully integrated NVIDIA Jetson inference pipeline.
+        - To Do: Benchmark performance on low-power devices.
+- Notes:
+    - Slack channels noisy lately—filter important updates into Confluence.
+    - Reminder: Merge GitHub PR #202 into main by EOD.",[],
+Brainstorming Session Notes 18079e96c7a18041bc91c4ed8d88cfb5,Brainstorming Session Notes 18079e96c7a18041bc91c4ed8d88cfb5,"# Brainstorming Session Notes
+
+- **Retail Safety**:
+    - Ideas:
+        - Heatmaps to dynamically adjust store layouts.
+        - Predictive analytics for theft patterns using historical data.
+    - Issues:
+        - Lack of training data for atypical behavior patterns.
+- **Autonomous Vehicles**:
+    - Discussion:
+        - Should we prioritize person detection in urban vs rural settings?
+        - Suggest splitting datasets by environment type.
+- Miscellaneous Notes:
+    - Upcoming hackathon topic: Combining face recognition and pedestrian tracking.
+    - Need approval for budget increase to expand GAN-based video generation.",[],
+Weekly Project Tracker 18079e96c7a180f69794dd5f08426f6e,Weekly Project Tracker 18079e96c7a180f69794dd5f08426f6e,"# Weekly Project Tracker
+
+- **Deepfake Detection**:
+    - Completed:
+        - Initial GAN experiments for dataset creation.
+    - Blocked:
+        - GPU resource allocation conflict with other teams.
+- **Face Recognition**:
+    - Upcoming:
+        - Roll out lightweight models to additional airport terminals.
+        - Challenges:
+            - Scaling inference pipelines for peak hour traffic.
+- Miscellaneous:
+    - Fix typo in Slack channel description (`#cv-detection` → `#cv_research`).
+    - Update Notion templates for team retrospectives.",[],
+Autonomous Vehicles Weekly Progress Update 18079e96c7a18022affad519ef6a8855,Autonomous Vehicles Weekly Progress Update 18079e96c7a18022affad519ef6a8855,"# Autonomous Vehicles: Weekly Progress Update
+
+- **Pedestrian Tracking**:
+    - Integrated night vision camera datasets into the training pipeline.
+    - Found 15% improvement in F1 scores for low-light scenarios.
+    - Open Bug:
+        - Reflective materials near headlights cause false positives (Jira Issue #394).
+- **Cyclist Detection**:
+    - Initial results show 65% accuracy in urban settings.
+    - Challenges:
+        - High occlusion rates due to vehicle proximity.
+        - Need for more diverse datasets from rural areas.
+- Miscellaneous Notes:
+    - Discussed cross-project opportunities with the retail safety team.
+    - Suggested combining motion detection from stores with AV datasets for anomaly identification.",[],
+Deepfake Detection Pipeline Enhancements 18079e96c7a18084b40bcef8c47d70f0,Deepfake Detection Pipeline Enhancements 18079e96c7a18084b40bcef8c47d70f0,"# Deepfake Detection Pipeline Enhancements
+
+- **Current Progress**:
+    - GAN-based data augmentation added for voice synchronization tests.
+    - Model accuracy improved from 82% to 89%.
+- **Blocked Tasks**:
+    - GPU memory overflow during training on 8K resolution datasets.
+    - Dataset imbalance: Overrepresentation of lip-sync-related deepfakes.
+- **Cross-Project Updates**:
+    - Shared image preprocessing scripts with face recognition team.
+    - Found possible shared edge cases between airport face recognition and retail store camera systems.
+- **Slack Notes**:
+    - Brian raised concerns about detection reliability in multilingual datasets.
+    - Discussed in #cv-research channel.",[],
+Face Recognition Model Tuning 18079e96c7a180309cbae20144930b39,Face Recognition Model Tuning 18079e96c7a180309cbae20144930b39,"# Face Recognition Model Tuning
+
+- **Terminal Accuracy Testing**:
+    - Tested lightweight models in 3 airport terminals.
+    - Average processing time reduced by 12%, but false positive rates increased.
+- **Proposed Fixes**:
+    - Introduce angle compensation for off-center faces.
+    - Enhance training on partial face datasets.
+- **Random Updates**:
+    - Slack Message from Rachel:
+        - ""Are we integrating the new biometric standards yet?""
+    - Meeting scheduled to discuss model deployment challenges with the autonomous vehicle team.
+- **Jira Issues to Track**:
+    - #482: Face bounding box overlap in crowded areas.
+    - #490: Accuracy dips for masked individuals in low lighting.",[],
+Retail Safety Analytics Brainstorm 18079e96c7a18053a05cd132fb3347a0,Retail Safety Analytics Brainstorm 18079e96c7a18053a05cd132fb3347a0,"# Retail Safety Analytics Brainstorm
+
+- **Key Ideas**:
+    - Use customer movement patterns to optimize store layout.
+    - Introduce thermal cameras to detect unusual activities (e.g., crowding).
+- **Challenges**:
+    - Lack of real-time feedback loop for security staff.
+    - Motion detection triggers too many false alarms in busy areas.
+- **Miscellaneous Notes**:
+    - Suggested combining pedestrian datasets from AV projects for store safety.
+    - Brian's suggestion:
+        - ""Can we share the slack automation scripts across teams?""",[],
+Trials 18079e96c7a1802ba082c9aa6bc2f91f,Trials 18079e96c7a1802ba082c9aa6bc2f91f,"# Trials
+
+- **Cross-Team Efforts**:
+    - Shared facial recognition preprocessing pipeline with the deepfake team.
+    - Discussed merging safety analytics from retail with person detection from AV projects.
+- **Pain Points**:
+    - Data schema inconsistencies across projects.
+    - GitHub PR reviews delayed due to unclear code comments.
+- **Action Items**:
+    - Brian will update Confluence documentation for deepfake datasets.
+    - Rachel to schedule a meeting for merging Slack channel logs into centralized analytics.",[],
+Notes 18079e96c7a180a7bb99dd03fa5134b0,Notes 18079e96c7a180a7bb99dd03fa5134b0,"# Notes
+
+- **New AV Features**:
+    - Cyclist detection model prototype completed.
+    - Early results show:
+        - Urban accuracy: 72%
+        - Rural accuracy: 65%
+- **Confluence Documentation**:
+    - Added ""Quick Start Guide"" for AV training pipeline.
+    - Notion duplication issue flagged by Brian.
+- **Random Thoughts**:
+    - Should we align face recognition preprocessing with AV pedestrian models?
+    - Retail safety project can use AV motion detection for identifying crowd dynamics.",[],
+Overall Updates on Week 5 18079e96c7a18060b987dac36b185061,Overall Updates on Week 5 18079e96c7a18060b987dac36b185061,"# Overall Updates on Week 5
+
+- **Autonomous Vehicles**:
+    - Added nighttime pedestrian dataset (results pending).
+    - Discussed moving redundant code blocks to shared GitHub repo.
+- **Deepfake Detection**:
+    - GAN-based synthetic data generated 500 new sequences.
+    - Need to align dataset schema with the face recognition team.
+- **Retail Safety**:
+    - Heatmap-based camera realignment reduced blind spots by 30%.
+    - Slack automation script updated for sending alerts.
+- **Miscellaneous**:
+    - Meeting rescheduled for Friday at 10 AM.
+    - Rachel suggested using Notion for team retrospectives moving forward.",[],
+Heatmaps 18079e96c7a180f98e97ef05e56b8835,Heatmaps 18079e96c7a180f98e97ef05e56b8835,"# Heatmaps
+
+- **Current Features**:
+    - Heatmap overlays for customer activity patterns.
+    - Theft detection pipeline triggered 5 successful alerts in the last week.
+- **Open Questions**:
+    - Can face recognition from airports be used to enhance retail safety?
+    - How do we handle edge cases where customers wear masks or hats?
+- **Action Points**:
+    - Update Jira Issue #609 with test results from theft detection trials.
+    - Share dataset enhancements in #cv-data Slack channel.
+
+[Logs](Heatmaps%2018079e96c7a180f98e97ef05e56b8835/Logs%2018079e96c7a1804c86fcf47164453f1e.md)",[],
+Edge Cases AV 18079e96c7a1801eb415ee1645bea5d1,Edge Cases AV 18079e96c7a1801eb415ee1645bea5d1,"# Edge Cases AV
+
+- **Edge Cases Observed**:
+    - Low-light conditions reduce accuracy to 78%.
+    - High angles (e.g., security cameras on ceilings) cause bounding box misalignment.
+- **Related Projects**:
+    - Collaborating with retail safety team on shared bounding box features.
+    - Borrowing thermal imaging datasets from the AV project.
+- **Miscellaneous Notes**:
+    - Slack message: ""Should we standardize dataset metadata schema across projects?""
+    - GitHub Commit ID: ""bf67a9: Improved bounding box accuracy for tilted camera angles.""",[],
+Logs 18079e96c7a1804c86fcf47164453f1e,Logs 18079e96c7a1804c86fcf47164453f1e,"# Logs
+
+- **Deepfake Debugging**:
+    - Memory bottleneck traced to overlapping frame analysis.
+    - Suggested workaround: Reduce frames analyzed per second for long videos.
+- **Autonomous Vehicles**:
+    - Misclassification issue for bicyclists wearing high-visibility gear.
+    - Temporary fix: Retrain with adjusted reflective gear parameters.
+- **Miscellaneous**:
+    - Jira Issue #518: Slack bot error for automated notifications.
+    - Rachel suggested migrating certain GitHub repositories for better CI/CD integration.",[],

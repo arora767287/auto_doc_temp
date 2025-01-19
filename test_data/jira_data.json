@@ -1,0 +1,104 @@
+[
+    {
+      "id": "JIRA-1234",
+      "key": "SAFETY-101",
+      "summary": "Update YOLO model for edge device deployment",
+      "description": "Ensure that the YOLOv7 model used for safety analysis can run on Nvidia Jetson devices. Optimize the model for latency and accuracy trade-offs.",
+      "status": "In Progress",
+      "assignee": "arjun_m",
+      "reporter": "arjun_m",
+      "priority": "High",
+      "comments": [
+        {
+          "user": "devika_r",
+          "comment": "We should also test it on the Nano platform to confirm performance.",
+          "timestamp": "2025-01-15T10:00:00Z"
+        },
+        {
+          "user": "arjun_m",
+          "comment": "Good point. Adding it to the task checklist.",
+          "timestamp": "2025-01-15T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "JIRA-1235",
+      "key": "AIRPORT-209",
+      "summary": "Improve face recognition robustness in low-light conditions",
+      "description": "Investigate failure cases in airport face recognition. Analyze low-light datasets and consider augmenting data with synthetic images.",
+      "status": "To Do",
+      "assignee": "arjun_m",
+      "reporter": "sanya_k",
+      "priority": "Medium",
+      "comments": [
+        {
+          "user": "sanya_k",
+          "comment": "Make sure to look into using GANs for generating low-light samples.",
+          "timestamp": "2025-01-10T09:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "JIRA-1236",
+      "key": "AV-324",
+      "summary": "Validate person detection accuracy in adverse weather",
+      "description": "Test the accuracy of the person detection module for autonomous vehicles during rain and snow conditions. Use the new dataset collected from the test track.",
+      "status": "In Progress",
+      "assignee": "arjun_m",
+      "reporter": "rajiv_t",
+      "priority": "High",
+      "comments": [
+        {
+          "user": "rajiv_t",
+          "comment": "Do we have the performance metrics for similar conditions in the past?",
+          "timestamp": "2025-01-12T14:00:00Z"
+        },
+        {
+          "user": "arjun_m",
+          "comment": "Adding a comparison with previous datasets to the scope.",
+          "timestamp": "2025-01-13T08:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "JIRA-1237",
+      "key": "DEEPFAKE-556",
+      "summary": "Evaluate Transformer model for deepfake detection",
+      "description": "Run experiments using Vision Transformers (ViTs) for deepfake detection. Compare against current CNN baseline.",
+      "status": "In Review",
+      "assignee": "arjun_m",
+      "reporter": "arjun_m",
+      "priority": "High",
+      "comments": [
+        {
+          "user": "arjun_m",
+          "comment": "Initial results show a 2% improvement in recall. Sharing the notebook in the review thread.",
+          "timestamp": "2025-01-14T16:00:00Z"
+        },
+        {
+          "user": "priya_n",
+          "comment": "Metrics look promising. Let’s proceed with formal evaluation.",
+          "timestamp": "2025-01-15T09:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "JIRA-1238",
+      "key": "SAFETY-102",
+      "summary": "Generate heatmaps for store entry/exit patterns",
+      "description": "Visualize customer movement patterns at retail store entrances using OpenCV. Heatmaps should capture high-traffic areas.",
+      "status": "To Do",
+      "assignee": "arjun_m",
+      "reporter": "sahil_b",
+      "priority": "Low",
+      "comments": [
+        {
+          "user": "sahil_b",
+          "comment": "Ensure privacy by anonymizing all customer footage.",
+          "timestamp": "2025-01-16T10:00:00Z"
+        }
+      ]
+    }
+  ]
+  
+  

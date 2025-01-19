@@ -1,0 +1,93 @@
+[
+    {
+      "id": "confluence_page_1",
+      "title": "YOLOv7 Deployment: Challenges and Solutions",
+      "body": "This document discusses ongoing efforts to optimize YOLOv7 for edge deployment and its integration into retail safety analysis.\n\n### Edge Deployment Optimization\n- **TensorRT Conversion**: The YOLOv7 model has been converted to TensorRT for real-time inference on Nvidia Jetson Xavier. Latency analysis has been conducted to balance throughput and detection accuracy.\n- **Quantization**: INT8 quantization has been applied to reduce computational overhead but falls back to FP16 precision for tasks requiring fine-grained object detection (e.g., small objects in cluttered scenes).\n- **Heatmap Analytics**: YOLOv7 tracks customer entry and exit patterns at retail stores. Heatmaps generated using OpenCV highlight high-traffic areas to improve safety and optimize space.\n\n### Privacy Concerns\n- Privacy regulations mandate anonymization pipelines for video feeds. A synthetic dataset with anonymized data is being explored to enable compliant model training.\n- Masking PII in heatmaps is being tested to retain visual information while obscuring personal identifiers.\n\n### Challenges\n- Compatibility issues between TensorRT and older Jetson devices, leading to occasional crashes during inference.\n- Memory constraints when processing high-resolution heatmaps on edge devices.\n\n### Next Steps\n1. Explore Vision Transformers (ViT) as an alternative to YOLO for certain tasks.\n2. Develop benchmarking tools to compare privacy-preserving models with standard implementations.\n3. Test integration of YOLOv7 in multi-camera setups to enhance detection accuracy across overlapping fields of view.",
+      "tags": ["YOLOv7", "Edge Deployment", "Retail Safety"],
+      "authors": ["arjun_m", "sahil_b"],
+      "last_modified": "2025-01-19T08:00:00Z",
+      "related_topics": ["privacy", "TensorRT"]
+    },
+    {
+      "id": "confluence_page_2",
+      "title": "Low-Light Face Recognition Enhancements",
+      "body": "Improving face recognition systems for low-light environments, such as airports, is a priority for ensuring robustness in diverse conditions.\n\n### Challenges in Low-Light Conditions\n- **GAN Augmentation**: Synthetic data generation using GANs has been employed to create low-light variations of public datasets like CelebA-HQ.\n- **Preprocessing Improvements**: Techniques such as adaptive histogram equalization and gamma correction improve visibility and recall in challenging lighting scenarios.\n- **Edge Deployment Issues**: Edge devices deployed at airport checkpoints struggle with processing augmented data in real-time.\n\n### Cross-Domain Insights\n- The person detection model used in autonomous vehicles during foggy weather can benefit from the low-light recognition techniques developed here.\n- Noise reduction pipelines from AV projects are being adapted to filter out camera sensor noise in low-light facial images.\n\n### Metrics\n- Augmentation resulted in a 12% improvement in recall for low-light scenarios.\n- Pre-trained networks such as EfficientNet and ViTs outperform general-purpose models by 18% on low-light subsets of the dataset.\n\n### Next Steps\n1. Collaborate with AV teams to integrate noise-reduction techniques.\n2. Expand testing datasets to include synthetic low-light scenarios generated via CycleGAN.",
+      "tags": ["Face Recognition", "Low-Light Conditions"],
+      "authors": ["sanya_k", "arjun_m"],
+      "last_modified": "2025-01-19T10:15:00Z",
+      "related_topics": ["autonomous vehicles", "GAN"]
+    },
+    {
+      "id": "confluence_page_3",
+      "title": "Deepfake Detection and Analysis",
+      "body": "Deepfake detection has become a critical focus for improving AI robustness in real-world applications.\n\n### Detection Models\n- **Baseline Models**: XceptionNet and EfficientNet have been used as baselines for detecting deepfakes in the DFDC and CelebDF datasets.\n- **Vision Transformers (ViTs)**: Experiments with ViTs have shown a 7% improvement in recall compared to CNN-based baselines.\n- **Synthetic Deepfake Generation**: GANs are being used to generate synthetic training datasets, which improve generalization to unseen manipulations.\n\n### Applications in Airport Security\n- Deepfake detection pipelines have been integrated with airport surveillance systems to monitor for falsified video feeds.\n- YOLOv7 is used to isolate faces from live feeds before feeding them into deepfake detection models.\n\n### Challenges\n1. False positives remain high in diverse demographic groups, indicating dataset bias.\n2. Large-scale inference using ViTs on edge devices requires substantial hardware optimization.\n\n### Cross-Project Integration\n- Insights from retail safety and airport surveillance are being leveraged to test multi-task models combining person detection and deepfake classification.",
+      "tags": ["Deepfake Detection", "Vision Transformers"],
+      "authors": ["arjun_m", "priya_n"],
+      "last_modified": "2025-01-19T09:00:00Z",
+      "related_topics": ["GAN", "security"]
+    },
+    {
+      "id": "confluence_page_4",
+      "title": "Retail Safety Heatmaps",
+      "body": "Heatmaps are being generated for retail stores to track customer movement patterns and optimize space usage.\n\n### Current Workflow\n1. Cameras placed at entry and exit points record anonymized video feeds.\n2. YOLOv7 detects and tracks customer movements.\n3. OpenCV generates heatmaps to visualize high-traffic areas.\n\n### Observations\n- Heatmap density correlates with shelf arrangement, providing actionable insights for product placement.\n- Privacy compliance remains a significant challenge due to live video feeds being processed at the edge.\n\n### Recommendations\n- Experiment with synthetic customer movement data to fine-tune heatmap generation algorithms.\n- Collaborate with the face recognition team to anonymize high-resolution customer footage.",
+      "tags": ["Retail Safety", "Heatmaps"],
+      "authors": ["arjun_m", "sahil_b"],
+      "last_modified": "2025-01-19T13:15:00Z",
+      "related_topics": ["YOLOv7", "OpenCV"]
+    },
+    {
+      "id": "confluence_page_5",
+      "title": "General Observations: Heatmap Noise",
+      "body": "Not all heatmaps generated in retail safety analysis are usable due to artifacts:\n\n### Sources of Noise\n- Overlapping object detection leading to false heatmap signals.\n- Incorrect frame synchronization across multi-camera setups.\n\n### Cross-Project Insights\n- Lessons learned from low-light face recognition could reduce false heatmap signals.",
+      "tags": ["Heatmaps", "Retail Safety"],
+      "authors": ["anonymous"],
+      "last_modified": "2025-01-19T15:00:00Z",
+      "related_topics": ["cross-project", "noise"]
+    },
+    {
+      "id": "confluence_page_6",
+      "title": "Edge Device Failures",
+      "body": "An ongoing list of hardware failures during YOLOv7 deployment:\n\n### Common Issues\n- Jetson GPU memory leaks causing inference failures.",
+      "tags": ["YOLO", "failures"],
+      "authors": ["rajiv_t"],
+      "last_modified": "2025-01-19T14:00:00Z",
+      "related_topics": ["AI failures"]
+    },
+        {
+          "id": "confluence_page_7",
+          "title": "Autonomous Vehicles: Person Detection in Adverse Weather",
+          "body": "Testing person detection models for autonomous vehicles in adverse weather conditions remains an ongoing challenge.\n\n### Challenges\n1. **Rain and Snow Artifacts**: Raindrops on camera lenses and snow reflections significantly degrade detection accuracy.\n2. **Dataset Diversity**: Existing datasets lack sufficient samples of adverse weather scenarios. Synthetic datasets are being generated using Unity-based simulations.\n\n### Integration with Retail Safety\n- Algorithms used in retail safety for low-resolution object detection are being tested in vehicle-mounted systems.\n\n### Key Results\n- The YOLOv7 model achieved 78% accuracy under heavy rain conditions, compared to 85% in clear weather.\n\n### Next Steps\n1. Train models on weather-augmented datasets.\n2. Explore deploying ViTs for improved robustness in edge cases.",
+          "tags": ["Autonomous Vehicles", "Person Detection", "Adverse Weather"],
+          "authors": ["arjun_m", "rajiv_t"],
+          "last_modified": "2025-01-19T16:00:00Z",
+          "related_topics": ["weather augmentation", "synthetic datasets"]
+        },
+        {
+          "id": "confluence_page_8",
+          "title": "Deepfake and Low-Light Recognition Combined Framework",
+          "body": "Merging insights from deepfake detection and low-light face recognition has shown promise for robust security solutions.\n\n### Framework\n1. **Dual Pipeline**: Images are first processed using adaptive histogram equalization (low-light pipeline), followed by classification using ViTs for deepfake detection.\n2. **GAN-Generated Data**: GAN-based augmentation has significantly improved detection recall.\n\n### Findings\n- Combining low-light and deepfake pipelines reduced false positives by 9%.\n- Runtime on edge devices increased by 15%, necessitating optimization.\n\n### Recommendations\n- Collaborate with AV teams to assess if combined pipelines can detect driver fatigue.\n- Conduct further experiments on multi-modal datasets combining audio and video.",
+          "tags": ["Deepfake Detection", "Low-Light Recognition", "Combined Framework"],
+          "authors": ["arjun_m", "priya_n"],
+          "last_modified": "2025-01-19T17:30:00Z",
+          "related_topics": ["GAN", "Vision Transformers"]
+        },
+        {
+          "id": "confluence_page_9",
+          "title": "Miscellaneous: Debugging YOLOv7 Training",
+          "body": "A series of debugging efforts for training YOLOv7 models on new datasets:\n\n### Observations\n1. **Unstable Loss Curves**: Caused by mislabeled training data from customer movement videos.\n2. **Batch Size Issues**: Memory overflow when batch sizes exceeded GPU limits on Jetson Xavier.\n\n### Solutions\n- Loss stabilization was achieved by using a revised dataset with corrected annotations.\n- Dynamic batch sizing was implemented to prevent crashes during training.",
+          "tags": ["Debugging", "YOLOv7"],
+          "authors": ["arjun_m"],
+          "last_modified": "2025-01-19T18:15:00Z",
+          "related_topics": ["retail analysis"]
+        },
+        {
+          "id": "confluence_page_10",
+          "title": "Edge Deployment for Multi-Task Models",
+          "body": "This document explores the deployment of multi-task models combining object detection, face recognition, and deepfake detection on edge devices.\n\n### Key Findings\n1. **Latency Analysis**: Multi-task models require 1.8x more processing power than single-task models, resulting in delays during inference.\n2. **Data Bottlenecks**: Streaming high-resolution video to edge devices causes significant bandwidth issues.\n\n### Mixed Applications\n- Retail safety analysis can benefit from the detection models designed for airport checkpoints.\n- Deepfake detection pipelines tested for airport surveillance are being explored for use in retail fraud detection.\n\n### Recommendations\n1. Explore model distillation to reduce computational overhead.\n2. Train multi-task models on unified datasets combining customer movement, face recognition, and synthetic deepfake samples.",
+          "tags": ["Edge Deployment", "Multi-Task Models"],
+          "authors": ["sahil_b", "arjun_m"],
+          "last_modified": "2025-01-19T19:00:00Z",
+          "related_topics": ["multi-task learning", "resource optimization"]
+        }      
+  ]
+  

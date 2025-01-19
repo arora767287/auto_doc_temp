@@ -1,0 +1,147 @@
+[
+    {
+      "repo": "safety_analysis",
+      "branch": "main",
+      "commit_id": "eaf12d3",
+      "message": "Optimize YOLOv7 inference for Jetson platform",
+      "author": "arjun_m",
+      "date": "2025-01-15T08:30:00Z",
+      "files_changed": [
+        "yolov7_inference.py",
+        "jetson_optimization_notes.md"
+      ]
+    },
+    {
+      "repo": "face_recognition_airports",
+      "branch": "dev",
+      "commit_id": "4cd56fe",
+      "message": "Add augmentation pipeline for low-light datasets",
+      "author": "arjun_m",
+      "date": "2025-01-13T14:15:00Z",
+      "files_changed": [
+        "data_augmentation.py",
+        "test_cases/low_light/test_images.json"
+      ]
+    },
+    {
+      "repo": "autonomous_vehicle_detection",
+      "branch": "rainy_conditions",
+      "commit_id": "ff872ac",
+      "message": "Update dataset loader for adverse weather conditions",
+      "author": "arjun_m",
+      "date": "2025-01-14T10:00:00Z",
+      "files_changed": [
+        "dataset_loader.py",
+        "rain_snow_conditions_notes.md"
+      ]
+    },
+    {
+      "repo": "deepfake_detection",
+      "branch": "transformer_baseline",
+      "commit_id": "d1347f8",
+      "message": "First run with ViT for deepfake detection",
+      "author": "arjun_m",
+      "date": "2025-01-12T16:45:00Z",
+      "files_changed": [
+        "vit_baseline.py",
+        "metrics_comparison.csv"
+      ]
+    },
+    {
+      "repo": "safety_analysis",
+      "branch": "testing",
+      "commit_id": "0f87412",
+      "message": "Added visualization script for heatmap generation",
+      "author": "arjun_m",
+      "date": "2025-01-17T11:00:00Z",
+      "files_changed": [
+        "visualize_heatmap.py",
+        "heatmap_notes.md"
+      ]
+    },
+    {
+      "repo": "face_recognition_airports",
+      "branch": "main",
+      "commit_id": "9ba8d4f",
+      "message": "Fix bug in facial landmarks extraction module",
+      "author": "arjun_m",
+      "date": "2025-01-16T09:30:00Z",
+      "files_changed": [
+        "facial_landmarks.py",
+        "README.md"
+      ]
+    },
+    {
+      "repo": "deepfake_detection",
+      "branch": "main",
+      "commit_id": "a21c3bf",
+      "message": "Cleaned up preprocessing pipeline for deepfake detection",
+      "author": "arjun_m",
+      "date": "2025-01-15T12:45:00Z",
+      "files_changed": [
+        "preprocessing.py",
+        "data_config.json"
+      ]
+    },
+    {
+      "repo": "autonomous_vehicle_detection",
+      "branch": "adverse_weather_testing",
+      "commit_id": "12b45ef",
+      "message": "Reorganize evaluation scripts for rainy dataset",
+      "author": "arjun_m",
+      "date": "2025-01-14T18:00:00Z",
+      "files_changed": [
+        "evaluate_rain.py",
+        "notes/adverse_weather.md"
+      ]
+    },
+    {
+      "repo": "face_recognition_airports",
+      "branch": "test",
+      "commit_id": "342bcd1",
+      "message": "Added tests for synthetic low-light images",
+      "author": "arjun_m",
+      "date": "2025-01-13T20:10:00Z",
+      "files_changed": [
+        "tests/test_low_light.py",
+        "synthetic_images_generator.py"
+      ]
+    },
+    {
+      "repo": "safety_analysis",
+      "branch": "main",
+      "commit_id": "de234af",
+      "message": "Remove redundant code in YOLO wrapper",
+      "author": "arjun_m",
+      "date": "2025-01-12T15:30:00Z",
+      "files_changed": [
+        "yolo_wrapper.py",
+        "CHANGELOG.md"
+      ]
+    },
+    {
+      "repo": "deepfake_detection",
+      "branch": "transformer_baseline",
+      "commit_id": "84adcb3",
+      "message": "Reformatted Transformer architecture to match input size",
+      "author": "arjun_m",
+      "date": "2025-01-17T14:20:00Z",
+      "files_changed": [
+        "vit_architecture.py",
+        "transformer_config.yaml"
+      ]
+    },
+    {
+      "repo": "autonomous_vehicle_detection",
+      "branch": "edge_cases",
+      "commit_id": "a7cbfed",
+      "message": "Edge case handling for snow visibility",
+      "author": "arjun_m",
+      "date": "2025-01-11T13:10:00Z",
+      "files_changed": [
+        "edge_case_handler.py",
+        "visualization/snow_testing.md"
+      ]
+    }
+  ]
+  
