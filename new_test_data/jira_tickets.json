@@ -1,0 +1,476 @@
+{
+    "jira_tickets": [
+      {
+        "ticket_id": "SAFETY-595",
+        "title": "Bounding box jitter in high-density retail zones",
+        "description": "Bounding boxes exhibit jittering during peak hours in high-density zones. Investigate temporal smoothing and Kalman filter parameter adjustments.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-204",
+        "title": "Failure in parallel processing for large video datasets",
+        "description": "Deepfake detection module crashes when processing large datasets in parallel. Investigate thread allocation and memory usage.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-598",
+        "title": "Thermal imaging overexposure in bright environments",
+        "description": "Safety analysis module fails to detect objects accurately in environments with excessive thermal contrast. Fine-tune exposure calibration.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "PDAV-914",
+        "title": "Occlusion failures for suburban crosswalks",
+        "description": "Person detection in autonomous vehicles struggles with partial occlusions at suburban crosswalks during low light conditions.",
+        "priority": "Medium",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "AIRPORT-326",
+        "title": "Reduced accuracy for passengers with accessories",
+        "description": "Face recognition module experiences reduced accuracy for passengers wearing hats and scarves. Augment training dataset and reevaluate thresholds.",
+        "priority": "Medium",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-205",
+        "title": "Inconsistent frame alignment during preprocessing",
+        "description": "Deepfake detection preprocessing pipeline occasionally misaligns video frames, causing downstream model failures. Validate and optimize alignment module.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-599",
+        "title": "False alarms triggered by overlapping thermal zones",
+        "description": "Safety analysis module generates false alarms when multiple thermal regions overlap. Review and optimize merge strategies.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "PDAV-915",
+        "title": "Latency spike during multi-angle camera integration",
+        "description": "Integrating multi-angle cameras in autonomous vehicles increases latency by 25%. Profile and optimize synchronization logic.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "AIRPORT-327",
+        "title": "High false negative rates for facial recognition at VIP gates",
+        "description": "The face recognition module misidentifies VIP passengers more frequently during high traffic. Adjust confidence thresholds.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-206",
+        "title": "Overfitting in deepfake detection training pipeline",
+        "description": "Training pipeline for deepfake detection shows overfitting to certain video styles. Expand dataset and apply regularization techniques.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-600",
+        "title": "Edge case failures in anomaly detection",
+        "description": "Anomaly detection fails for edge cases involving overlapping reflective surfaces. Augment training and validate model behavior.",
+        "priority": "Medium",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "PDAV-916",
+        "title": "Inaccurate bounding boxes for high-speed objects",
+        "description": "Bounding box predictions lose accuracy for fast-moving pedestrians in urban environments. Investigate model latency and tuning.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "AIRPORT-328",
+        "title": "Delayed response times for fallback mechanisms",
+        "description": "Fallback mechanisms in face recognition exhibit delays during high-traffic scenarios. Optimize logic and resource allocation.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-207",
+        "title": "Increased latency for real-time deepfake detection",
+        "description": "Latency spikes occur during peak processing in real-time deepfake detection. Profile and optimize inference pipeline.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-601",
+        "title": "Anomaly detection crashes with large datasets",
+        "description": "The anomaly detection module crashes during batch processing of large datasets. Debug memory usage and optimize resource allocation.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-595",
+        "title": "Bounding box jitter in high-density retail zones",
+        "description": "Bounding boxes exhibit jittering during peak hours in high-density zones. Investigate temporal smoothing and Kalman filter parameter adjustments.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-204",
+        "title": "Failure in parallel processing for large video datasets",
+        "description": "Deepfake detection module crashes when processing large datasets in parallel. Investigate thread allocation and memory usage.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-598",
+        "title": "Thermal imaging overexposure in bright environments",
+        "description": "Safety analysis module fails to detect objects accurately in environments with excessive thermal contrast. Fine-tune exposure calibration.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "PDAV-914",
+        "title": "Occlusion failures for suburban crosswalks",
+        "description": "Person detection in autonomous vehicles struggles with partial occlusions at suburban crosswalks during low light conditions.",
+        "priority": "Medium",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "AIRPORT-326",
+        "title": "Reduced accuracy for passengers with accessories",
+        "description": "Face recognition module experiences reduced accuracy for passengers wearing hats and scarves. Augment training dataset and reevaluate thresholds.",
+        "priority": "Medium",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-205",
+        "title": "Inconsistent frame alignment during preprocessing",
+        "description": "Deepfake detection preprocessing pipeline occasionally misaligns video frames, causing downstream model failures. Validate and optimize alignment module.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-599",
+        "title": "False alarms triggered by overlapping thermal zones",
+        "description": "Safety analysis module generates false alarms when multiple thermal regions overlap. Review and optimize merge strategies.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "PDAV-915",
+        "title": "Latency spike during multi-angle camera integration",
+        "description": "Integrating multi-angle cameras in autonomous vehicles increases latency by 25%. Profile and optimize synchronization logic.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "AIRPORT-327",
+        "title": "High false negative rates for facial recognition at VIP gates",
+        "description": "The face recognition module misidentifies VIP passengers more frequently during high traffic. Adjust confidence thresholds.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-206",
+        "title": "Overfitting in deepfake detection training pipeline",
+        "description": "Training pipeline for deepfake detection shows overfitting to certain video styles. Expand dataset and apply regularization techniques.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-600",
+        "title": "Edge case failures in anomaly detection",
+        "description": "Anomaly detection fails for edge cases involving overlapping reflective surfaces. Augment training and validate model behavior.",
+        "priority": "Medium",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "PDAV-916",
+        "title": "Inaccurate bounding boxes for high-speed objects",
+        "description": "Bounding box predictions lose accuracy for fast-moving pedestrians in urban environments. Investigate model latency and tuning.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "AIRPORT-328",
+        "title": "Delayed response times for fallback mechanisms",
+        "description": "Fallback mechanisms in face recognition exhibit delays during high-traffic scenarios. Optimize logic and resource allocation.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-207",
+        "title": "Increased latency for real-time deepfake detection",
+        "description": "Latency spikes occur during peak processing in real-time deepfake detection. Profile and optimize inference pipeline.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-601",
+        "title": "Anomaly detection crashes with large datasets",
+        "description": "The anomaly detection module crashes during batch processing of large datasets. Debug memory usage and optimize resource allocation.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-602",
+        "title": "Misaligned bounding boxes for thermal regions",
+        "description": "Bounding boxes are misaligned during thermal imaging in high-density environments. Review calibration and dataset augmentation.",
+        "priority": "Medium",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "PDAV-917",
+        "title": "Pedestrian detection failures at curved crosswalks",
+        "description": "Model struggles to identify pedestrians at crosswalks with significant curves. Investigate curvature augmentation in training datasets.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "AIRPORT-329",
+        "title": "VIP gate processing delays under high load",
+        "description": "Face recognition at VIP gates exhibits delays during simultaneous processing of multiple passengers. Optimize threading logic.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-208",
+        "title": "Model accuracy drops for synthesized audio-video pairs",
+        "description": "Deepfake detection shows reduced accuracy for synthesized audio-video combinations. Augment dataset and retrain models.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-603",
+        "title": "Thermal zone overlap errors during low-light tests",
+        "description": "Errors occur in safety analysis when thermal zones overlap under low-light conditions. Optimize preprocessing for boundary detection.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "PDAV-918",
+        "title": "Edge case latency for nighttime suburban scenarios",
+        "description": "Latency spikes observed in suburban tests during nighttime pedestrian detection. Profile bottlenecks and refine the pipeline.",
+        "priority": "Medium",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-595",
+        "title": "Bounding box jitter in high-density retail zones",
+        "description": "Bounding boxes exhibit jittering during peak hours in high-density zones. Investigate temporal smoothing and Kalman filter parameter adjustments.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-204",
+        "title": "Failure in parallel processing for large video datasets",
+        "description": "Deepfake detection module crashes when processing large datasets in parallel. Investigate thread allocation and memory usage.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-598",
+        "title": "Thermal imaging overexposure in bright environments",
+        "description": "Safety analysis module fails to detect objects accurately in environments with excessive thermal contrast. Fine-tune exposure calibration.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "PDAV-914",
+        "title": "Occlusion failures for suburban crosswalks",
+        "description": "Person detection in autonomous vehicles struggles with partial occlusions at suburban crosswalks during low light conditions.",
+        "priority": "Medium",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "AIRPORT-326",
+        "title": "Reduced accuracy for passengers with accessories",
+        "description": "Face recognition module experiences reduced accuracy for passengers wearing hats and scarves. Augment training dataset and reevaluate thresholds.",
+        "priority": "Medium",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-205",
+        "title": "Inconsistent frame alignment during preprocessing",
+        "description": "Deepfake detection preprocessing pipeline occasionally misaligns video frames, causing downstream model failures. Validate and optimize alignment module.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-599",
+        "title": "False alarms triggered by overlapping thermal zones",
+        "description": "Safety analysis module generates false alarms when multiple thermal regions overlap. Review and optimize merge strategies.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "PDAV-915",
+        "title": "Latency spike during multi-angle camera integration",
+        "description": "Integrating multi-angle cameras in autonomous vehicles increases latency by 25%. Profile and optimize synchronization logic.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "AIRPORT-327",
+        "title": "High false negative rates for facial recognition at VIP gates",
+        "description": "The face recognition module misidentifies VIP passengers more frequently during high traffic. Adjust confidence thresholds.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-206",
+        "title": "Overfitting in deepfake detection training pipeline",
+        "description": "Training pipeline for deepfake detection shows overfitting to certain video styles. Expand dataset and apply regularization techniques.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-600",
+        "title": "Edge case failures in anomaly detection",
+        "description": "Anomaly detection fails for edge cases involving overlapping reflective surfaces. Augment training and validate model behavior.",
+        "priority": "Medium",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "PDAV-916",
+        "title": "Inaccurate bounding boxes for high-speed objects",
+        "description": "Bounding box predictions lose accuracy for fast-moving pedestrians in urban environments. Investigate model latency and tuning.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "AIRPORT-328",
+        "title": "Delayed response times for fallback mechanisms",
+        "description": "Fallback mechanisms in face recognition exhibit delays during high-traffic scenarios. Optimize logic and resource allocation.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-207",
+        "title": "Increased latency for real-time deepfake detection",
+        "description": "Latency spikes occur during peak processing in real-time deepfake detection. Profile and optimize inference pipeline.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-601",
+        "title": "Anomaly detection crashes with large datasets",
+        "description": "The anomaly detection module crashes during batch processing of large datasets. Debug memory usage and optimize resource allocation.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-602",
+        "title": "Misaligned bounding boxes for thermal regions",
+        "description": "Bounding boxes are misaligned during thermal imaging in high-density environments. Review calibration and dataset augmentation.",
+        "priority": "Medium",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "PDAV-917",
+        "title": "Pedestrian detection failures at curved crosswalks",
+        "description": "Model struggles to identify pedestrians at crosswalks with significant curves. Investigate curvature augmentation in training datasets.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "AIRPORT-329",
+        "title": "VIP gate processing delays under high load",
+        "description": "Face recognition at VIP gates exhibits delays during simultaneous processing of multiple passengers. Optimize threading logic.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-208",
+        "title": "Model accuracy drops for synthesized audio-video pairs",
+        "description": "Deepfake detection shows reduced accuracy for synthesized audio-video combinations. Augment dataset and retrain models.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-603",
+        "title": "Thermal zone overlap errors during low-light tests",
+        "description": "Errors occur in safety analysis when thermal zones overlap under low-light conditions. Optimize preprocessing for boundary detection.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "PDAV-918",
+        "title": "Edge case latency for nighttime suburban scenarios",
+        "description": "Latency spikes observed in suburban tests during nighttime pedestrian detection. Profile bottlenecks and refine the pipeline.",
+        "priority": "Medium",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "DEEPFAKE-209",
+        "title": "Misclassification during adversarial input testing",
+        "description": "Adversarial inputs with minor pixel alterations cause the deepfake detection model to misclassify. Reinforce training against adversarial examples.",
+        "priority": "Critical",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      },
+      {
+        "ticket_id": "SAFETY-604",
+        "title": "Anomaly overlay misalignment in QA demos",
+        "description": "During QA demonstrations, anomaly overlays misalign with bounding boxes when thermal layers are active. Debug overlay logic.",
+        "priority": "High",
+        "assignee": "arjun.mehta",
+        "status": "Open"
+      }
+    ]
+  }

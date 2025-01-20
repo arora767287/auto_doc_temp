@@ -1,0 +1,110 @@
+{
+    "github_data": [
+      {
+        "repository": "safety-analysis-retail",
+        "issues": [
+          {
+            "issue_id": 101,
+            "title": "Bounding box jitter in high-density retail zones",
+            "description": "Bounding boxes exhibit jittering during peak hours in high-density zones. Investigate temporal smoothing and Kalman filter parameter adjustments.",
+            "timestamp": "2025-01-21T09:15:00Z",
+            "linked_jira_ticket": "SAFETY-595",
+            "status": "Open"
+          },
+          {
+            "issue_id": 102,
+            "title": "Thermal imaging overexposure in bright environments",
+            "description": "Safety analysis module fails to detect objects accurately in environments with excessive thermal contrast. Fine-tune exposure calibration.",
+            "timestamp": "2025-01-21T10:00:00Z",
+            "linked_jira_ticket": "SAFETY-598",
+            "status": "Open"
+          }
+        ],
+        "commits": [
+          {
+            "commit_id": "a1b2c3d",
+            "message": "Added temporal smoothing for bounding box jitter in retail zones.",
+            "timestamp": "2025-01-21T09:45:00Z",
+            "linked_jira_ticket": "SAFETY-595"
+          },
+          {
+            "commit_id": "d4e5f6g",
+            "message": "Adjusted exposure calibration for bright environments in safety analysis.",
+            "timestamp": "2025-01-21T10:30:00Z",
+            "linked_jira_ticket": "SAFETY-598"
+          }
+        ]
+      },
+      {
+        "repository": "deepfake-detection",
+        "issues": [
+          {
+            "issue_id": 201,
+            "title": "Failure in parallel processing for large video datasets",
+            "description": "Deepfake detection module crashes when processing large datasets in parallel. Investigate thread allocation and memory usage.",
+            "timestamp": "2025-01-22T11:00:00Z",
+            "linked_jira_ticket": "DEEPFAKE-204",
+            "status": "Open"
+          },
+          {
+            "issue_id": 202,
+            "title": "Inconsistent frame alignment during preprocessing",
+            "description": "Deepfake detection preprocessing pipeline occasionally misaligns video frames, causing downstream model failures. Validate and optimize alignment module.",
+            "timestamp": "2025-01-22T12:00:00Z",
+            "linked_jira_ticket": "DEEPFAKE-205",
+            "status": "Open"
+          }
+        ],
+        "commits": [
+          {
+            "commit_id": "g7h8i9j",
+            "message": "Optimized thread allocation for parallel processing in large datasets.",
+            "timestamp": "2025-01-22T11:30:00Z",
+            "linked_jira_ticket": "DEEPFAKE-204"
+          },
+          {
+            "commit_id": "k1l2m3n",
+            "message": "Resolved frame alignment issues in preprocessing pipeline.",
+            "timestamp": "2025-01-22T12:30:00Z",
+            "linked_jira_ticket": "DEEPFAKE-205"
+          }
+        ]
+      },
+      {
+        "repository": "autonomous-vehicles",
+        "issues": [
+          {
+            "issue_id": 301,
+            "title": "Occlusion failures for suburban crosswalks",
+            "description": "Person detection in autonomous vehicles struggles with partial occlusions at suburban crosswalks during low light conditions.",
+            "timestamp": "2025-01-23T09:00:00Z",
+            "linked_jira_ticket": "PDAV-914",
+            "status": "Open"
+          },
+          {
+            "issue_id": 302,
+            "title": "Latency spike during multi-angle camera integration",
+            "description": "Integrating multi-angle cameras in autonomous vehicles increases latency by 25%. Profile and optimize synchronization logic.",
+            "timestamp": "2025-01-23T10:00:00Z",
+            "linked_jira_ticket": "PDAV-915",
+            "status": "Open"
+          }
+        ],
+        "commits": [
+          {
+            "commit_id": "o1p2q3r",
+            "message": "Enhanced training dataset for suburban crosswalk occlusions.",
+            "timestamp": "2025-01-23T09:30:00Z",
+            "linked_jira_ticket": "PDAV-914"
+          },
+          {
+            "commit_id": "s4t5u6v",
+            "message": "Optimized synchronization logic for multi-angle camera latency.",
+            "timestamp": "2025-01-23T10:30:00Z",
+            "linked_jira_ticket": "PDAV-915"
+          }
+        ]
+      }
+    ]
+  }
+  

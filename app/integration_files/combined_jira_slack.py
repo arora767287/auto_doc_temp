@@ -31,7 +31,7 @@ def home():
 def auth():
     query_params = {
         "client_id": SLACK_CLIENT_ID,
-        "scope": "channels:history,im:history,mpim:history,groups:history,users:read,team:read,channels:read,groups:read,mpim:read,im:read,channels:manage",
+        "scope": "channels:history,im:history,mpim:history,groups:history,users:read,team:read,channels:read,groups:read,mpim:read,im:read,channels:manage,channels:join",
         "redirect_uri": REDIRECT_URI
     }
     auth_url = f"https://slack.com/oauth/v2/authorize?{urlencode(query_params)}"

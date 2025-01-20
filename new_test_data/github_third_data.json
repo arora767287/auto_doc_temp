@@ -1,0 +1,110 @@
+{
+    "github_data": [
+      {
+        "repository": "safety-analysis-retail",
+        "issues": [
+          {
+            "issue_id": 105,
+            "title": "Thermal zone overlap errors during low-light tests",
+            "description": "Errors occur in safety analysis when thermal zones overlap under low-light conditions. Optimize preprocessing for boundary detection.",
+            "timestamp": "2025-01-27T09:15:00Z",
+            "linked_jira_ticket": "SAFETY-603",
+            "status": "Open"
+          },
+          {
+            "issue_id": 106,
+            "title": "Anomaly overlay misalignment in QA demos",
+            "description": "During QA demonstrations, anomaly overlays misalign with bounding boxes when thermal layers are active. Debug overlay logic.",
+            "timestamp": "2025-01-27T10:00:00Z",
+            "linked_jira_ticket": "SAFETY-604",
+            "status": "Open"
+          }
+        ],
+        "commits": [
+          {
+            "commit_id": "a3b4c5d",
+            "message": "Optimized preprocessing to address thermal zone overlap errors.",
+            "timestamp": "2025-01-27T09:45:00Z",
+            "linked_jira_ticket": "SAFETY-603"
+          },
+          {
+            "commit_id": "e6f7g8h",
+            "message": "Aligned anomaly overlays with bounding boxes for QA tests.",
+            "timestamp": "2025-01-27T10:30:00Z",
+            "linked_jira_ticket": "SAFETY-604"
+          }
+        ]
+      },
+      {
+        "repository": "deepfake-detection",
+        "issues": [
+          {
+            "issue_id": 205,
+            "title": "Increased latency for real-time deepfake detection",
+            "description": "Latency spikes occur during peak processing in real-time deepfake detection. Profile and optimize inference pipeline.",
+            "timestamp": "2025-01-28T11:00:00Z",
+            "linked_jira_ticket": "DEEPFAKE-207",
+            "status": "Open"
+          },
+          {
+            "issue_id": 206,
+            "title": "Model accuracy drops for synthesized audio-video pairs",
+            "description": "Deepfake detection shows reduced accuracy for synthesized audio-video combinations. Augment dataset and retrain models.",
+            "timestamp": "2025-01-28T12:00:00Z",
+            "linked_jira_ticket": "DEEPFAKE-208",
+            "status": "Open"
+          }
+        ],
+        "commits": [
+          {
+            "commit_id": "i9j1k2l",
+            "message": "Optimized inference pipeline to reduce latency spikes in real-time processing.",
+            "timestamp": "2025-01-28T11:30:00Z",
+            "linked_jira_ticket": "DEEPFAKE-207"
+          },
+          {
+            "commit_id": "m3n4o5p",
+            "message": "Augmented dataset with synthesized audio-video pairs for retraining.",
+            "timestamp": "2025-01-28T12:30:00Z",
+            "linked_jira_ticket": "DEEPFAKE-208"
+          }
+        ]
+      },
+      {
+        "repository": "autonomous-vehicles",
+        "issues": [
+          {
+            "issue_id": 305,
+            "title": "Edge case latency for nighttime suburban scenarios",
+            "description": "Latency spikes observed in suburban tests during nighttime pedestrian detection. Profile bottlenecks and refine the pipeline.",
+            "timestamp": "2025-01-29T09:00:00Z",
+            "linked_jira_ticket": "PDAV-918",
+            "status": "Open"
+          },
+          {
+            "issue_id": 306,
+            "title": "False positives for crowd detection in urban settings",
+            "description": "Pedestrian detection model triggers false positives for crowds in dense urban areas. Refine model thresholds and training data.",
+            "timestamp": "2025-01-29T10:00:00Z",
+            "linked_jira_ticket": "PDAV-919",
+            "status": "Open"
+          }
+        ],
+        "commits": [
+          {
+            "commit_id": "q6r7s8t",
+            "message": "Addressed latency spikes for nighttime suburban scenarios.",
+            "timestamp": "2025-01-29T09:30:00Z",
+            "linked_jira_ticket": "PDAV-918"
+          },
+          {
+            "commit_id": "u9v1w2x",
+            "message": "Refined thresholds to reduce false positives in urban crowd detection.",
+            "timestamp": "2025-01-29T10:30:00Z",
+            "linked_jira_ticket": "PDAV-919"
+          }
+        ]
+      }
+    ]
+  }
+  

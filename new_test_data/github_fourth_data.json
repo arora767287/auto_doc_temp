@@ -1,0 +1,110 @@
+{
+    "github_data": [
+      {
+        "repository": "safety-analysis-retail",
+        "issues": [
+          {
+            "issue_id": 107,
+            "title": "Thermal boundary inconsistencies in overlapping areas",
+            "description": "Thermal boundaries fail to merge consistently in retail environments with dynamic heat sources. Investigate overlapping boundary calibration.",
+            "timestamp": "2025-01-30T08:00:00Z",
+            "linked_jira_ticket": "SAFETY-605",
+            "status": "Open"
+          },
+          {
+            "issue_id": 108,
+            "title": "Anomaly detection reports redundant alerts",
+            "description": "During peak hours, the anomaly detection system sends duplicate alerts for minor boundary overlaps. Review redundancy filters.",
+            "timestamp": "2025-01-30T09:00:00Z",
+            "linked_jira_ticket": "SAFETY-606",
+            "status": "Open"
+          }
+        ],
+        "commits": [
+          {
+            "commit_id": "x1y2z3a",
+            "message": "Reviewed calibration methods for merging thermal boundaries.",
+            "timestamp": "2025-01-30T08:45:00Z",
+            "linked_jira_ticket": "SAFETY-605"
+          },
+          {
+            "commit_id": "b3c4d5e",
+            "message": "Added filters to reduce redundancy in anomaly detection alerts.",
+            "timestamp": "2025-01-30T09:30:00Z",
+            "linked_jira_ticket": "SAFETY-606"
+          }
+        ]
+      },
+      {
+        "repository": "deepfake-detection",
+        "issues": [
+          {
+            "issue_id": 207,
+            "title": "Dataset labeling inconsistencies",
+            "description": "Certain video samples in the deepfake dataset are incorrectly labeled, causing false positives. Review and correct labels.",
+            "timestamp": "2025-01-31T10:00:00Z",
+            "linked_jira_ticket": "DEEPFAKE-210",
+            "status": "Open"
+          },
+          {
+            "issue_id": 208,
+            "title": "Random frame skipping during model inference",
+            "description": "Inference pipeline occasionally skips random frames in video samples. Debug frame scheduler logic.",
+            "timestamp": "2025-01-31T11:00:00Z",
+            "linked_jira_ticket": "DEEPFAKE-211",
+            "status": "Open"
+          }
+        ],
+        "commits": [
+          {
+            "commit_id": "h6i7j8k",
+            "message": "Corrected mislabeled samples in deepfake dataset.",
+            "timestamp": "2025-01-31T10:30:00Z",
+            "linked_jira_ticket": "DEEPFAKE-210"
+          },
+          {
+            "commit_id": "l9m1n2o",
+            "message": "Fixed frame skipping in inference pipeline.",
+            "timestamp": "2025-01-31T11:30:00Z",
+            "linked_jira_ticket": "DEEPFAKE-211"
+          }
+        ]
+      },
+      {
+        "repository": "autonomous-vehicles",
+        "issues": [
+          {
+            "issue_id": 307,
+            "title": "False negatives in crosswalk scenarios with shadows",
+            "description": "Pedestrian detection model fails to detect individuals in shadowed areas of crosswalks during evening tests. Investigate shadow augmentations.",
+            "timestamp": "2025-02-01T08:00:00Z",
+            "linked_jira_ticket": "PDAV-920",
+            "status": "Open"
+          },
+          {
+            "issue_id": 308,
+            "title": "High resource utilization during parallel camera streams",
+            "description": "Resource usage spikes when processing parallel camera streams in autonomous vehicle tests. Optimize resource allocation logic.",
+            "timestamp": "2025-02-01T09:00:00Z",
+            "linked_jira_ticket": "PDAV-921",
+            "status": "Open"
+          }
+        ],
+        "commits": [
+          {
+            "commit_id": "p3q4r5s",
+            "message": "Improved pedestrian detection in shadowed crosswalks with augmented datasets.",
+            "timestamp": "2025-02-01T08:45:00Z",
+            "linked_jira_ticket": "PDAV-920"
+          },
+          {
+            "commit_id": "t6u7v8w",
+            "message": "Optimized resource allocation for parallel camera stream processing.",
+            "timestamp": "2025-02-01T09:45:00Z",
+            "linked_jira_ticket": "PDAV-921"
+          }
+        ]
+      }
+    ]
+  }
+  
