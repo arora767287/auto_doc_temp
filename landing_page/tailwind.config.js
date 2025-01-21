@@ -4,13 +4,18 @@ module.exports = {
         extend: {
             colors: {
                 dark: {
-                    primary: '#0F172A',    // Very dark blue
-                    secondary: '#1E293B',  // Dark blue-gray
-                    accent: '#3B82F6',     // Bright blue for accents
+                    primary: '#1E3A8A',    // Deep navy blue
+                    secondary: '#1E293B',   // Dark blue-gray
+                    accent: '#0D9488',      // Teal
                 },
                 text: {
-                    primary: '#F8FAFC',    // Almost white
-                    secondary: '#94A3B8',  // Light gray
+                    primary: '#F9FAFB',     // Soft white
+                    secondary: '#94A3B8',    // Light gray
+                },
+                accent: {
+                    light: '#2DD4BF',       // Lighter teal for hover states
+                    DEFAULT: '#0D9488',      // Base teal
+                    dark: '#0F766E',        // Darker teal for active states
                 }
             },
         },

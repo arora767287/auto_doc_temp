@@ -1,9 +1,12 @@
 import React from 'react';
+import stripes from './vanishing-stripes.svg';
 
 const ProblemSection = () => {
     return (
         <div id="problem" className="bg-dark-primary py-40 px-8">
             <div className="max-w-7xl mx-auto">
+            <div className="absolute inset-100 opacity-10" style={{ backgroundImage: `url(${stripes})` }}></div>
+            <div className="max-w-7xl mx-auto relative z-100">
                 <h2 
                     className="text-3xl font-bold text-text-primary text-center"
                     data-aos="fade-down"
@@ -45,7 +48,7 @@ const ProblemSection = () => {
                     {/* Similar blocks with different animations */}
                 </div>
 
-
+            </div>
             </div>
         </div>
     );

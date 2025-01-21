@@ -9,6 +9,7 @@ import Pricing from '../components/Pricing';
 import Footer from '../components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import stripes from './vanishing-stripes.svg';
 
 const Home = () => {
     useEffect(() => {
@@ -21,8 +22,12 @@ const Home = () => {
 
     return (
         <div>
+             <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `url(${stripes})` }}></div>
+
             <Navbar />
             <Hero />
+            <div className="opacity-10" style={{ backgroundImage: `url(${stripes})` }}></div>
+
             <ProblemSection />
             <SolutionSection />
             <Features />

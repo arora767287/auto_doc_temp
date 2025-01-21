@@ -1,8 +1,10 @@
 import React from 'react';
+import stripes from './vanishing-stripes.svg';
 
 const Hero = () => {
     return (
-        <div className="bg-dark-primary text-white py-40 px-8">
+        <div className="bg-dark-primary text-white py-40 px-8 relative overflow-hidden">
+            <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `url(${stripes})` }}></div>
             <div className="max-w-7xl mx-auto flex flex-col items-center justify-center">
                 <div className="text-center max-w-3xl">
                     {/* YC Badge - Centered */}
@@ -40,7 +42,6 @@ const Hero = () => {
                         data-aos="fade-up"
                         data-aos-delay="300"
                     >
-                        {/* Button placeholder */}
                     </div>
                 </div>
             </div>

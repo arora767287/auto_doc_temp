@@ -10,7 +10,7 @@ const Pricing = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                     <div className="p-8 bg-dark-primary rounded-lg" data-aos="fade-up">
                         <h3 className="text-xl font-bold text-text-primary">Starter</h3>
-                        <p className="mt-4 text-3xl font-bold text-text-primary">$59<span className="text-sm">/employee/month</span></p>
+                        <p className="mt-4 text-3xl font-bold text-text-primary">Free<span className="text-sm"></span></p>
                     </div>
                     <div className="p-8 bg-dark-accent rounded-lg transform md:scale-110 relative" data-aos="fade-up" data-aos-delay="100">
                         <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -19,7 +19,7 @@ const Pricing = () => {
                             </span>
                         </div>
                         <h3 className="text-xl font-bold text-text-primary">Professional</h3>
-                        <p className="mt-4 text-3xl font-bold text-text-primary">$99<span className="text-sm">/employee/month</span></p>
+                        <p className="mt-4 text-3xl font-bold text-text-primary">$29<span className="text-sm">/employee/month</span></p>
                     </div>
                     <div className="p-8 bg-dark-primary rounded-lg" data-aos="fade-up" data-aos-delay="200">
                         <h3 className="text-xl font-bold text-text-primary">Enterprise (2000 + employees)</h3>
