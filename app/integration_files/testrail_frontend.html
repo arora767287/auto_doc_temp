@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect to TestRail</title>
+    <script>
+        async function connectToTestRail() {
+            const subdomain = document.getElementById('subdomain').value;
+            const apiToken = document.getElementById('api_token').value;
+
+            const response = await fetch('/connect', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ subdomain, api_token: apiToken })
+            });
+
+            const result = await response.json();
+            alert(result.message || result.error);
+        }
+
+        async function getTests() {
+            const subdomain = document.getElementById('subdomain').value;
+            const projectId = document.getElementById('project_id').value;
+
+            const response = await fetch(`/get_tests?subdomain=${subdomain}&project_id=${projectId}`);
+            const result = await response.json();
+
+            if (result.error) {
+                alert(result.error);
+            } else {
+                console.log(result);
+                alert('Check console for test cases!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Connect to TestRail</h1>
+    <label for="subdomain">Subdomain:</label>
+    <input type="text" id="subdomain" placeholder="company" required><br><br>
+
+    <label for="api_token">API Token:</label>
+    <input type="password" id="api_token" placeholder="Your API Token" required><br><br>
+
+    <button onclick="connectToTestRail()">Connect</button>
+
+    <h2>Fetch Test Cases</h2>
+    <label for="project_id">Project ID:</label>
+    <input type="text" id="project_id" placeholder="Project ID" required><br><br>
+
+    <button onclick="getTests()">Get Tests</button>
+</body>
+</html>
