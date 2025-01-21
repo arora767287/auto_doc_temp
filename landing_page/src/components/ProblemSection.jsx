@@ -5,7 +5,8 @@ const ProblemSection = () => {
     return (
         <div id="problem" className="bg-dark-primary py-40 px-8">
             <div className="max-w-7xl mx-auto">
-            <div className="absolute inset-100 opacity-10" style={{ backgroundImage: `url(${stripes})` }}></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-3xl opacity-30"></div>
+
             <div className="max-w-7xl mx-auto relative z-100">
                 <h2 
                     className="text-3xl font-bold text-text-primary text-center"

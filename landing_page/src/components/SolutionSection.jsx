@@ -56,7 +56,7 @@ const SolutionSection = () => {
                         </div>
                         <div className="md:w-2/3 p-6 bg-dark-secondary rounded-lg">
                             <div className="h-48 transparent rounded-lg flex items-center justify-center" style={{padding:100}}>
-                                <img src={documentationUpdate} alt="Documentation Update" style={{borderRadius: 10, width: 400}}/>
+                                <img src={documentationUpdate} alt="Documentation Update" style={{borderRadius: 10, width: 250}}/>
                             </div>
                         </div>
                     </div>
