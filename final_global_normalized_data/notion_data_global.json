@@ -1,0 +1,289 @@
+[
+    {
+        "id": "NOTION-1-notes",
+        "source": "notion",
+        "type": "document",
+        "org": "nvidia",
+        "content": {
+            "title": "Notes",
+            "body": "- **New AV Features**:\n    - Cyclist detection model prototype completed.\n    - Early results show:\n        - Urban accuracy: 72%\n        - Rural accuracy: 65%\n- **Confluence Documentation**:\n    - Added \"Quick Start Guide\" for AV training pipeline.\n    - Notion duplication issue flagged by Brian.\n- **Random Thoughts**:\n    - Should we align face recognition preprocessing with AV pedestrian models?\n    - Retail safety project can use AV motion detection for identifying crowd dynamics."
+        },
+        "metadata": {
+            "tags": [
+                "Notes"
+            ],
+            "authors": [
+                "unknown"
+            ]
+        },
+        "timestamps": {
+            "last_modified": "2025-01-26T17:56:55.886089"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "NOTION-2-retail-safety-analytics-brainstorm",
+        "source": "notion",
+        "type": "document",
+        "org": "nvidia",
+        "content": {
+            "title": "Retail Safety Analytics Brainstorm",
+            "body": "- **Key Ideas**:\n    - Use customer movement patterns to optimize store layout.\n    - Introduce thermal cameras to detect unusual activities (e.g., crowding).\n- **Challenges**:\n    - Lack of real-time feedback loop for security staff.\n    - Motion detection triggers too many false alarms in busy areas.\n- **Miscellaneous Notes**:\n    - Suggested combining pedestrian datasets from AV projects for store safety.\n    - Brian's suggestion:\n        - \"Can we share the slack automation scripts across teams?\""
+        },
+        "metadata": {
+            "tags": [
+                "Retail",
+                "Safety",
+                "Analytics",
+                "Brainstorm"
+            ],
+            "authors": [
+                "unknown"
+            ]
+        },
+        "timestamps": {
+            "last_modified": "2025-01-26T17:56:55.886391"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "NOTION-3-trials",
+        "source": "notion",
+        "type": "document",
+        "org": "nvidia",
+        "content": {
+            "title": "Trials",
+            "body": "- **Cross-Team Efforts**:\n    - Shared facial recognition preprocessing pipeline with the deepfake team.\n    - Discussed merging safety analytics from retail with person detection from AV projects.\n- **Pain Points**:\n    - Data schema inconsistencies across projects.\n    - GitHub PR reviews delayed due to unclear code comments.\n- **Action Items**:\n    - Brian will update Confluence documentation for deepfake datasets.\n    - Rachel to schedule a meeting for merging Slack channel logs into centralized analytics."
+        },
+        "metadata": {
+            "tags": [
+                "Trials"
+            ],
+            "authors": [
+                "unknown"
+            ]
+        },
+        "timestamps": {
+            "last_modified": "2025-01-26T17:56:55.886594"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "NOTION-4-heatmaps",
+        "source": "notion",
+        "type": "document",
+        "org": "nvidia",
+        "content": {
+            "title": "Heatmaps",
+            "body": "- **Current Features**:\n    - Heatmap overlays for customer activity patterns.\n    - Theft detection pipeline triggered 5 successful alerts in the last week.\n- **Open Questions**:\n    - Can face recognition from airports be used to enhance retail safety?\n    - How do we handle edge cases where customers wear masks or hats?\n- **Action Points**:\n    - Update Jira Issue #609 with test results from theft detection trials.\n    - Share dataset enhancements in #cv-data Slack channel.\n\n[Logs](Heatmaps%2018079e96c7a180f98e97ef05e56b8835/Logs%2018079e96c7a1804c86fcf47164453f1e.md)"
+        },
+        "metadata": {
+            "tags": [
+                "Heatmaps"
+            ],
+            "authors": [
+                "unknown"
+            ]
+        },
+        "timestamps": {
+            "last_modified": "2025-01-26T17:56:55.887165"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "NOTION-5-overall-updates-on-week-5",
+        "source": "notion",
+        "type": "document",
+        "org": "nvidia",
+        "content": {
+            "title": "Overall Updates on Week 5",
+            "body": "- **Autonomous Vehicles**:\n    - Added nighttime pedestrian dataset (results pending).\n    - Discussed moving redundant code blocks to shared GitHub repo.\n- **Deepfake Detection**:\n    - GAN-based synthetic data generated 500 new sequences.\n    - Need to align dataset schema with the face recognition team.\n- **Retail Safety**:\n    - Heatmap-based camera realignment reduced blind spots by 30%.\n    - Slack automation script updated for sending alerts.\n- **Miscellaneous**:\n    - Meeting rescheduled for Friday at 10 AM.\n    - Rachel suggested using Notion for team retrospectives moving forward."
+        },
+        "metadata": {
+            "tags": [
+                "Overall",
+                "Updates",
+                "on",
+                "Week",
+                "5"
+            ],
+            "authors": [
+                "unknown"
+            ]
+        },
+        "timestamps": {
+            "last_modified": "2025-01-26T17:56:55.887245"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "NOTION-6-edge-cases-av",
+        "source": "notion",
+        "type": "document",
+        "org": "nvidia",
+        "content": {
+            "title": "Edge Cases AV",
+            "body": "- **Edge Cases Observed**:\n    - Low-light conditions reduce accuracy to 78%.\n    - High angles (e.g., security cameras on ceilings) cause bounding box misalignment.\n- **Related Projects**:\n    - Collaborating with retail safety team on shared bounding box features.\n    - Borrowing thermal imaging datasets from the AV project.\n- **Miscellaneous Notes**:\n    - Slack message: \"Should we standardize dataset metadata schema across projects?\"\n    - GitHub Commit ID: \"bf67a9: Improved bounding box accuracy for tilted camera angles.\""
+        },
+        "metadata": {
+            "tags": [
+                "Edge",
+                "Cases",
+                "AV"
+            ],
+            "authors": [
+                "unknown"
+            ]
+        },
+        "timestamps": {
+            "last_modified": "2025-01-26T17:56:55.887302"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "NOTION-7-weekly-project-tracker",
+        "source": "notion",
+        "type": "document",
+        "org": "nvidia",
+        "content": {
+            "title": "Weekly Project Tracker",
+            "body": "- **Deepfake Detection**:\n    - Completed:\n        - Initial GAN experiments for dataset creation.\n    - Blocked:\n        - GPU resource allocation conflict with other teams.\n- **Face Recognition**:\n    - Upcoming:\n        - Roll out lightweight models to additional airport terminals.\n        - Challenges:\n            - Scaling inference pipelines for peak hour traffic.\n- Miscellaneous:\n    - Fix typo in Slack channel description (`#cv-detection` \u2192 `#cv_research`).\n    - Update Notion templates for team retrospectives."
+        },
+        "metadata": {
+            "tags": [
+                "Weekly",
+                "Project",
+                "Tracker"
+            ],
+            "authors": [
+                "unknown"
+            ]
+        },
+        "timestamps": {
+            "last_modified": "2025-01-26T17:56:55.887354"
+        },
+        "user": "echow52"
+    },
+    {
+        "id": "NOTION-8-face-recognition-model-tuning",
+        "source": "notion",
+        "type": "document",
+        "org": "nvidia",
+        "content": {
+            "title": "Face Recognition Model Tuning",
+            "body": "- **Terminal Accuracy Testing**:\n    - Tested lightweight models in 3 airport terminals.\n    - Average processing time reduced by 12%, but false positive rates increased.\n- **Proposed Fixes**:\n    - Introduce angle compensation for off-center faces.\n    - Enhance training on partial face datasets.\n- **Random Updates**:\n    - Slack Message from Rachel:\n        - \"Are we integrating the new biometric standards yet?\"\n    - Meeting scheduled to discuss model deployment challenges with the autonomous vehicle team.\n- **Jira Issues to Track**:\n    - #482: Face bounding box overlap in crowded areas.\n    - #490: Accuracy dips for masked individuals in low lighting."
+        },
+        "metadata": {
+            "tags": [
+                "Face",
+                "Recognition",
+                "Model",
+                "Tuning"
+            ],
+            "authors": [
+                "unknown"
+            ]
+        },
+        "timestamps": {
+            "last_modified": "2025-01-26T17:56:55.887404"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "NOTION-9-brainstorming-session-notes",
+        "source": "notion",
+        "type": "document",
+        "org": "nvidia",
+        "content": {
+            "title": "Brainstorming Session Notes",
+            "body": "- **Retail Safety**:\n    - Ideas:\n        - Heatmaps to dynamically adjust store layouts.\n        - Predictive analytics for theft patterns using historical data.\n    - Issues:\n        - Lack of training data for atypical behavior patterns.\n- **Autonomous Vehicles**:\n    - Discussion:\n        - Should we prioritize person detection in urban vs rural settings?\n        - Suggest splitting datasets by environment type.\n- Miscellaneous Notes:\n    - Upcoming hackathon topic: Combining face recognition and pedestrian tracking.\n    - Need approval for budget increase to expand GAN-based video generation."
+        },
+        "metadata": {
+            "tags": [
+                "Brainstorming",
+                "Session",
+                "Notes"
+            ],
+            "authors": [
+                "unknown"
+            ]
+        },
+        "timestamps": {
+            "last_modified": "2025-01-26T17:56:55.887455"
+        },
+        "user": "skim90"
+    },
+    {
+        "id": "NOTION-10-autonomous-vehicles-weekly-progress-update",
+        "source": "notion",
+        "type": "document",
+        "org": "nvidia",
+        "content": {
+            "title": "Autonomous Vehicles: Weekly Progress Update",
+            "body": "- **Pedestrian Tracking**:\n    - Integrated night vision camera datasets into the training pipeline.\n    - Found 15% improvement in F1 scores for low-light scenarios.\n    - Open Bug:\n        - Reflective materials near headlights cause false positives (Jira Issue #394).\n- **Cyclist Detection**:\n    - Initial results show 65% accuracy in urban settings.\n    - Challenges:\n        - High occlusion rates due to vehicle proximity.\n        - Need for more diverse datasets from rural areas.\n- Miscellaneous Notes:\n    - Discussed cross-project opportunities with the retail safety team.\n    - Suggested combining motion detection from stores with AV datasets for anomaly identification."
+        },
+        "metadata": {
+            "tags": [
+                "Autonomous",
+                "Vehicles"
+            ],
+            "authors": [
+                "unknown"
+            ]
+        },
+        "timestamps": {
+            "last_modified": "2025-01-26T17:56:55.887498"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "NOTION-11-deepfake-detection-pipeline-enhancements",
+        "source": "notion",
+        "type": "document",
+        "org": "nvidia",
+        "content": {
+            "title": "Deepfake Detection Pipeline Enhancements",
+            "body": "- **Current Progress**:\n    - GAN-based data augmentation added for voice synchronization tests.\n    - Model accuracy improved from 82% to 89%.\n- **Blocked Tasks**:\n    - GPU memory overflow during training on 8K resolution datasets.\n    - Dataset imbalance: Overrepresentation of lip-sync-related deepfakes.\n- **Cross-Project Updates**:\n    - Shared image preprocessing scripts with face recognition team.\n    - Found possible shared edge cases between airport face recognition and retail store camera systems.\n- **Slack Notes**:\n    - Brian raised concerns about detection reliability in multilingual datasets.\n    - Discussed in #cv-research channel."
+        },
+        "metadata": {
+            "tags": [
+                "Deepfake",
+                "Detection",
+                "Pipeline",
+                "Enhancements"
+            ],
+            "authors": [
+                "unknown"
+            ]
+        },
+        "timestamps": {
+            "last_modified": "2025-01-26T17:56:55.887542"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "NOTION-12-project-alignment-for-q1",
+        "source": "notion",
+        "type": "document",
+        "org": "nvidia",
+        "content": {
+            "title": "Project Alignment for Q1",
+            "body": "- **Main Projects**:\n    1. Deepfake Detection:\n        - Goal: Improve real-time detection accuracy for videos under 60 seconds.\n        - Challenges: Noise in compressed formats causing false positives.\n    2. Person Detection:\n        - Status: Successfully integrated NVIDIA Jetson inference pipeline.\n        - To Do: Benchmark performance on low-power devices.\n- Notes:\n    - Slack channels noisy lately\u2014filter important updates into Confluence.\n    - Reminder: Merge GitHub PR #202 into main by EOD."
+        },
+        "metadata": {
+            "tags": [
+                "Project",
+                "Alignment",
+                "for",
+                "Q1"
+            ],
+            "authors": [
+                "unknown"
+            ]
+        },
+        "timestamps": {
+            "last_modified": "2025-01-26T17:56:55.887587"
+        },
+        "user": "amehta70"
+    }
+]

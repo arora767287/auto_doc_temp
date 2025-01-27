@@ -1,0 +1,218 @@
+[
+    {
+        "id": "GITHUB-37-safety-analysis-retail-101",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_issue",
+        "content": {
+            "title": "Bounding box jitter in high-density retail zones",
+            "description": "Bounding boxes exhibit jittering during peak hours in high-density zones. Investigate temporal smoothing and Kalman filter parameter adjustments."
+        },
+        "metadata": {
+            "repository": "safety-analysis-retail",
+            "status": "Open",
+            "linked_jira_ticket": "SAFETY-595"
+        },
+        "timestamps": {
+            "created": "2025-01-21T09:15:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "GITHUB-38-safety-analysis-retail-102",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_issue",
+        "content": {
+            "title": "Thermal imaging overexposure in bright environments",
+            "description": "Safety analysis module fails to detect objects accurately in environments with excessive thermal contrast. Fine-tune exposure calibration."
+        },
+        "metadata": {
+            "repository": "safety-analysis-retail",
+            "status": "Open",
+            "linked_jira_ticket": "SAFETY-598"
+        },
+        "timestamps": {
+            "created": "2025-01-21T10:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "GITHUB-39-safety-analysis-retail-a1b2c3d",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_commit",
+        "content": {
+            "message": "Added temporal smoothing for bounding box jitter in retail zones."
+        },
+        "metadata": {
+            "repository": "safety-analysis-retail",
+            "linked_jira_ticket": "SAFETY-595"
+        },
+        "timestamps": {
+            "created": "2025-01-21T09:45:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "GITHUB-40-safety-analysis-retail-d4e5f6g",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_commit",
+        "content": {
+            "message": "Adjusted exposure calibration for bright environments in safety analysis."
+        },
+        "metadata": {
+            "repository": "safety-analysis-retail",
+            "linked_jira_ticket": "SAFETY-598"
+        },
+        "timestamps": {
+            "created": "2025-01-21T10:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "GITHUB-41-deepfake-detection-201",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_issue",
+        "content": {
+            "title": "Failure in parallel processing for large video datasets",
+            "description": "Deepfake detection module crashes when processing large datasets in parallel. Investigate thread allocation and memory usage."
+        },
+        "metadata": {
+            "repository": "deepfake-detection",
+            "status": "Open",
+            "linked_jira_ticket": "DEEPFAKE-204"
+        },
+        "timestamps": {
+            "created": "2025-01-22T11:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "GITHUB-42-deepfake-detection-202",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_issue",
+        "content": {
+            "title": "Inconsistent frame alignment during preprocessing",
+            "description": "Deepfake detection preprocessing pipeline occasionally misaligns video frames, causing downstream model failures. Validate and optimize alignment module."
+        },
+        "metadata": {
+            "repository": "deepfake-detection",
+            "status": "Open",
+            "linked_jira_ticket": "DEEPFAKE-205"
+        },
+        "timestamps": {
+            "created": "2025-01-22T12:00:00Z"
+        },
+        "user": "mchen99"
+    },
+    {
+        "id": "GITHUB-43-deepfake-detection-g7h8i9j",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_commit",
+        "content": {
+            "message": "Optimized thread allocation for parallel processing in large datasets."
+        },
+        "metadata": {
+            "repository": "deepfake-detection",
+            "linked_jira_ticket": "DEEPFAKE-204"
+        },
+        "timestamps": {
+            "created": "2025-01-22T11:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "GITHUB-44-deepfake-detection-k1l2m3n",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_commit",
+        "content": {
+            "message": "Resolved frame alignment issues in preprocessing pipeline."
+        },
+        "metadata": {
+            "repository": "deepfake-detection",
+            "linked_jira_ticket": "DEEPFAKE-205"
+        },
+        "timestamps": {
+            "created": "2025-01-22T12:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "GITHUB-45-autonomous-vehicles-301",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_issue",
+        "content": {
+            "title": "Occlusion failures for suburban crosswalks",
+            "description": "Person detection in autonomous vehicles struggles with partial occlusions at suburban crosswalks during low light conditions."
+        },
+        "metadata": {
+            "repository": "autonomous-vehicles",
+            "status": "Open",
+            "linked_jira_ticket": "PDAV-914"
+        },
+        "timestamps": {
+            "created": "2025-01-23T09:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "GITHUB-46-autonomous-vehicles-302",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_issue",
+        "content": {
+            "title": "Latency spike during multi-angle camera integration",
+            "description": "Integrating multi-angle cameras in autonomous vehicles increases latency by 25%. Profile and optimize synchronization logic."
+        },
+        "metadata": {
+            "repository": "autonomous-vehicles",
+            "status": "Open",
+            "linked_jira_ticket": "PDAV-915"
+        },
+        "timestamps": {
+            "created": "2025-01-23T10:00:00Z"
+        },
+        "user": "echow52"
+    },
+    {
+        "id": "GITHUB-47-autonomous-vehicles-o1p2q3r",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_commit",
+        "content": {
+            "message": "Enhanced training dataset for suburban crosswalk occlusions."
+        },
+        "metadata": {
+            "repository": "autonomous-vehicles",
+            "linked_jira_ticket": "PDAV-914"
+        },
+        "timestamps": {
+            "created": "2025-01-23T09:30:00Z"
+        },
+        "user": "echow52"
+    },
+    {
+        "id": "GITHUB-48-autonomous-vehicles-s4t5u6v",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_commit",
+        "content": {
+            "message": "Optimized synchronization logic for multi-angle camera latency."
+        },
+        "metadata": {
+            "repository": "autonomous-vehicles",
+            "linked_jira_ticket": "PDAV-915"
+        },
+        "timestamps": {
+            "created": "2025-01-23T10:30:00Z"
+        },
+        "user": "amehta70"
+    }
+]

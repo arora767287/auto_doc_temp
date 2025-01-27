@@ -1,0 +1,1354 @@
+[
+    {
+        "id": "SLACK-121-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Do the false positives tend to cluster in any particular scenarios, like near intersections or parked vehicles?",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "michael.chen"
+        },
+        "timestamps": {
+            "created": "2025-01-20T06:35:00Z"
+        },
+        "replies": [],
+        "user": "mchen99"
+    },
+    {
+        "id": "SLACK-122-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Mostly near intersections with complex backgrounds. I\u2019ll focus on these cases for the next round of debugging.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-20T06:40:30Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-123-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019ve uploaded a detailed analysis of crosswalk detection inconsistencies to Notion: https://notion.nvidia.com/crosswalk-detection-report. Feedback welcome.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-20T06:50:00Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "SLACK-124-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Thermal imaging integration tests show improved accuracy for hidden pedestrians, but latency has increased. Could we explore hardware-specific optimizations?",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "maria.garcia"
+        },
+        "timestamps": {
+            "created": "2025-01-20T07:00:00Z"
+        },
+        "replies": [],
+        "user": "mgarcia09"
+    },
+    {
+        "id": "SLACK-125-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "We could consider offloading some preprocessing to edge devices. I\u2019ll test this with the current pipeline.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "michael.chen"
+        },
+        "timestamps": {
+            "created": "2025-01-20T07:10:00Z"
+        },
+        "replies": [],
+        "user": "mchen99"
+    },
+    {
+        "id": "SLACK-126-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Sounds good. Let me know if you need additional data for these tests.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-20T07:15:30Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-127-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "The QA team flagged inconsistencies in pedestrian bounding boxes during sharp turns. This might be related to the camera calibration settings.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-20T07:25:00Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "SLACK-128-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Do we have calibration logs from the latest camera setup?",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "maria.garcia"
+        },
+        "timestamps": {
+            "created": "2025-01-20T07:30:00Z"
+        },
+        "replies": [],
+        "user": "mgarcia09"
+    },
+    {
+        "id": "SLACK-129-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Yes, I\u2019ll upload the calibration logs and share the link shortly.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-20T07:35:30Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-130-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "The current model is struggling with partially occluded pedestrians near delivery trucks. Should we prioritize adding more occlusion data?",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "michael.chen"
+        },
+        "timestamps": {
+            "created": "2025-01-20T07:45:00Z"
+        },
+        "replies": [],
+        "user": "mchen99"
+    },
+    {
+        "id": "SLACK-131-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Yes, and we should also consider augmenting the dataset with varying truck sizes and positions.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-20T07:50:30Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "SLACK-132-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019ve scheduled a QA session to validate shadow detection issues. Please send specific scenarios that need testing by end of day.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "maria.garcia"
+        },
+        "timestamps": {
+            "created": "2025-01-20T08:00:00Z"
+        },
+        "replies": [],
+        "user": "mgarcia09"
+    },
+    {
+        "id": "SLACK-133-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019ll add examples with dynamic shadows caused by moving vehicles.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-20T08:10:00Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-134-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "We\u2019re seeing detection drops in rural environments where pedestrians are far from the roadside. Should we tweak the detection range?",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-20T08:15:00Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "SLACK-135-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "That could work. I\u2019ll analyze the current range thresholds and propose adjustments.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "michael.chen"
+        },
+        "timestamps": {
+            "created": "2025-01-20T08:20:30Z"
+        },
+        "replies": [],
+        "user": "mchen99"
+    },
+    {
+        "id": "SLACK-136-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "The fog simulation results are in. Accuracy improved by 12% after dataset augmentation, but edge cases remain in dense fog.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "maria.garcia"
+        },
+        "timestamps": {
+            "created": "2025-01-20T08:30:00Z"
+        },
+        "replies": [],
+        "user": "mgarcia09"
+    },
+    {
+        "id": "SLACK-137-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Let\u2019s refine the augmentation pipeline to include varying fog densities.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-20T08:35:00Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-138-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019ve drafted a Confluence page with findings from the latest suburban trials: https://confluence.nvidia.com/pages/viewpage.action?pageId=902344.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-20T08:40:00Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "SLACK-139-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Thanks, Samantha. I\u2019ll review and add notes on how different vehicle speeds impacted detection.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "michael.chen"
+        },
+        "timestamps": {
+            "created": "2025-01-20T08:50:00Z"
+        },
+        "replies": [],
+        "user": "mchen99"
+    },
+    {
+        "id": "JIRA-140-SAFETY-595",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Bounding box jitter in high-density retail zones",
+            "description": "Bounding boxes exhibit jittering during peak hours in high-density zones. Investigate temporal smoothing and Kalman filter parameter adjustments."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T09:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-141-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019ve analyzed the latest logs for pedestrian detection in heavy rain conditions. The model\u2019s recall dropped by 15% compared to clear conditions.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-20T09:00:00Z"
+        },
+        "replies": [
+            {
+                "id": "SLACK-41-person-detection-autonomous-vehicles",
+                "source": "slack",
+                "org": "nvidia",
+                "type": "slack_reply",
+                "content": {
+                    "text": "Are the false negatives clustered in any specific scenarios, like high-speed zones or intersections?"
+                },
+                "metadata": {
+                    "channel": "person-detection-autonomous-vehicles",
+                    "user": "michael.chen"
+                },
+                "timestamps": {
+                    "created": "2025-01-20T09:05:00Z"
+                },
+                "user": "mchen99"
+            },
+            {
+                "id": "SLACK-42-person-detection-autonomous-vehicles",
+                "source": "slack",
+                "org": "nvidia",
+                "type": "slack_reply",
+                "content": {
+                    "text": "Mostly at high-speed zones. It seems the motion blur under heavy rain is causing issues."
+                },
+                "metadata": {
+                    "channel": "person-detection-autonomous-vehicles",
+                    "user": "arjun.mehta"
+                },
+                "timestamps": {
+                    "created": "2025-01-20T09:10:00Z"
+                },
+                "user": "amehta70"
+            }
+        ],
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-142-DEEPFAKE-204",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Failure in parallel processing for large video datasets",
+            "description": "Deepfake detection module crashes when processing large datasets in parallel. Investigate thread allocation and memory usage."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T09:10:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-143-SAFETY-598",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Thermal imaging overexposure in bright environments",
+            "description": "Safety analysis module fails to detect objects accurately in environments with excessive thermal contrast. Fine-tune exposure calibration."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T09:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-144-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019ve added motion blur augmentation to the latest training dataset. Results should be ready by EOD.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-20T09:20:00Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "SLACK-145-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Thermal imaging results from last week\u2019s trials show consistent improvement in detecting partially hidden pedestrians. I\u2019ve shared a detailed breakdown on Notion: https://notion.nvidia.com/thermal-performance-report.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "maria.garcia"
+        },
+        "timestamps": {
+            "created": "2025-01-20T09:25:00Z"
+        },
+        "replies": [
+            {
+                "id": "SLACK-45-person-detection-autonomous-vehicles",
+                "source": "slack",
+                "org": "nvidia",
+                "type": "slack_reply",
+                "content": {
+                    "text": "Thanks, Maria. I\u2019ll cross-reference this with the results from urban trials."
+                },
+                "metadata": {
+                    "channel": "person-detection-autonomous-vehicles",
+                    "user": "michael.chen"
+                },
+                "timestamps": {
+                    "created": "2025-01-20T09:30:00Z"
+                },
+                "user": "mchen99"
+            }
+        ],
+        "user": "mgarcia09"
+    },
+    {
+        "id": "JIRA-146-PDAV-914",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Occlusion failures for suburban crosswalks",
+            "description": "Person detection in autonomous vehicles struggles with partial occlusions at suburban crosswalks during low light conditions."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T09:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-147-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019m running tests on a new occlusion-handling approach for crosswalk detection. Early results show promise, but we need more real-world data.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-20T09:35:00Z"
+        },
+        "replies": [
+            {
+                "id": "SLACK-47-person-detection-autonomous-vehicles",
+                "source": "slack",
+                "org": "nvidia",
+                "type": "slack_reply",
+                "content": {
+                    "text": "I\u2019ll pull footage from the downtown Los Angeles dataset. It should have plenty of challenging crosswalk scenarios."
+                },
+                "metadata": {
+                    "channel": "person-detection-autonomous-vehicles",
+                    "user": "samantha.kim"
+                },
+                "timestamps": {
+                    "created": "2025-01-20T09:40:00Z"
+                },
+                "user": "skim90"
+            }
+        ],
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-148-AIRPORT-326",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Reduced accuracy for passengers with accessories",
+            "description": "Face recognition module experiences reduced accuracy for passengers wearing hats and scarves. Augment training dataset and reevaluate thresholds."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T09:40:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-149-DEEPFAKE-205",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Inconsistent frame alignment during preprocessing",
+            "description": "Deepfake detection preprocessing pipeline occasionally misaligns video frames, causing downstream model failures. Validate and optimize alignment module."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T09:50:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-150-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019ve updated the Jira tracker with edge cases for nighttime urban pedestrian detection: https://jira.nvidia.com/browse/PDAV-1152. Please review.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "maria.garcia"
+        },
+        "timestamps": {
+            "created": "2025-01-20T09:50:00Z"
+        },
+        "replies": [
+            {
+                "id": "SLACK-49-person-detection-autonomous-vehicles",
+                "source": "slack",
+                "org": "nvidia",
+                "type": "slack_reply",
+                "content": {
+                    "text": "Noted. I\u2019ll add specific failure cases from the suburban dataset."
+                },
+                "metadata": {
+                    "channel": "person-detection-autonomous-vehicles",
+                    "user": "michael.chen"
+                },
+                "timestamps": {
+                    "created": "2025-01-20T09:55:00Z"
+                },
+                "user": "mchen99"
+            }
+        ],
+        "user": "mgarcia09"
+    },
+    {
+        "id": "JIRA-151-SAFETY-599",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "False alarms triggered by overlapping thermal zones",
+            "description": "Safety analysis module generates false alarms when multiple thermal regions overlap. Review and optimize merge strategies."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T10:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-152-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "The bounding box jitter in high-speed scenarios has been reduced by 8% after the latest Kalman filter update.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-20T10:05:00Z"
+        },
+        "replies": [
+            {
+                "id": "SLACK-51-person-detection-autonomous-vehicles",
+                "source": "slack",
+                "org": "nvidia",
+                "type": "slack_reply",
+                "content": {
+                    "text": "That\u2019s a solid improvement! Do we still see jitter in low-light environments?"
+                },
+                "metadata": {
+                    "channel": "person-detection-autonomous-vehicles",
+                    "user": "samantha.kim"
+                },
+                "timestamps": {
+                    "created": "2025-01-20T10:10:00Z"
+                },
+                "user": "skim90"
+            },
+            {
+                "id": "SLACK-52-person-detection-autonomous-vehicles",
+                "source": "slack",
+                "org": "nvidia",
+                "type": "slack_reply",
+                "content": {
+                    "text": "Yes, it\u2019s less pronounced but still present. I\u2019ll tweak the parameters further."
+                },
+                "metadata": {
+                    "channel": "person-detection-autonomous-vehicles",
+                    "user": "arjun.mehta"
+                },
+                "timestamps": {
+                    "created": "2025-01-20T10:15:00Z"
+                },
+                "user": "amehta70"
+            }
+        ],
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-153-PDAV-915",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Latency spike during multi-angle camera integration",
+            "description": "Integrating multi-angle cameras in autonomous vehicles increases latency by 25%. Profile and optimize synchronization logic."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T10:10:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-154-AIRPORT-327",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "High false negative rates for facial recognition at VIP gates",
+            "description": "The face recognition module misidentifies VIP passengers more frequently during high traffic. Adjust confidence thresholds."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T10:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-155-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "During sharp turns, false positives seem to spike near reflective surfaces. I\u2019ve flagged this for further analysis.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "maria.garcia"
+        },
+        "timestamps": {
+            "created": "2025-01-20T10:25:00Z"
+        },
+        "replies": [
+            {
+                "id": "SLACK-54-person-detection-autonomous-vehicles",
+                "source": "slack",
+                "org": "nvidia",
+                "type": "slack_reply",
+                "content": {
+                    "text": "Could this be linked to how the model handles glare in preprocessing?"
+                },
+                "metadata": {
+                    "channel": "person-detection-autonomous-vehicles",
+                    "user": "michael.chen"
+                },
+                "timestamps": {
+                    "created": "2025-01-20T10:30:00Z"
+                },
+                "user": "mchen99"
+            },
+            {
+                "id": "SLACK-55-person-detection-autonomous-vehicles",
+                "source": "slack",
+                "org": "nvidia",
+                "type": "slack_reply",
+                "content": {
+                    "text": "Likely. I\u2019ll experiment with adjustments to the glare reduction module."
+                },
+                "metadata": {
+                    "channel": "person-detection-autonomous-vehicles",
+                    "user": "arjun.mehta"
+                },
+                "timestamps": {
+                    "created": "2025-01-20T10:35:00Z"
+                },
+                "user": "amehta70"
+            }
+        ],
+        "user": "mgarcia09"
+    },
+    {
+        "id": "JIRA-156-DEEPFAKE-206",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Overfitting in deepfake detection training pipeline",
+            "description": "Training pipeline for deepfake detection shows overfitting to certain video styles. Expand dataset and apply regularization techniques."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T10:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-157-SAFETY-600",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Edge case failures in anomaly detection",
+            "description": "Anomaly detection fails for edge cases involving overlapping reflective surfaces. Augment training and validate model behavior."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T10:40:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-158-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "The QA team suggested we include scenarios with large crowds crossing simultaneously. Should we prioritize this?",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-20T10:45:00Z"
+        },
+        "replies": [
+            {
+                "id": "SLACK-57-person-detection-autonomous-vehicles",
+                "source": "slack",
+                "org": "nvidia",
+                "type": "slack_reply",
+                "content": {
+                    "text": "Yes, especially for urban environments. I\u2019ll add crowd simulation data to the test suite."
+                },
+                "metadata": {
+                    "channel": "person-detection-autonomous-vehicles",
+                    "user": "maria.garcia"
+                },
+                "timestamps": {
+                    "created": "2025-01-20T10:50:00Z"
+                },
+                "user": "mgarcia09"
+            }
+        ],
+        "user": "skim90"
+    },
+    {
+        "id": "JIRA-159-PDAV-916",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Inaccurate bounding boxes for high-speed objects",
+            "description": "Bounding box predictions lose accuracy for fast-moving pedestrians in urban environments. Investigate model latency and tuning."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T10:50:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-160-AIRPORT-328",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Delayed response times for fallback mechanisms",
+            "description": "Fallback mechanisms in face recognition exhibit delays during high-traffic scenarios. Optimize logic and resource allocation."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T11:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-161-person-detection-autonomous-vehicles",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "The latest model update shows a 5% boost in suburban pedestrian detection. The false positive rate remains stable, which is encouraging.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "person-detection-autonomous-vehicles",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-20T11:00:00Z"
+        },
+        "replies": [
+            {
+                "id": "SLACK-59-person-detection-autonomous-vehicles",
+                "source": "slack",
+                "org": "nvidia",
+                "type": "slack_reply",
+                "content": {
+                    "text": "That\u2019s great! Do we need any follow-up tests to confirm the results?"
+                },
+                "metadata": {
+                    "channel": "person-detection-autonomous-vehicles",
+                    "user": "michael.chen"
+                },
+                "timestamps": {
+                    "created": "2025-01-20T11:10:00Z"
+                },
+                "user": "mchen99"
+            },
+            {
+                "id": "SLACK-60-person-detection-autonomous-vehicles",
+                "source": "slack",
+                "org": "nvidia",
+                "type": "slack_reply",
+                "content": {
+                    "text": "Yes, I\u2019ll coordinate with QA to run extended trials in mixed environments."
+                },
+                "metadata": {
+                    "channel": "person-detection-autonomous-vehicles",
+                    "user": "arjun.mehta"
+                },
+                "timestamps": {
+                    "created": "2025-01-20T11:15:00Z"
+                },
+                "user": "amehta70"
+            }
+        ],
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-162-DEEPFAKE-207",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Increased latency for real-time deepfake detection",
+            "description": "Latency spikes occur during peak processing in real-time deepfake detection. Profile and optimize inference pipeline."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T11:10:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-163-SAFETY-601",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Anomaly detection crashes with large datasets",
+            "description": "The anomaly detection module crashes during batch processing of large datasets. Debug memory usage and optimize resource allocation."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T11:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-164-SAFETY-595",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Bounding box jitter in high-density retail zones",
+            "description": "Bounding boxes exhibit jittering during peak hours in high-density zones. Investigate temporal smoothing and Kalman filter parameter adjustments."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T11:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-165-DEEPFAKE-204",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Failure in parallel processing for large video datasets",
+            "description": "Deepfake detection module crashes when processing large datasets in parallel. Investigate thread allocation and memory usage."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T11:40:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-166-SAFETY-598",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Thermal imaging overexposure in bright environments",
+            "description": "Safety analysis module fails to detect objects accurately in environments with excessive thermal contrast. Fine-tune exposure calibration."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T11:50:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-167-PDAV-914",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Occlusion failures for suburban crosswalks",
+            "description": "Person detection in autonomous vehicles struggles with partial occlusions at suburban crosswalks during low light conditions."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T12:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-168-AIRPORT-326",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Reduced accuracy for passengers with accessories",
+            "description": "Face recognition module experiences reduced accuracy for passengers wearing hats and scarves. Augment training dataset and reevaluate thresholds."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T12:10:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-169-DEEPFAKE-205",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Inconsistent frame alignment during preprocessing",
+            "description": "Deepfake detection preprocessing pipeline occasionally misaligns video frames, causing downstream model failures. Validate and optimize alignment module."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T12:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-170-SAFETY-599",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "False alarms triggered by overlapping thermal zones",
+            "description": "Safety analysis module generates false alarms when multiple thermal regions overlap. Review and optimize merge strategies."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T12:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-171-PDAV-915",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Latency spike during multi-angle camera integration",
+            "description": "Integrating multi-angle cameras in autonomous vehicles increases latency by 25%. Profile and optimize synchronization logic."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T12:40:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-172-AIRPORT-327",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "High false negative rates for facial recognition at VIP gates",
+            "description": "The face recognition module misidentifies VIP passengers more frequently during high traffic. Adjust confidence thresholds."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T12:50:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-173-DEEPFAKE-206",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Overfitting in deepfake detection training pipeline",
+            "description": "Training pipeline for deepfake detection shows overfitting to certain video styles. Expand dataset and apply regularization techniques."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T13:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-174-SAFETY-600",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Edge case failures in anomaly detection",
+            "description": "Anomaly detection fails for edge cases involving overlapping reflective surfaces. Augment training and validate model behavior."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T13:10:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-175-PDAV-916",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Inaccurate bounding boxes for high-speed objects",
+            "description": "Bounding box predictions lose accuracy for fast-moving pedestrians in urban environments. Investigate model latency and tuning."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T13:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-176-AIRPORT-328",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Delayed response times for fallback mechanisms",
+            "description": "Fallback mechanisms in face recognition exhibit delays during high-traffic scenarios. Optimize logic and resource allocation."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T13:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-177-DEEPFAKE-207",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Increased latency for real-time deepfake detection",
+            "description": "Latency spikes occur during peak processing in real-time deepfake detection. Profile and optimize inference pipeline."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T13:40:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-178-SAFETY-601",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Anomaly detection crashes with large datasets",
+            "description": "The anomaly detection module crashes during batch processing of large datasets. Debug memory usage and optimize resource allocation."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T13:50:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-179-SAFETY-602",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Misaligned bounding boxes for thermal regions",
+            "description": "Bounding boxes are misaligned during thermal imaging in high-density environments. Review calibration and dataset augmentation."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T14:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-180-PDAV-917",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Pedestrian detection failures at curved crosswalks",
+            "description": "Model struggles to identify pedestrians at crosswalks with significant curves. Investigate curvature augmentation in training datasets."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T14:10:00Z"
+        },
+        "user": "amehta70"
+    }
+]

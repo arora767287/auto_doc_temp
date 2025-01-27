@@ -1,0 +1,211 @@
+[
+    {
+        "id": "JIRA-13-AIRPORT-328",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Delayed response times for fallback mechanisms",
+            "description": "Fallback mechanisms in face recognition exhibit delays during high-traffic scenarios. Optimize logic and resource allocation."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T17:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-14-DEEPFAKE-207",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Increased latency for real-time deepfake detection",
+            "description": "Latency spikes occur during peak processing in real-time deepfake detection. Profile and optimize inference pipeline."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T17:10:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-15-SAFETY-601",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Anomaly detection crashes with large datasets",
+            "description": "The anomaly detection module crashes during batch processing of large datasets. Debug memory usage and optimize resource allocation."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T17:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-16-SAFETY-602",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Misaligned bounding boxes for thermal regions",
+            "description": "Bounding boxes are misaligned during thermal imaging in high-density environments. Review calibration and dataset augmentation."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T17:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-17-PDAV-917",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Pedestrian detection failures at curved crosswalks",
+            "description": "Model struggles to identify pedestrians at crosswalks with significant curves. Investigate curvature augmentation in training datasets."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T17:40:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-18-AIRPORT-329",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "VIP gate processing delays under high load",
+            "description": "Face recognition at VIP gates exhibits delays during simultaneous processing of multiple passengers. Optimize threading logic."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T17:50:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-19-DEEPFAKE-208",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Model accuracy drops for synthesized audio-video pairs",
+            "description": "Deepfake detection shows reduced accuracy for synthesized audio-video combinations. Augment dataset and retrain models."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T18:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-20-SAFETY-603",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Thermal zone overlap errors during low-light tests",
+            "description": "Errors occur in safety analysis when thermal zones overlap under low-light conditions. Optimize preprocessing for boundary detection."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T18:10:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-21-PDAV-918",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Edge case latency for nighttime suburban scenarios",
+            "description": "Latency spikes observed in suburban tests during nighttime pedestrian detection. Profile bottlenecks and refine the pipeline."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T18:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-22-DEEPFAKE-209",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Misclassification during adversarial input testing",
+            "description": "Adversarial inputs with minor pixel alterations cause the deepfake detection model to misclassify. Reinforce training against adversarial examples."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T18:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-23-SAFETY-604",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Anomaly overlay misalignment in QA demos",
+            "description": "During QA demonstrations, anomaly overlays misalign with bounding boxes when thermal layers are active. Debug overlay logic."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T18:40:00Z"
+        },
+        "user": "amehta70"
+    }
+]

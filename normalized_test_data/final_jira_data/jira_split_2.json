@@ -1,0 +1,230 @@
+[
+    {
+        "id": "JIRA-24-AIRPORT-328",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Delayed response times for fallback mechanisms",
+            "description": "Fallback mechanisms in face recognition exhibit delays during high-traffic scenarios. Optimize logic and resource allocation."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T11:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-25-DEEPFAKE-207",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Increased latency for real-time deepfake detection",
+            "description": "Latency spikes occur during peak processing in real-time deepfake detection. Profile and optimize inference pipeline."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T11:10:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-26-SAFETY-601",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Anomaly detection crashes with large datasets",
+            "description": "The anomaly detection module crashes during batch processing of large datasets. Debug memory usage and optimize resource allocation."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T11:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-27-SAFETY-595",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Bounding box jitter in high-density retail zones",
+            "description": "Bounding boxes exhibit jittering during peak hours in high-density zones. Investigate temporal smoothing and Kalman filter parameter adjustments."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T11:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-28-DEEPFAKE-204",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Failure in parallel processing for large video datasets",
+            "description": "Deepfake detection module crashes when processing large datasets in parallel. Investigate thread allocation and memory usage."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T11:40:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-29-SAFETY-598",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Thermal imaging overexposure in bright environments",
+            "description": "Safety analysis module fails to detect objects accurately in environments with excessive thermal contrast. Fine-tune exposure calibration."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T11:50:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-30-PDAV-914",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Occlusion failures for suburban crosswalks",
+            "description": "Person detection in autonomous vehicles struggles with partial occlusions at suburban crosswalks during low light conditions."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T12:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-31-AIRPORT-326",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Reduced accuracy for passengers with accessories",
+            "description": "Face recognition module experiences reduced accuracy for passengers wearing hats and scarves. Augment training dataset and reevaluate thresholds."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T12:10:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-32-DEEPFAKE-205",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Inconsistent frame alignment during preprocessing",
+            "description": "Deepfake detection preprocessing pipeline occasionally misaligns video frames, causing downstream model failures. Validate and optimize alignment module."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T12:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-33-SAFETY-599",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "False alarms triggered by overlapping thermal zones",
+            "description": "Safety analysis module generates false alarms when multiple thermal regions overlap. Review and optimize merge strategies."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T12:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-34-PDAV-915",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Latency spike during multi-angle camera integration",
+            "description": "Integrating multi-angle cameras in autonomous vehicles increases latency by 25%. Profile and optimize synchronization logic."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T12:40:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-35-AIRPORT-327",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "High false negative rates for facial recognition at VIP gates",
+            "description": "The face recognition module misidentifies VIP passengers more frequently during high traffic. Adjust confidence thresholds."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T12:50:00Z"
+        },
+        "user": "amehta70"
+    }
+]

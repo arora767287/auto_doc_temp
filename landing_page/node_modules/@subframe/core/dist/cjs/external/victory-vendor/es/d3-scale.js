@@ -1,0 +1,50 @@
+'use strict';
+
+var identity = require('../../d3-scale/src/identity.js');
+var log = require('../../d3-scale/src/log.js');
+var symlog = require('../../d3-scale/src/symlog.js');
+var pow = require('../../d3-scale/src/pow.js');
+var radial = require('../../d3-scale/src/radial.js');
+var quantile = require('../../d3-scale/src/quantile.js');
+var quantize = require('../../d3-scale/src/quantize.js');
+var threshold = require('../../d3-scale/src/threshold.js');
+var time = require('../../d3-scale/src/time.js');
+var utcTime = require('../../d3-scale/src/utcTime.js');
+var sequential = require('../../d3-scale/src/sequential.js');
+var sequentialQuantile = require('../../d3-scale/src/sequentialQuantile.js');
+var diverging = require('../../d3-scale/src/diverging.js');
+var tickFormat = require('../../d3-scale/src/tickFormat.js');
+var band = require('../../d3-scale/src/band.js');
+var linear = require('../../d3-scale/src/linear.js');
+var ordinal = require('../../d3-scale/src/ordinal.js');
+
+
+
+exports.scaleIdentity = identity;
+exports.scaleLog = log.default;
+exports.scaleSymlog = symlog.default;
+exports.scalePow = pow.default;
+exports.scaleSqrt = pow.sqrt;
+exports.scaleRadial = radial;
+exports.scaleQuantile = quantile;
+exports.scaleQuantize = quantize;
+exports.scaleThreshold = threshold;
+exports.scaleTime = time.default;
+exports.scaleUtc = utcTime;
+exports.scaleSequential = sequential.default;
+exports.scaleSequentialLog = sequential.sequentialLog;
+exports.scaleSequentialPow = sequential.sequentialPow;
+exports.scaleSequentialSqrt = sequential.sequentialSqrt;
+exports.scaleSequentialSymlog = sequential.sequentialSymlog;
+exports.scaleSequentialQuantile = sequentialQuantile;
+exports.scaleDiverging = diverging.default;
+exports.scaleDivergingLog = diverging.divergingLog;
+exports.scaleDivergingPow = diverging.divergingPow;
+exports.scaleDivergingSqrt = diverging.divergingSqrt;
+exports.scaleDivergingSymlog = diverging.divergingSymlog;
+exports.tickFormat = tickFormat;
+exports.scaleBand = band.default;
+exports.scalePoint = band.point;
+exports.scaleLinear = linear.default;
+exports.scaleImplicit = ordinal.implicit;
+exports.scaleOrdinal = ordinal.default;

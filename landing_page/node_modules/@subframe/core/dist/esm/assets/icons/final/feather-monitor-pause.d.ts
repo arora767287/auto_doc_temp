@@ -1,0 +1,5 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+declare const SvgFeatherMonitorPause: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
+export default SvgFeatherMonitorPause;
+//# sourceMappingURL=feather-monitor-pause.d.ts.map

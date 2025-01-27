@@ -1,0 +1,23 @@
+'use strict';
+
+var path = require('../../d3-path/src/path.js');
+
+function withPath(shape) {
+  let digits = 3;
+
+  shape.digits = function(_) {
+    if (!arguments.length) return digits;
+    if (_ == null) {
+      digits = null;
+    } else {
+      const d = Math.floor(_);
+      if (!(d >= 0)) throw new RangeError(`invalid digits: ${_}`);
+      digits = d;
+    }
+    return shape;
+  };
+
+  return () => new path.Path(digits);
+}
+
+exports.withPath = withPath;

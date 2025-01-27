@@ -1,0 +1,1138 @@
+[
+    {
+        "id": "JIRA-181-AIRPORT-329",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "VIP gate processing delays under high load",
+            "description": "Face recognition at VIP gates exhibits delays during simultaneous processing of multiple passengers. Optimize threading logic."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T14:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-182-DEEPFAKE-208",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Model accuracy drops for synthesized audio-video pairs",
+            "description": "Deepfake detection shows reduced accuracy for synthesized audio-video combinations. Augment dataset and retrain models."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T14:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-183-SAFETY-603",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Thermal zone overlap errors during low-light tests",
+            "description": "Errors occur in safety analysis when thermal zones overlap under low-light conditions. Optimize preprocessing for boundary detection."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T14:40:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-184-PDAV-918",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Edge case latency for nighttime suburban scenarios",
+            "description": "Latency spikes observed in suburban tests during nighttime pedestrian detection. Profile bottlenecks and refine the pipeline."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T14:50:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-185-SAFETY-595",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Bounding box jitter in high-density retail zones",
+            "description": "Bounding boxes exhibit jittering during peak hours in high-density zones. Investigate temporal smoothing and Kalman filter parameter adjustments."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T15:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-186-DEEPFAKE-204",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Failure in parallel processing for large video datasets",
+            "description": "Deepfake detection module crashes when processing large datasets in parallel. Investigate thread allocation and memory usage."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T15:10:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-187-SAFETY-598",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Thermal imaging overexposure in bright environments",
+            "description": "Safety analysis module fails to detect objects accurately in environments with excessive thermal contrast. Fine-tune exposure calibration."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T15:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-188-PDAV-914",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Occlusion failures for suburban crosswalks",
+            "description": "Person detection in autonomous vehicles struggles with partial occlusions at suburban crosswalks during low light conditions."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T15:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-189-AIRPORT-326",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Reduced accuracy for passengers with accessories",
+            "description": "Face recognition module experiences reduced accuracy for passengers wearing hats and scarves. Augment training dataset and reevaluate thresholds."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T15:40:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-190-DEEPFAKE-205",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Inconsistent frame alignment during preprocessing",
+            "description": "Deepfake detection preprocessing pipeline occasionally misaligns video frames, causing downstream model failures. Validate and optimize alignment module."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T15:50:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-191-SAFETY-599",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "False alarms triggered by overlapping thermal zones",
+            "description": "Safety analysis module generates false alarms when multiple thermal regions overlap. Review and optimize merge strategies."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T16:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-192-PDAV-915",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Latency spike during multi-angle camera integration",
+            "description": "Integrating multi-angle cameras in autonomous vehicles increases latency by 25%. Profile and optimize synchronization logic."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T16:10:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-193-AIRPORT-327",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "High false negative rates for facial recognition at VIP gates",
+            "description": "The face recognition module misidentifies VIP passengers more frequently during high traffic. Adjust confidence thresholds."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T16:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-194-DEEPFAKE-206",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Overfitting in deepfake detection training pipeline",
+            "description": "Training pipeline for deepfake detection shows overfitting to certain video styles. Expand dataset and apply regularization techniques."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T16:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-195-SAFETY-600",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Edge case failures in anomaly detection",
+            "description": "Anomaly detection fails for edge cases involving overlapping reflective surfaces. Augment training and validate model behavior."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T16:40:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-196-PDAV-916",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Inaccurate bounding boxes for high-speed objects",
+            "description": "Bounding box predictions lose accuracy for fast-moving pedestrians in urban environments. Investigate model latency and tuning."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T16:50:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-197-AIRPORT-328",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Delayed response times for fallback mechanisms",
+            "description": "Fallback mechanisms in face recognition exhibit delays during high-traffic scenarios. Optimize logic and resource allocation."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T17:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-198-DEEPFAKE-207",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Increased latency for real-time deepfake detection",
+            "description": "Latency spikes occur during peak processing in real-time deepfake detection. Profile and optimize inference pipeline."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T17:10:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-199-SAFETY-601",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Anomaly detection crashes with large datasets",
+            "description": "The anomaly detection module crashes during batch processing of large datasets. Debug memory usage and optimize resource allocation."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T17:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-200-SAFETY-602",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Misaligned bounding boxes for thermal regions",
+            "description": "Bounding boxes are misaligned during thermal imaging in high-density environments. Review calibration and dataset augmentation."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T17:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-201-PDAV-917",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Pedestrian detection failures at curved crosswalks",
+            "description": "Model struggles to identify pedestrians at crosswalks with significant curves. Investigate curvature augmentation in training datasets."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T17:40:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-202-AIRPORT-329",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "VIP gate processing delays under high load",
+            "description": "Face recognition at VIP gates exhibits delays during simultaneous processing of multiple passengers. Optimize threading logic."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T17:50:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-203-DEEPFAKE-208",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Model accuracy drops for synthesized audio-video pairs",
+            "description": "Deepfake detection shows reduced accuracy for synthesized audio-video combinations. Augment dataset and retrain models."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T18:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-204-SAFETY-603",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Thermal zone overlap errors during low-light tests",
+            "description": "Errors occur in safety analysis when thermal zones overlap under low-light conditions. Optimize preprocessing for boundary detection."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T18:10:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-205-PDAV-918",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Edge case latency for nighttime suburban scenarios",
+            "description": "Latency spikes observed in suburban tests during nighttime pedestrian detection. Profile bottlenecks and refine the pipeline."
+        },
+        "metadata": {
+            "priority": "Medium",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T18:20:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-206-DEEPFAKE-209",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Misclassification during adversarial input testing",
+            "description": "Adversarial inputs with minor pixel alterations cause the deepfake detection model to misclassify. Reinforce training against adversarial examples."
+        },
+        "metadata": {
+            "priority": "Critical",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T18:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "JIRA-207-SAFETY-604",
+        "source": "jira",
+        "org": "nvidia",
+        "type": "jira_ticket",
+        "content": {
+            "title": "Anomaly overlay misalignment in QA demos",
+            "description": "During QA demonstrations, anomaly overlays misalign with bounding boxes when thermal layers are active. Debug overlay logic."
+        },
+        "metadata": {
+            "priority": "High",
+            "assignee": "arjun.mehta",
+            "status": "Open"
+        },
+        "timestamps": {
+            "created": "2025-01-20T18:40:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-208-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I noticed the issue with the bounding box jitter reappearing in the safety-analysis module under high-density scenarios. I\u2019ve reopened Jira ticket SAFETY-223.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-21T08:00:00Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-209-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Thanks for catching that, Arjun. Was it tied to specific hardware setups or software configurations?",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "michael.chen"
+        },
+        "timestamps": {
+            "created": "2025-01-21T08:05:00Z"
+        },
+        "replies": [],
+        "user": "mchen99"
+    },
+    {
+        "id": "SLACK-210-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Mostly on older Jetson Nano devices during simultaneous inference tasks.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-21T08:10:00Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-211-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019ve seen similar behavior in the face-recognition-airports module when processing partially occluded faces. Could it be related?",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-21T08:15:00Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "SLACK-212-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Possibly. I\u2019ll cross-check the alignment between these two modules and see if there\u2019s a shared dependency.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-21T08:20:00Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-213-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019ve updated the Confluence page with details on the fallback issue in person detection during thermal imaging tests: https://confluence.nvidia.com/pages/viewpage.action?pageId=911233.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "maria.garcia"
+        },
+        "timestamps": {
+            "created": "2025-01-21T08:30:00Z"
+        },
+        "replies": [],
+        "user": "mgarcia09"
+    },
+    {
+        "id": "SLACK-214-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Thanks, Maria. I\u2019ll check if those fallback edge cases are also triggering the jitter issue.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-21T08:35:00Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-215-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "The automated deployment script for bug fixes in the face-recognition-airports project failed last night. I\u2019ve logged this as BUG-324.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-21T08:40:00Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "SLACK-216-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019ll rerun the script with additional logging to see where it\u2019s failing.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "michael.chen"
+        },
+        "timestamps": {
+            "created": "2025-01-21T08:45:00Z"
+        },
+        "replies": [],
+        "user": "mchen99"
+    },
+    {
+        "id": "SLACK-217-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Could it be related to the recent update in the Jenkins pipeline for the airports module?",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-21T08:50:00Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-218-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Potentially. I\u2019ll verify the configurations and report back.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-21T08:55:00Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "SLACK-219-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "The person-detection-autonomous-vehicles module is showing inconsistent latency during fog simulations. I\u2019ve flagged this in Jira as BUG-407.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "maria.garcia"
+        },
+        "timestamps": {
+            "created": "2025-01-21T09:00:00Z"
+        },
+        "replies": [],
+        "user": "mgarcia09"
+    },
+    {
+        "id": "SLACK-220-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Noted. I\u2019ll rerun those simulations and profile the preprocessing pipeline to isolate the bottleneck.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-21T09:05:00Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "GITHUB-221-safety-analysis-retail-101",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_issue",
+        "content": {
+            "title": "Bounding box jitter in high-density retail zones",
+            "description": "Bounding boxes exhibit jittering during peak hours in high-density zones. Investigate temporal smoothing and Kalman filter parameter adjustments."
+        },
+        "metadata": {
+            "repository": "safety-analysis-retail",
+            "status": "Open",
+            "linked_jira_ticket": "SAFETY-595"
+        },
+        "timestamps": {
+            "created": "2025-01-21T09:15:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-222-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "The GitHub repo for the deepfake-detection project is missing the latest dependency updates. I\u2019ll push a patch shortly.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "michael.chen"
+        },
+        "timestamps": {
+            "created": "2025-01-21T09:15:00Z"
+        },
+        "replies": [],
+        "user": "mchen99"
+    },
+    {
+        "id": "SLACK-223-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Thanks, Michael. Let\u2019s ensure the CI/CD pipeline triggers validation checks after the patch.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-21T09:20:00Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-224-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "The anomaly-detection script for the safety-analysis module is crashing when handling dense data streams. I\u2019ve logged it as BUG-431.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-21T09:25:00Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "SLACK-225-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Could be a memory allocation issue. I\u2019ll monitor the runtime metrics and report back.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-21T09:30:00Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-226-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019ve updated the QA tracker with edge cases where person detection fails under overlapping shadows. QA results are available here: https://notion.nvidia.com/qa-results-tracker.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "maria.garcia"
+        },
+        "timestamps": {
+            "created": "2025-01-21T09:40:00Z"
+        },
+        "replies": [],
+        "user": "mgarcia09"
+    },
+    {
+        "id": "GITHUB-227-safety-analysis-retail-a1b2c3d",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_commit",
+        "content": {
+            "message": "Added temporal smoothing for bounding box jitter in retail zones."
+        },
+        "metadata": {
+            "repository": "safety-analysis-retail",
+            "linked_jira_ticket": "SAFETY-595"
+        },
+        "timestamps": {
+            "created": "2025-01-21T09:45:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-228-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Thanks, Maria. I\u2019ll use these cases to test the latest preprocessing updates.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-21T09:45:00Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-229-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I noticed a recurring issue with the deepfake-detection dashboard not updating in real-time. I\u2019ll debug the front-end rendering scripts.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-21T09:50:00Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "GITHUB-230-safety-analysis-retail-102",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_issue",
+        "content": {
+            "title": "Thermal imaging overexposure in bright environments",
+            "description": "Safety analysis module fails to detect objects accurately in environments with excessive thermal contrast. Fine-tune exposure calibration."
+        },
+        "metadata": {
+            "repository": "safety-analysis-retail",
+            "status": "Open",
+            "linked_jira_ticket": "SAFETY-598"
+        },
+        "timestamps": {
+            "created": "2025-01-21T10:00:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-231-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "The latest bug fixes in the airports module have improved latency by 12%. Let\u2019s validate this in the next stakeholder demo.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-21T10:00:00Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-232-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "The person-detection-autonomous-vehicles module is showing edge case failures during low-light urban tests. I\u2019ve flagged this in BUG-512.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-21T10:10:00Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "SLACK-233-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Does this involve scenarios with heavy pedestrian traffic or isolated subjects?",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "maria.garcia"
+        },
+        "timestamps": {
+            "created": "2025-01-21T10:15:00Z"
+        },
+        "replies": [],
+        "user": "mgarcia09"
+    },
+    {
+        "id": "SLACK-234-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Both, but it seems more frequent with isolated subjects on dimly lit roads.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-21T10:20:00Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "GITHUB-235-safety-analysis-retail-d4e5f6g",
+        "source": "github",
+        "org": "nvidia",
+        "type": "github_commit",
+        "content": {
+            "message": "Adjusted exposure calibration for bright environments in safety analysis."
+        },
+        "metadata": {
+            "repository": "safety-analysis-retail",
+            "linked_jira_ticket": "SAFETY-598"
+        },
+        "timestamps": {
+            "created": "2025-01-21T10:30:00Z"
+        },
+        "user": "amehta70"
+    },
+    {
+        "id": "SLACK-236-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "The fallback mechanism for the face-recognition-airports module isn\u2019t triggering in specific edge cases. Logged it as BUG-537.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "michael.chen"
+        },
+        "timestamps": {
+            "created": "2025-01-21T10:30:00Z"
+        },
+        "replies": [],
+        "user": "mchen99"
+    },
+    {
+        "id": "SLACK-237-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019ll review the fallback logic and see if any recent changes in thresholds affected it.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "liam.tanaka"
+        },
+        "timestamps": {
+            "created": "2025-01-21T10:35:00Z"
+        },
+        "replies": [],
+        "user": "liamtanaka633"
+    },
+    {
+        "id": "SLACK-238-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Has anyone else noticed latency spikes when processing dense datasets in the safety-analysis module?",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "samantha.kim"
+        },
+        "timestamps": {
+            "created": "2025-01-21T10:40:00Z"
+        },
+        "replies": [],
+        "user": "skim90"
+    },
+    {
+        "id": "SLACK-239-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "Yes, it\u2019s particularly noticeable in scenarios with overlapping anomalies. I\u2019ll flag this for additional logging.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "maria.garcia"
+        },
+        "timestamps": {
+            "created": "2025-01-21T10:45:00Z"
+        },
+        "replies": [],
+        "user": "mgarcia09"
+    },
+    {
+        "id": "SLACK-240-bug-fixes",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_message",
+        "content": {
+            "text": "I\u2019ve run into a bug with the deepfake-detection model where video frames are occasionally skipped during preprocessing. Reporting as BUG-562.",
+            "blocks": []
+        },
+        "metadata": {
+            "channel": "bug-fixes",
+            "user": "arjun.mehta"
+        },
+        "timestamps": {
+            "created": "2025-01-21T10:50:00Z"
+        },
+        "replies": [],
+        "user": "amehta70"
+    }
+]

@@ -1,0 +1,11 @@
+export { labelCaption, labelGrid } from './labelGrid.js';
+export { labelGridcell } from './labelGridcell.js';
+export { labelDay, labelDayButton } from './labelDayButton.js';
+export { labelNav } from './labelNav.js';
+export { labelMonthDropdown } from './labelMonthDropdown.js';
+export { labelNext } from './labelNext.js';
+export { labelPrevious } from './labelPrevious.js';
+export { labelWeekday } from './labelWeekday.js';
+export { labelWeekNumber } from './labelWeekNumber.js';
+export { labelWeekNumberHeader } from './labelWeekNumberHeader.js';
+export { labelYearDropdown } from './labelYearDropdown.js';

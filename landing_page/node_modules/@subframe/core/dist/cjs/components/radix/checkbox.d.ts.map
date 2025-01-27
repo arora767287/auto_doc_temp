@@ -1,0 +1,1 @@
+{"version":3,"file":"checkbox.d.ts","sourceRoot":"","sources":["../../../../src/components/radix/checkbox.ts"],"names":[],"mappings":";AAEA,OAAO,KAAK,aAAa,MAAM,0BAA0B,CAAA;AAEzD,eAAO,MAAM,QAAQ,2HAAyB,CAAA;AAC9C,eAAO,MAAM,iBAAiB,kIAAkC,CAAA;AAChE,eAAO,MAAM,SAAS,kIAA0B,CAAA;AAChD,eAAO,MAAM,IAAI,2HAAqB,CAAA;AACtC,MAAM,MAAM,YAAY,GAAG,aAAa,CAAC,YAAY,CAAA"}
