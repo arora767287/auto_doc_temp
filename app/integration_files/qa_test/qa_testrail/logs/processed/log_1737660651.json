@@ -1,0 +1,7 @@
+{
+    "test_id": "TC-API-ORDERS",
+    "testrail_case_id": 6,
+    "status": "FAIL",
+    "description": "Orders endpoint returned 500.",
+    "timestamp": "2025-01-23T19:30:51Z"
+}

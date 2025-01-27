@@ -1,0 +1,7 @@
+{
+    "test_id": "TC-DASHBOARD-LOAD",
+    "testrail_case_id": 7,
+    "status": "FAIL",
+    "description": "Dashboard loaded under 2s, all widgets OK.",
+    "timestamp": "2025-01-23T19:29:21Z"
+}

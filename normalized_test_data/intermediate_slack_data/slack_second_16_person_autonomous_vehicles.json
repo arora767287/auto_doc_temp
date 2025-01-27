@@ -1,0 +1,283 @@
+[
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T01:15:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The anomaly rate for pedestrian detection in construction zones has increased by 18% since the last model update. It seems the reflective gear is causing issues.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-20T01:15:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T01:20:30Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Reflective gear might be affecting the contrast ratio. Should we simulate similar scenarios in synthetic data?"
+        },
+        "metadata": {
+          "channel": "person-detection-autonomous-vehicles",
+          "user": "samantha.kim"
+        },
+        "timestamps": {
+          "created": "2025-01-20T01:20:30Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T01:25:15Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Yes, I\u2019ll coordinate with the data team to create these examples."
+        },
+        "metadata": {
+          "channel": "person-detection-autonomous-vehicles",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-20T01:25:15Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T01:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve added a Confluence page summarizing edge cases for pedestrian detection in low-visibility conditions: https://confluence.nvidia.com/pages/viewpage.action?pageId=789654. Let\u2019s review it during the sync tomorrow.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-20T01:30:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T01:40:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Quick heads-up: Some datasets from the Dallas region are missing metadata. I\u2019ve flagged it in Jira: https://jira.nvidia.com/browse/PDAV-789.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-20T01:40:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T01:50:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Testing thermal imaging integration is revealing potential gains in nighttime detection. Recall has increased by 15% in preliminary tests. Let\u2019s plan full validation this week.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-20T01:50:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T01:55:20Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "That\u2019s excellent progress. Are there any latency impacts with the new data stream?"
+        },
+        "metadata": {
+          "channel": "person-detection-autonomous-vehicles",
+          "user": "michael.chen"
+        },
+        "timestamps": {
+          "created": "2025-01-20T01:55:20Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T02:00:45Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Minor, but within acceptable limits. I\u2019ll include the full latency breakdown in the report."
+        },
+        "metadata": {
+          "channel": "person-detection-autonomous-vehicles",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-20T02:00:45Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T02:10:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Does anyone know if the model was tested with data from urban areas with dense pedestrian traffic, like Times Square?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-20T02:10:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T02:15:30Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Not yet. Times Square-type environments will push the occlusion handling to its limits. Let\u2019s prioritize this for the next round.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-20T02:15:30Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T02:25:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "We\u2019re seeing occasional false positives with large pets like dogs being identified as pedestrians. Should we refine the model further to avoid these scenarios?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-20T02:25:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T02:30:15Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Yes, I\u2019ll add a classification step to distinguish between human and non-human forms."
+        },
+        "metadata": {
+          "channel": "person-detection-autonomous-vehicles",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-20T02:30:15Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T02:40:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "FYI, I\u2019ve started reviewing the video streams from the San Francisco trials. The foggy conditions have revealed some interesting edge cases.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-20T02:40:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T02:50:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Has anyone compared performance across different weather scenarios yet?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-20T02:50:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T03:00:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ll run a comparison matrix and share it during the team sync-up tomorrow.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-20T03:00:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T03:10:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Reminder: Add your test case updates to the QA tracker by EOD so we can finalize tomorrow\u2019s validation plan.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-20T03:10:00Z"
+    },
+    "replies": []
+  }
+]

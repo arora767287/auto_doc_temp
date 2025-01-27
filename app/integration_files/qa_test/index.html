@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Log -> Jira Demo</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    #logsTable { border-collapse: collapse; width: 100%; max-width: 800px; }
+    #logsTable td, #logsTable th { border: 1px solid #ccc; padding: 8px; }
+    #logsTable th { background: #f9f9f9; }
+    .status-failed { color: red; }
+    .status-passed { color: green; }
+    .ticket-link a { color: #0079bf; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<h1>Log -> Jira Integration Demo</h1>
+
+<button id="simulateLogsBtn">Simulate Incoming Logs</button>
+<table id="logsTable">
+  <thead>
+    <tr>
+      <th>Test ID</th>
+      <th>Status</th>
+      <th>Description</th>
+      <th>Jira Ticket</th>
+    </tr>
+  </thead>
+  <tbody id="logsTableBody"></tbody>
+</table>
+
+<script>
+  const simulateLogsBtn = document.getElementById('simulateLogsBtn');
+  const logsTableBody = document.getElementById('logsTableBody');
+
+  // 1. On "Simulate Incoming Logs" click, call backend to generate logs
+  simulateLogsBtn.addEventListener('click', async () => {
+    try {
+      // This endpoint triggers your server to generate logs & sync them to Jira
+      const response = await fetch('/simulate_logs', { method: 'POST' });
+      const result = await response.json();
+      // 'result' might look like: { logs: [{ test_id, status, description, jira_ticket_url }, ...] }
+
+      // Clear table body
+      logsTableBody.innerHTML = '';
+
+      // Populate table with new logs
+      result.logs.forEach(log => {
+        const row = document.createElement('tr');
+
+        // Test ID
+        const testIdCell = document.createElement('td');
+        testIdCell.textContent = log.test_id;
+        row.appendChild(testIdCell);
+
+        // Status
+        const statusCell = document.createElement('td');
+        statusCell.textContent = log.status;
+        statusCell.className = log.status === 'failed' ? 'status-failed' : 'status-passed';
+        row.appendChild(statusCell);
+
+        // Description
+        const descCell = document.createElement('td');
+        descCell.textContent = log.description;
+        row.appendChild(descCell);
+
+        // Jira Ticket link (optional)
+        const ticketCell = document.createElement('td');
+        ticketCell.className = 'ticket-link';
+        if (log.jira_ticket_url) {
+          const link = document.createElement('a');
+          link.href = log.jira_ticket_url;
+          link.target = '_blank';
+          link.textContent = log.jira_ticket_url;
+          ticketCell.appendChild(link);
+        } else {
+          ticketCell.textContent = 'No Jira Ticket';
+        }
+        row.appendChild(ticketCell);
+
+        logsTableBody.appendChild(row);
+      });
+    } catch (err) {
+      console.error('Error simulating logs:', err);
+      alert('Error simulating logs. Check console for details.');
+    }
+  });
+</script>
+</body>
+</html>

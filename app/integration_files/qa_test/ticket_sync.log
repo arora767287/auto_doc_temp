@@ -1,0 +1,680 @@
+2025-01-22 10:06:13,982 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5000
+2025-01-22 10:06:13,982 - [33mPress CTRL+C to quit[0m
+2025-01-22 10:06:13,983 -  * Restarting with stat
+2025-01-22 10:06:14,088 -  * Debugger is active!
+2025-01-22 10:06:14,094 -  * Debugger PIN: 590-982-633
+2025-01-22 10:06:18,992 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:18,992 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:18,992 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:19,101 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:19,101 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:19,101 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:24,015 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:24,015 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:24,015 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:24,110 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:24,110 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:24,111 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:29,035 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:29,036 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:29,036 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:29,119 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:29,120 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:29,120 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:30,685 - 127.0.0.1 - - [22/Jan/2025 10:06:30] "GET / HTTP/1.1" 200 -
+2025-01-22 10:06:32,822 - 127.0.0.1 - - [22/Jan/2025 10:06:32] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-01-22 10:06:34,053 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:34,053 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:34,053 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:34,130 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:34,130 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:34,130 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:39,068 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:39,069 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:39,069 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:39,148 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:39,148 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:39,148 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:39,227 - 127.0.0.1 - - [22/Jan/2025 10:06:39] "GET /callback?state=random_state_string&code=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2ZDQ0YmU5NC03NTkzLTQ1OTItYjQ3ZS1iOTllYmEyYmMxMmIiLCJzdWIiOiI3MTIwMjA6OTI3NDI1Y2UtY2YzYi00YTA4LWFhNDAtZjk4OTViODg3YzNhIiwibmJmIjoxNzM3NTY5Mjc3LCJpc3MiOiJhdXRoLmF0bGFzc2lhbi5jb20iLCJpYXQiOjE3Mzc1NjkyNzcsImV4cCI6MTczNzU2OTU3NywiYXVkIjoiYnBrbWo4OXZ0eGdzN3JCMjVKVm5yQmxUWnFJcmZDT0ciLCJjbGllbnRfYXV0aF90eXBlIjoiUE9TVCIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS92ZXJpZmllZCI6dHJ1ZSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL3VqdCI6IjZkNDRiZTk0LTc1OTMtNDU5Mi1iNDdlLWI5OWViYTJiYzEyYiIsInNjb3BlIjpbInJlYWQ6amlyYS13b3JrIiwib2ZmbGluZV9hY2Nlc3MiLCJ3cml0ZTpqaXJhLXdvcmsiXSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL2F0bF90b2tlbl90eXBlIjoiQVVUSF9DT0RFIiwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL2hhc1JlZGlyZWN0VXJpIjp0cnVlLCJodHRwczovL2lkLmF0bGFzc2lhbi5jb20vc2Vzc2lvbl9pZCI6IjRhOTRiNDlmLWRlZWQtNGIxZi1hMzM1LTNkMmNhYThlODA4OSIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS9wcm9jZXNzUmVnaW9uIjoidXMtd2VzdC0yIn0.2G9SDfu-bO80dTNH7jNg2-DtAfWwBH-KuxssLEVWV7g HTTP/1.1" 200 -
+2025-01-22 10:06:44,087 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:44,088 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:44,088 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:44,487 - Access token expired. Refreshing...
+2025-01-22 10:06:44,985 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:06:45,263 - Access token expired. Refreshing...
+2025-01-22 10:06:45,698 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:06:45,946 - Access token expired. Refreshing...
+2025-01-22 10:06:46,379 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:06:49,102 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:49,102 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:49,102 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:51,625 - Access token expired. Refreshing...
+2025-01-22 10:06:52,118 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:06:52,388 - Access token expired. Refreshing...
+2025-01-22 10:06:52,851 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:06:53,125 - Access token expired. Refreshing...
+2025-01-22 10:06:53,572 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:06:54,122 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:54,123 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:54,123 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:58,881 - Access token expired. Refreshing...
+2025-01-22 10:06:59,142 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:06:59,142 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:06:59,142 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:06:59,359 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:06:59,629 - Access token expired. Refreshing...
+2025-01-22 10:07:00,084 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:00,299 - Access token expired. Refreshing...
+2025-01-22 10:07:00,687 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:04,161 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:07:04,161 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:07:04,161 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:07:06,007 - Access token expired. Refreshing...
+2025-01-22 10:07:06,496 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:06,788 - Access token expired. Refreshing...
+2025-01-22 10:07:07,192 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:07,434 - Access token expired. Refreshing...
+2025-01-22 10:07:07,922 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:09,179 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:07:09,179 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:07:09,179 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:07:13,244 - Access token expired. Refreshing...
+2025-01-22 10:07:13,721 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:13,968 - Access token expired. Refreshing...
+2025-01-22 10:07:14,200 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:07:14,200 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:07:14,200 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:07:14,394 - 127.0.0.1 - - [22/Jan/2025 10:07:14] "[35m[1mGET //callback?state=random_state_string&code=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2ZDQ0YmU5NC03NTkzLTQ1OTItYjQ3ZS1iOTllYmEyYmMxMmIiLCJzdWIiOiI3MTIwMjA6OTI3NDI1Y2UtY2YzYi00YTA4LWFhNDAtZjk4OTViODg3YzNhIiwibmJmIjoxNzM3NTY5Mjc3LCJpc3MiOiJhdXRoLmF0bGFzc2lhbi5jb20iLCJpYXQiOjE3Mzc1NjkyNzcsImV4cCI6MTczNzU2OTU3NywiYXVkIjoiYnBrbWo4OXZ0eGdzN3JCMjVKVm5yQmxUWnFJcmZDT0ciLCJjbGllbnRfYXV0aF90eXBlIjoiUE9TVCIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS92ZXJpZmllZCI6dHJ1ZSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL3VqdCI6IjZkNDRiZTk0LTc1OTMtNDU5Mi1iNDdlLWI5OWViYTJiYzEyYiIsInNjb3BlIjpbInJlYWQ6amlyYS13b3JrIiwib2ZmbGluZV9hY2Nlc3MiLCJ3cml0ZTpqaXJhLXdvcmsiXSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL2F0bF90b2tlbl90eXBlIjoiQVVUSF9DT0RFIiwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL2hhc1JlZGlyZWN0VXJpIjp0cnVlLCJodHRwczovL2lkLmF0bGFzc2lhbi5jb20vc2Vzc2lvbl9pZCI6IjRhOTRiNDlmLWRlZWQtNGIxZi1hMzM1LTNkMmNhYThlODA4OSIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS9wcm9jZXNzUmVnaW9uIjoidXMtd2VzdC0yIn0.2G9SDfu-bO80dTNH7jNg2-DtAfWwBH-KuxssLEVWV7g HTTP/1.1[0m" 500 -
+2025-01-22 10:07:14,417 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:14,660 - Access token expired. Refreshing...
+2025-01-22 10:07:15,152 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:18,426 - 127.0.0.1 - - [22/Jan/2025 10:07:18] "[35m[1mGET /callback?state=random_state_string&code=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2ZDQ0YmU5NC03NTkzLTQ1OTItYjQ3ZS1iOTllYmEyYmMxMmIiLCJzdWIiOiI3MTIwMjA6OTI3NDI1Y2UtY2YzYi00YTA4LWFhNDAtZjk4OTViODg3YzNhIiwibmJmIjoxNzM3NTY5Mjc3LCJpc3MiOiJhdXRoLmF0bGFzc2lhbi5jb20iLCJpYXQiOjE3Mzc1NjkyNzcsImV4cCI6MTczNzU2OTU3NywiYXVkIjoiYnBrbWo4OXZ0eGdzN3JCMjVKVm5yQmxUWnFJcmZDT0ciLCJjbGllbnRfYXV0aF90eXBlIjoiUE9TVCIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS92ZXJpZmllZCI6dHJ1ZSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL3VqdCI6IjZkNDRiZTk0LTc1OTMtNDU5Mi1iNDdlLWI5OWViYTJiYzEyYiIsInNjb3BlIjpbInJlYWQ6amlyYS13b3JrIiwib2ZmbGluZV9hY2Nlc3MiLCJ3cml0ZTpqaXJhLXdvcmsiXSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL2F0bF90b2tlbl90eXBlIjoiQVVUSF9DT0RFIiwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL2hhc1JlZGlyZWN0VXJpIjp0cnVlLCJodHRwczovL2lkLmF0bGFzc2lhbi5jb20vc2Vzc2lvbl9pZCI6IjRhOTRiNDlmLWRlZWQtNGIxZi1hMzM1LTNkMmNhYThlODA4OSIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS9wcm9jZXNzUmVnaW9uIjoidXMtd2VzdC0yIn0.2G9SDfu-bO80dTNH7jNg2-DtAfWwBH-KuxssLEVWV7g HTTP/1.1[0m" 500 -
+2025-01-22 10:07:19,212 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:07:19,213 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:07:19,213 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:07:20,476 - Access token expired. Refreshing...
+2025-01-22 10:07:20,960 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:21,240 - Access token expired. Refreshing...
+2025-01-22 10:07:21,698 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:21,972 - Access token expired. Refreshing...
+2025-01-22 10:07:22,416 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:24,226 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:07:24,226 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:07:24,226 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:07:27,705 - Access token expired. Refreshing...
+2025-01-22 10:07:28,109 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:28,373 - Access token expired. Refreshing...
+2025-01-22 10:07:28,811 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:29,074 - Access token expired. Refreshing...
+2025-01-22 10:07:29,250 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:07:29,250 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:07:29,250 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:07:29,464 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:34,272 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:07:34,273 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:07:34,273 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:07:34,781 - Access token expired. Refreshing...
+2025-01-22 10:07:35,225 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:35,473 - Access token expired. Refreshing...
+2025-01-22 10:07:35,846 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:36,064 - Access token expired. Refreshing...
+2025-01-22 10:07:36,521 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:39,295 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:07:39,296 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:07:39,296 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:07:41,835 - Access token expired. Refreshing...
+2025-01-22 10:07:42,341 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:42,662 - Access token expired. Refreshing...
+2025-01-22 10:07:43,092 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:43,341 - Access token expired. Refreshing...
+2025-01-22 10:07:43,829 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:44,316 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:07:44,316 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:07:44,316 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:07:49,183 - Access token expired. Refreshing...
+2025-01-22 10:07:49,331 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:07:49,332 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:07:49,332 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:07:49,619 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:49,893 - Access token expired. Refreshing...
+2025-01-22 10:07:50,395 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:50,637 - Access token expired. Refreshing...
+2025-01-22 10:07:51,057 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:54,353 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:07:54,353 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:07:54,353 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:07:56,333 - Access token expired. Refreshing...
+2025-01-22 10:07:56,827 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:57,069 - Access token expired. Refreshing...
+2025-01-22 10:07:57,489 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:57,750 - Access token expired. Refreshing...
+2025-01-22 10:07:58,137 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:07:59,370 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:07:59,370 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:07:59,370 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:08:03,451 - Access token expired. Refreshing...
+2025-01-22 10:08:03,914 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:04,183 - Access token expired. Refreshing...
+2025-01-22 10:08:04,392 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:08:04,393 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:08:04,393 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:08:04,638 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:04,900 - Access token expired. Refreshing...
+2025-01-22 10:08:05,352 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:09,413 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:08:09,413 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:08:09,413 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:08:10,652 - Access token expired. Refreshing...
+2025-01-22 10:08:11,113 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:11,370 - Access token expired. Refreshing...
+2025-01-22 10:08:11,769 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:12,028 - Access token expired. Refreshing...
+2025-01-22 10:08:12,421 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:14,435 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:08:14,435 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:08:14,435 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:08:17,711 - Access token expired. Refreshing...
+2025-01-22 10:08:18,169 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:18,444 - Access token expired. Refreshing...
+2025-01-22 10:08:18,866 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:19,125 - Access token expired. Refreshing...
+2025-01-22 10:08:19,456 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:08:19,456 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:08:19,457 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:08:19,546 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:24,479 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:08:24,479 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:08:24,479 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:08:24,775 - Access token expired. Refreshing...
+2025-01-22 10:08:25,222 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:25,483 - Access token expired. Refreshing...
+2025-01-22 10:08:25,906 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:26,141 - Access token expired. Refreshing...
+2025-01-22 10:08:26,579 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:29,493 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:08:29,493 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:08:29,494 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:08:31,843 - Access token expired. Refreshing...
+2025-01-22 10:08:32,315 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:32,568 - Access token expired. Refreshing...
+2025-01-22 10:08:32,998 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:33,274 - Access token expired. Refreshing...
+2025-01-22 10:08:33,747 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:34,507 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:08:34,508 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:08:34,508 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:08:39,069 - Access token expired. Refreshing...
+2025-01-22 10:08:39,508 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:39,533 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:08:39,533 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:08:39,533 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:08:39,765 - Access token expired. Refreshing...
+2025-01-22 10:08:40,209 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:40,472 - Access token expired. Refreshing...
+2025-01-22 10:08:40,873 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:44,555 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:08:44,555 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:08:44,556 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:08:46,172 - Access token expired. Refreshing...
+2025-01-22 10:08:46,608 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:46,889 - Access token expired. Refreshing...
+2025-01-22 10:08:47,350 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:47,646 - Access token expired. Refreshing...
+2025-01-22 10:08:48,083 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:49,570 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:08:49,570 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:08:49,570 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:08:53,364 - Access token expired. Refreshing...
+2025-01-22 10:08:53,836 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:54,090 - Access token expired. Refreshing...
+2025-01-22 10:08:54,528 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:54,586 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:08:54,586 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:08:54,586 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:08:54,804 - Access token expired. Refreshing...
+2025-01-22 10:08:55,220 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:08:59,602 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:08:59,603 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:08:59,603 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:09:00,536 - Access token expired. Refreshing...
+2025-01-22 10:09:01,001 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:01,258 - Access token expired. Refreshing...
+2025-01-22 10:09:01,731 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:02,007 - Access token expired. Refreshing...
+2025-01-22 10:09:02,468 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:04,627 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:09:04,627 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:09:04,627 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:09:07,786 - Access token expired. Refreshing...
+2025-01-22 10:09:08,258 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:08,539 - Access token expired. Refreshing...
+2025-01-22 10:09:08,982 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:09,282 - Access token expired. Refreshing...
+2025-01-22 10:09:09,651 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:09:09,651 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:09:09,651 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:09:09,747 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:14,675 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:09:14,675 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:09:14,675 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:09:15,084 - Access token expired. Refreshing...
+2025-01-22 10:09:15,597 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:15,866 - Access token expired. Refreshing...
+2025-01-22 10:09:16,317 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:16,583 - Access token expired. Refreshing...
+2025-01-22 10:09:17,031 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:19,684 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:09:19,684 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:09:19,684 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:09:22,342 - Access token expired. Refreshing...
+2025-01-22 10:09:22,762 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:23,064 - Access token expired. Refreshing...
+2025-01-22 10:09:23,552 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:23,833 - Access token expired. Refreshing...
+2025-01-22 10:09:24,299 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:24,701 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:09:24,701 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:09:24,701 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:09:29,633 - Access token expired. Refreshing...
+2025-01-22 10:09:29,720 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:09:29,720 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:09:29,720 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:09:30,106 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:30,365 - Access token expired. Refreshing...
+2025-01-22 10:09:30,792 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:31,032 - Access token expired. Refreshing...
+2025-01-22 10:09:31,431 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:34,736 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:09:34,736 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:09:34,736 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:09:36,750 - Access token expired. Refreshing...
+2025-01-22 10:09:37,229 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:37,462 - Access token expired. Refreshing...
+2025-01-22 10:09:37,977 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:38,202 - Access token expired. Refreshing...
+2025-01-22 10:09:38,643 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:39,752 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:09:39,753 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:09:39,755 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:09:43,984 - Access token expired. Refreshing...
+2025-01-22 10:09:44,476 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:44,686 - Access token expired. Refreshing...
+2025-01-22 10:09:44,771 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:09:44,772 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:09:44,772 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:09:45,107 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:45,343 - Access token expired. Refreshing...
+2025-01-22 10:09:45,817 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:49,783 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:09:49,785 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:09:49,785 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:09:51,146 - Access token expired. Refreshing...
+2025-01-22 10:09:51,587 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:51,828 - Access token expired. Refreshing...
+2025-01-22 10:09:52,316 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:52,554 - Access token expired. Refreshing...
+2025-01-22 10:09:53,005 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:54,802 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:09:54,803 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:09:54,803 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:09:58,265 - Access token expired. Refreshing...
+2025-01-22 10:09:58,731 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:58,975 - Access token expired. Refreshing...
+2025-01-22 10:09:59,395 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:09:59,629 - Access token expired. Refreshing...
+2025-01-22 10:09:59,820 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:09:59,821 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:09:59,821 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:10:00,137 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:04,838 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:10:04,839 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:10:04,839 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:10:05,421 - Access token expired. Refreshing...
+2025-01-22 10:10:05,922 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:06,155 - Access token expired. Refreshing...
+2025-01-22 10:10:06,605 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:06,832 - Access token expired. Refreshing...
+2025-01-22 10:10:07,290 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:09,858 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:10:09,858 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:10:09,858 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:10:12,571 - Access token expired. Refreshing...
+2025-01-22 10:10:12,923 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:13,128 - Access token expired. Refreshing...
+2025-01-22 10:10:13,583 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:13,893 - Access token expired. Refreshing...
+2025-01-22 10:10:14,316 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:14,877 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:10:14,878 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:10:14,878 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:10:19,610 - Access token expired. Refreshing...
+2025-01-22 10:10:19,900 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:10:19,901 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:10:19,901 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:10:20,074 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:20,312 - Access token expired. Refreshing...
+2025-01-22 10:10:20,707 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:20,952 - Access token expired. Refreshing...
+2025-01-22 10:10:21,370 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:24,940 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:10:24,940 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:10:24,940 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:10:26,594 - Access token expired. Refreshing...
+2025-01-22 10:10:27,032 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:27,362 - Access token expired. Refreshing...
+2025-01-22 10:10:28,019 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:28,319 - Access token expired. Refreshing...
+2025-01-22 10:10:28,783 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:29,962 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:10:29,962 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:10:29,962 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:10:34,094 - Access token expired. Refreshing...
+2025-01-22 10:10:34,594 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:34,843 - Access token expired. Refreshing...
+2025-01-22 10:10:34,988 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:10:34,988 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:10:34,988 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:10:35,288 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:35,610 - Access token expired. Refreshing...
+2025-01-22 10:10:36,101 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:40,007 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:10:40,008 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:10:40,008 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:10:41,400 - Access token expired. Refreshing...
+2025-01-22 10:10:41,862 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:42,151 - Access token expired. Refreshing...
+2025-01-22 10:10:42,573 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:42,807 - Access token expired. Refreshing...
+2025-01-22 10:10:43,275 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:45,026 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:10:45,027 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:10:45,027 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:10:48,574 - Access token expired. Refreshing...
+2025-01-22 10:10:49,046 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:49,323 - Access token expired. Refreshing...
+2025-01-22 10:10:49,756 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:50,025 - Access token expired. Refreshing...
+2025-01-22 10:10:50,044 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:10:50,044 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:10:50,044 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:10:50,470 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:55,066 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:10:55,066 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:10:55,066 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:10:55,759 - Access token expired. Refreshing...
+2025-01-22 10:10:56,256 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:56,573 - Access token expired. Refreshing...
+2025-01-22 10:10:57,087 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:10:57,308 - Access token expired. Refreshing...
+2025-01-22 10:10:57,791 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:00,090 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:11:00,091 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:11:00,091 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:11:03,105 - Access token expired. Refreshing...
+2025-01-22 10:11:03,523 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:03,808 - Access token expired. Refreshing...
+2025-01-22 10:11:04,255 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:04,540 - Access token expired. Refreshing...
+2025-01-22 10:11:04,997 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:05,110 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:11:05,111 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:11:05,111 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:11:10,130 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:11:10,130 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:11:10,130 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:11:10,260 - Access token expired. Refreshing...
+2025-01-22 10:11:10,732 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:11,023 - Access token expired. Refreshing...
+2025-01-22 10:11:11,455 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:11,720 - Access token expired. Refreshing...
+2025-01-22 10:11:12,159 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:15,154 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:11:15,155 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:11:15,155 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:11:17,419 - Access token expired. Refreshing...
+2025-01-22 10:11:17,869 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:18,190 - Access token expired. Refreshing...
+2025-01-22 10:11:18,609 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:18,871 - Access token expired. Refreshing...
+2025-01-22 10:11:19,298 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:20,169 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:11:20,170 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:11:20,170 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:11:24,581 - Access token expired. Refreshing...
+2025-01-22 10:11:25,025 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:25,180 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:11:25,181 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:11:25,181 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:11:25,287 - Access token expired. Refreshing...
+2025-01-22 10:11:25,736 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:25,989 - Access token expired. Refreshing...
+2025-01-22 10:11:26,440 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:30,202 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:11:30,202 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:11:30,202 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:11:31,746 - Access token expired. Refreshing...
+2025-01-22 10:11:32,212 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:32,449 - Access token expired. Refreshing...
+2025-01-22 10:11:32,877 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:33,124 - Access token expired. Refreshing...
+2025-01-22 10:11:33,594 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:35,221 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:11:35,222 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:11:35,222 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:11:38,887 - Access token expired. Refreshing...
+2025-01-22 10:11:39,336 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:39,608 - Access token expired. Refreshing...
+2025-01-22 10:11:40,073 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:40,235 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:11:40,236 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:11:40,236 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:11:40,366 - Access token expired. Refreshing...
+2025-01-22 10:11:40,806 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:45,252 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:11:45,253 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:11:45,253 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:11:46,069 - Access token expired. Refreshing...
+2025-01-22 10:11:46,524 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:46,792 - Access token expired. Refreshing...
+2025-01-22 10:11:47,256 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:47,488 - Access token expired. Refreshing...
+2025-01-22 10:11:47,936 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:50,273 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:11:50,274 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:11:50,274 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:11:53,255 - Access token expired. Refreshing...
+2025-01-22 10:11:53,715 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:54,005 - Access token expired. Refreshing...
+2025-01-22 10:11:54,419 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:54,657 - Access token expired. Refreshing...
+2025-01-22 10:11:55,058 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:11:55,295 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:11:55,296 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:11:55,296 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:12:00,306 - Access token expired. Refreshing...
+2025-01-22 10:12:00,314 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:12:00,314 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:12:00,314 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:12:00,750 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:00,965 - Access token expired. Refreshing...
+2025-01-22 10:12:01,384 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:01,660 - Access token expired. Refreshing...
+2025-01-22 10:12:02,065 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:05,334 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:12:05,334 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:12:05,334 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:12:07,301 - Access token expired. Refreshing...
+2025-01-22 10:12:07,708 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:07,979 - Access token expired. Refreshing...
+2025-01-22 10:12:08,422 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:08,681 - Access token expired. Refreshing...
+2025-01-22 10:12:09,075 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:10,351 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:12:10,351 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:12:10,351 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:12:14,381 - Access token expired. Refreshing...
+2025-01-22 10:12:14,810 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:15,034 - Access token expired. Refreshing...
+2025-01-22 10:12:15,371 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:12:15,371 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:12:15,371 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:12:15,502 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:15,713 - Access token expired. Refreshing...
+2025-01-22 10:12:16,164 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:20,391 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:12:20,391 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:12:20,391 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:12:21,481 - Access token expired. Refreshing...
+2025-01-22 10:12:21,958 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:22,237 - Access token expired. Refreshing...
+2025-01-22 10:12:22,695 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:22,965 - Access token expired. Refreshing...
+2025-01-22 10:12:23,410 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:25,409 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:12:25,409 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:12:25,409 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:12:28,717 - Access token expired. Refreshing...
+2025-01-22 10:12:29,165 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:29,411 - Access token expired. Refreshing...
+2025-01-22 10:12:29,820 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:12:30,101 - Access token expired. Refreshing...
+2025-01-22 10:12:30,252 -  * Detected change in '/Users/nityaarora/Downloads/new_auto_doc/auto_doc_temp/app/integration_files/qa_test/combined_new_file.py', reloading
+2025-01-22 10:12:30,274 -  * Restarting with stat
+2025-01-22 10:12:30,430 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:12:30,430 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:12:30,430 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:12:30,483 -  * Debugger is active!
+2025-01-22 10:12:30,488 -  * Debugger PIN: 590-982-633
+2025-01-22 10:12:35,451 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:12:35,451 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:12:35,451 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:12:35,496 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:12:35,496 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:12:35,496 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:12:40,467 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:12:40,467 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:12:40,468 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:12:40,521 - Error processing test TC001: Access token not available. Please authenticate first.
+2025-01-22 10:12:40,522 - Error processing test TC002: Access token not available. Please authenticate first.
+2025-01-22 10:12:40,522 - Error processing test TC003: Access token not available. Please authenticate first.
+2025-01-22 10:12:43,587 -  * Detected change in '/Users/nityaarora/Downloads/new_auto_doc/auto_doc_temp/app/integration_files/qa_test/combined_server_new.py', reloading
+2025-01-22 10:12:43,614 -  * Restarting with stat
+2025-01-22 10:12:55,130 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-22 10:12:55,130 - [33mPress CTRL+C to quit[0m
+2025-01-22 10:12:55,131 -  * Restarting with stat
+2025-01-22 10:12:55,239 -  * Debugger is active!
+2025-01-22 10:12:55,244 -  * Debugger PIN: 590-982-633
+2025-01-22 10:13:11,042 - 127.0.0.1 - - [22/Jan/2025 10:13:11] "GET / HTTP/1.1" 200 -
+2025-01-22 10:13:11,106 - 127.0.0.1 - - [22/Jan/2025 10:13:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-22 10:13:12,591 - 127.0.0.1 - - [22/Jan/2025 10:13:12] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-01-22 10:13:16,591 - 127.0.0.1 - - [22/Jan/2025 10:13:16] "GET /callback?state=random_state_string&code=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNDg3NDFjNi1mYzhjLTQzZTItYjM5OS1jZmFkNjkyNmYyMzUiLCJzdWIiOiI3MTIwMjA6OTI3NDI1Y2UtY2YzYi00YTA4LWFhNDAtZjk4OTViODg3YzNhIiwibmJmIjoxNzM3NTY5Njc0LCJpc3MiOiJhdXRoLmF0bGFzc2lhbi5jb20iLCJpYXQiOjE3Mzc1Njk2NzQsImV4cCI6MTczNzU2OTk3NCwiYXVkIjoiYnBrbWo4OXZ0eGdzN3JCMjVKVm5yQmxUWnFJcmZDT0ciLCJjbGllbnRfYXV0aF90eXBlIjoiUE9TVCIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS92ZXJpZmllZCI6dHJ1ZSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL3VqdCI6IjI0ODc0MWM2LWZjOGMtNDNlMi1iMzk5LWNmYWQ2OTI2ZjIzNSIsInNjb3BlIjpbInJlYWQ6amlyYS13b3JrIiwib2ZmbGluZV9hY2Nlc3MiLCJ3cml0ZTpqaXJhLXdvcmsiXSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL2F0bF90b2tlbl90eXBlIjoiQVVUSF9DT0RFIiwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL2hhc1JlZGlyZWN0VXJpIjp0cnVlLCJodHRwczovL2lkLmF0bGFzc2lhbi5jb20vc2Vzc2lvbl9pZCI6IjRhOTRiNDlmLWRlZWQtNGIxZi1hMzM1LTNkMmNhYThlODA4OSIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS9wcm9jZXNzUmVnaW9uIjoidXMtd2VzdC0yIn0.VgpeQj7-2jxuQJEll1O8JTOS4H1isti0Q0o7wm1Rc48 HTTP/1.1" 200 -
+2025-01-22 10:13:33,313 - 127.0.0.1 - - [22/Jan/2025 10:13:33] "[31m[1mPOST /run-job HTTP/1.1[0m" 405 -
+2025-01-22 10:13:43,163 - Access token expired. Refreshing...
+2025-01-22 10:13:43,680 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:13:44,000 - Access token expired. Refreshing...
+2025-01-22 10:13:44,424 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:13:44,694 - Access token expired. Refreshing...
+2025-01-22 10:13:45,147 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://startup-team-uhk4tlq7.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 10:13:45,150 - 127.0.0.1 - - [22/Jan/2025 10:13:45] "GET /run-job HTTP/1.1" 200 -
+2025-01-22 10:20:14,394 -  * Detected change in '/Users/nityaarora/Downloads/new_auto_doc/auto_doc_temp/app/integration_files/qa_test/combined_server_new.py', reloading
+2025-01-22 10:20:14,428 -  * Restarting with stat
+2025-01-22 10:20:14,653 -  * Debugger is active!
+2025-01-22 10:20:14,659 -  * Debugger PIN: 590-982-633
+2025-01-22 10:33:04,240 -  * Detected change in '/Users/nityaarora/Downloads/new_auto_doc/auto_doc_temp/app/integration_files/qa_test/combined_server_new.py', reloading
+2025-01-22 10:33:04,288 -  * Restarting with stat
+2025-01-22 10:33:04,522 -  * Debugger is active!
+2025-01-22 10:33:04,531 -  * Debugger PIN: 590-982-633
+2025-01-22 10:33:38,736 - 127.0.0.1 - - [22/Jan/2025 10:33:38] "GET / HTTP/1.1" 200 -
+2025-01-22 10:33:40,011 - 127.0.0.1 - - [22/Jan/2025 10:33:40] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-01-22 10:33:40,017 - 127.0.0.1 - - [22/Jan/2025 10:33:40] "[33mGET /PcV8HgR90kqRJS12euBLoYhJ8J7jt1TO?client_id=bpkmj89vtxgs7rB25JVnrBlTZqIrfCOG&redirect_uri=http://127.0.0.1:5000/callback&response_type=code&scope=read:jira-work+write:jira-work+offline_access&state=random_state_string HTTP/1.1[0m" 404 -
+2025-01-22 10:33:47,250 - 127.0.0.1 - - [22/Jan/2025 10:33:47] "GET / HTTP/1.1" 200 -
+2025-01-22 10:33:49,003 - 127.0.0.1 - - [22/Jan/2025 10:33:49] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-01-22 10:33:49,006 - 127.0.0.1 - - [22/Jan/2025 10:33:49] "[33mGET /PcV8HgR90kqRJS12euBLoYhJ8J7jt1TO?client_id=bpkmj89vtxgs7rB25JVnrBlTZqIrfCOG&redirect_uri=http://127.0.0.1:5000/callback&response_type=code&scope=read:jira-work+write:jira-work+offline_access&state=random_state_string HTTP/1.1[0m" 404 -
+2025-01-22 10:34:29,954 - 127.0.0.1 - - [22/Jan/2025 10:34:29] "GET / HTTP/1.1" 200 -
+2025-01-22 10:34:31,517 - 127.0.0.1 - - [22/Jan/2025 10:34:31] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-01-22 10:34:31,521 - 127.0.0.1 - - [22/Jan/2025 10:34:31] "[33mGET /PcV8HgR90kqRJS12euBLoYhJ8J7jt1TO?client_id=bpkmj89vtxgs7rB25JVnrBlTZqIrfCOG&redirect_uri=http://127.0.0.1:5000/callback&response_type=code&scope=read:jira-work+write:jira-work+offline_access&state=random_state_string HTTP/1.1[0m" 404 -
+2025-01-22 10:36:40,626 - 127.0.0.1 - - [22/Jan/2025 10:36:40] code 400, message Bad request version ('\x05ÄôÐ\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+2025-01-22 10:36:40,627 - 127.0.0.1 - - [22/Jan/2025 10:36:40] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x0b\x1e\x06\x90n\x9cF\x19\\¬ñÃd\x09\x1b}=\\\x9c´/\x80uþÄÏX\x0eùÙ¬\x9f Â-Ý\x1b³U\x1dl\x92\x17#W\x17U\x7f :PôHê\x06ëõ/r\x1c\x0b\x05ÄôÐ\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À[0m" HTTPStatus.BAD_REQUEST -
+2025-01-22 10:36:40,633 - 127.0.0.1 - - [22/Jan/2025 10:36:40] code 400, message Bad request version ('\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+2025-01-22 10:36:40,633 - 127.0.0.1 - - [22/Jan/2025 10:36:40] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03)1g(Fr=\x89ÁLå\x9b÷bÈ\x89¤Ì\x0cÊd÷~*\x0el\x18B`@1D 9ªû¯9¾;[\x9e\x85ÕV\x8e<ÊÌiPä\x13¥sZß\x97Î¸Æ¢±G\x09\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À[0m" HTTPStatus.BAD_REQUEST -
+2025-01-22 10:36:40,640 - 127.0.0.1 - - [22/Jan/2025 10:36:40] code 400, message Bad request version ('\x18\x16\x00\x00\x14À')
+2025-01-22 10:36:40,640 - 127.0.0.1 - - [22/Jan/2025 10:36:40] "[35m[1m\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ûÚyªß*m»¼\x1cÌbr\x1f÷00ÉxyJ\x11\x96_\x82rX¼ù\x09\x18\x16\x00\x00\x14À[0m" HTTPStatus.BAD_REQUEST -
+2025-01-22 10:37:41,966 - 127.0.0.1 - - [22/Jan/2025 10:37:41] code 400, message Bad request version ('a\x84%P`6è(')
+2025-01-22 10:37:41,969 - 127.0.0.1 - - [22/Jan/2025 10:37:41] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x8dz@ìÔTîï\x1e³\x10R\x0b \x14Öcýù9ß\x7f2ê\x0f^Jce\x85Jö \x04\x9e`8«rÜ\x09a\x84%P`6è([0m" HTTPStatus.BAD_REQUEST -
+2025-01-22 10:37:41,972 - 127.0.0.1 - - [22/Jan/2025 10:37:41] code 400, message Bad request version ('h\x00,ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+2025-01-22 10:37:41,973 - 127.0.0.1 - - [22/Jan/2025 10:37:41] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x7fû\x9e\x86ö]\x97>ý\x013DÚú\x1aµdÐ$ÔþÚÒº#!$¬­\x94 o \x96Ù,.°Ç\x90V"\x0f¶@)|s\x10NPñ\x9d\x8d§£+\x9bô{\x12ÓI\x1dh\x00,ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À[0m" HTTPStatus.BAD_REQUEST -
+2025-01-22 10:37:41,973 - 127.0.0.1 - - [22/Jan/2025 10:37:41] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01É\x13õM\x95\x19!ó-å³g¢')
+2025-01-22 10:37:41,974 - 127.0.0.1 - - [22/Jan/2025 10:37:41] "[35m[1m\x16\x03\x01\x00}\x01\x00\x00y\x03\x01É\x13õM\x95\x19!ó-å³g¢[0m" HTTPStatus.BAD_REQUEST -
+2025-01-22 10:52:36,550 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-22 10:52:36,550 - [33mPress CTRL+C to quit[0m
+2025-01-22 10:52:36,550 -  * Restarting with stat
+2025-01-22 10:52:36,654 -  * Debugger is active!
+2025-01-22 10:52:36,666 -  * Debugger PIN: 590-982-633
+2025-01-22 10:52:55,083 - 127.0.0.1 - - [22/Jan/2025 10:52:55] "GET / HTTP/1.1" 200 -
+2025-01-22 10:52:56,183 - 127.0.0.1 - - [22/Jan/2025 10:52:56] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-01-22 10:52:56,189 - 127.0.0.1 - - [22/Jan/2025 10:52:56] "[33mGET /PcV8HgR90kqRJS12euBLoYhJ8J7jt1TO?client_id=bpkmj89vtxgs7rB25JVnrBlTZqIrfCOG&redirect_uri=http://127.0.0.1:5000/callback&response_type=code&scope=read:jira-work+write:jira-work+offline_access&state=random_state_string HTTP/1.1[0m" 404 -
+2025-01-22 10:54:24,030 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-22 10:54:24,030 - [33mPress CTRL+C to quit[0m
+2025-01-22 10:54:24,031 -  * Restarting with stat
+2025-01-22 10:54:24,136 -  * Debugger is active!
+2025-01-22 10:54:24,142 -  * Debugger PIN: 590-982-633
+2025-01-22 10:54:33,648 - 127.0.0.1 - - [22/Jan/2025 10:54:33] "GET / HTTP/1.1" 200 -
+2025-01-22 10:54:37,331 - 127.0.0.1 - - [22/Jan/2025 10:54:37] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-01-22 10:54:37,337 - 127.0.0.1 - - [22/Jan/2025 10:54:37] "[33mGET /PcV8HgR90kqRJS12euBLoYhJ8J7jt1TO?client_id=bpkmj89vtxgs7rB25JVnrBlTZqIrfCOG&redirect_uri=http://127.0.0.1:5000/callback&response_type=code&scope=read:jira-work+write:jira-work+offline_access&state=random_state_string HTTP/1.1[0m" 404 -
+2025-01-22 10:55:00,262 - 127.0.0.1 - - [22/Jan/2025 10:55:00] "[31m[1mGET /callback HTTP/1.1[0m" 400 -
+2025-01-22 10:55:04,686 - 127.0.0.1 - - [22/Jan/2025 10:55:04] "GET / HTTP/1.1" 200 -
+2025-01-22 10:55:05,643 - 127.0.0.1 - - [22/Jan/2025 10:55:05] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-01-22 10:55:05,649 - 127.0.0.1 - - [22/Jan/2025 10:55:05] "[33mGET /PcV8HgR90kqRJS12euBLoYhJ8J7jt1TO?client_id=bpkmj89vtxgs7rB25JVnrBlTZqIrfCOG&redirect_uri=http://127.0.0.1:5000/callback&response_type=code&scope=read:jira-work+write:jira-work+offline_access&state=random_state_string HTTP/1.1[0m" 404 -
+2025-01-22 11:09:39,766 - 127.0.0.1 - - [22/Jan/2025 11:09:39] code 400, message Bad request version ('÷\x17A²\x81¬\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+2025-01-22 11:09:39,768 - 127.0.0.1 - - [22/Jan/2025 11:09:39] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03£ÁÕñ\x9b3æ\x06yÝ©\x90\x07ÈKQ±\x03cÚ²pb\x1a\x09\x09Í\x0d\x8cc@  \x89û\x12¢\x82\x01\x14\x9fÖM®lh)\x81ÈO»×ñÑ×õör\x1d÷\x17A²\x81¬\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À[0m" HTTPStatus.BAD_REQUEST -
+2025-01-22 11:09:39,790 - 127.0.0.1 - - [22/Jan/2025 11:09:39] code 400, message Bad request version ('Á«')
+2025-01-22 11:09:39,790 - 127.0.0.1 - - [22/Jan/2025 11:09:39] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03¿¿2a\x16£beÑE Ú8\x92·ÛÇ½Qá\x95= íú\x83\x9eo¯\x1aÌ7 Ò2hY\x87\x89O\x9e]6-\x82\x0dÁ«[0m" HTTPStatus.BAD_REQUEST -
+2025-01-22 11:09:39,795 - 127.0.0.1 - - [22/Jan/2025 11:09:39] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01òD&pD\x17"\x0e\x7f²\x18')
+2025-01-22 11:09:39,796 - 127.0.0.1 - - [22/Jan/2025 11:09:39] "[35m[1m\x16\x03\x01\x00}\x01\x00\x00y\x03\x01òD&pD\x17"\x0e\x7f²\x18 $\x06~D¨±õ¨×D*\x8drí#Ô+\x9eL\x01\x00\x00\x14À[0m" HTTPStatus.BAD_REQUEST -
+2025-01-22 11:27:18,604 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-22 11:27:18,604 - [33mPress CTRL+C to quit[0m
+2025-01-22 11:27:18,605 -  * Restarting with stat
+2025-01-22 11:27:18,726 -  * Debugger is active!
+2025-01-22 11:27:18,733 -  * Debugger PIN: 590-982-633
+2025-01-22 11:27:44,076 - 127.0.0.1 - - [22/Jan/2025 11:27:44] "GET / HTTP/1.1" 200 -
+2025-01-22 11:27:46,525 - 127.0.0.1 - - [22/Jan/2025 11:27:46] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-01-22 11:29:16,634 -  * Detected change in '/Users/nityaarora/Downloads/new_auto_doc/auto_doc_temp/app/integration_files/qa_test/combined_server_new.py', reloading
+2025-01-22 11:29:16,666 -  * Restarting with stat
+2025-01-22 11:29:16,875 -  * Debugger is active!
+2025-01-22 11:29:16,880 -  * Debugger PIN: 590-982-633
+2025-01-22 11:29:28,266 - 127.0.0.1 - - [22/Jan/2025 11:29:28] "GET / HTTP/1.1" 200 -
+2025-01-22 11:29:32,952 - 127.0.0.1 - - [22/Jan/2025 11:29:32] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-01-22 11:29:36,796 - 127.0.0.1 - - [22/Jan/2025 11:29:36] "[31m[1mGET /callback?state=random_state_string&code=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5MDU2NDU2Ny05ZDVkLTQwN2QtYmY5Mi02Zjc3MzI5MmJkZDYiLCJzdWIiOiI3MTIwMjA6OTI3NDI1Y2UtY2YzYi00YTA4LWFhNDAtZjk4OTViODg3YzNhIiwibmJmIjoxNzM3NTc0MjU1LCJpc3MiOiJhdXRoLmF0bGFzc2lhbi5jb20iLCJpYXQiOjE3Mzc1NzQyNTUsImV4cCI6MTczNzU3NDU1NSwiYXVkIjoiUGNWOEhnUjkwa3FSSlMxMmV1QkxvWWhKOEo3anQxVE8iLCJjbGllbnRfYXV0aF90eXBlIjoiUE9TVCIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS92ZXJpZmllZCI6dHJ1ZSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL3VqdCI6IjkwNTY0NTY3LTlkNWQtNDA3ZC1iZjkyLTZmNzczMjkyYmRkNiIsInNjb3BlIjpbInJlYWQ6amlyYS13b3JrIiwib2ZmbGluZV9hY2Nlc3MiLCJyZWFkOmNvbmZsdWVuY2UtY29udGVudC5hbGwiLCJyZWFkOmppcmEtdXNlciIsInJlYWQ6Y29uZmx1ZW5jZS1zcGFjZS5zdW1tYXJ5Il0sImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS9hdGxfdG9rZW5fdHlwZSI6IkFVVEhfQ09ERSIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS9oYXNSZWRpcmVjdFVyaSI6dHJ1ZSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL3Nlc3Npb25faWQiOiI0YTk0YjQ5Zi1kZWVkLTRiMWYtYTMzNS0zZDJjYWE4ZTgwODkiLCJodHRwczovL2lkLmF0bGFzc2lhbi5jb20vcHJvY2Vzc1JlZ2lvbiI6InVzLXdlc3QtMiJ9.p-gPU067G6sIOMETaF2u7suCXrf06C10aJYAZY0Sv74 HTTP/1.1[0m" 403 -
+2025-01-22 11:30:02,222 -  * Detected change in '/Users/nityaarora/Downloads/new_auto_doc/auto_doc_temp/app/integration_files/qa_test/combined_server_new.py', reloading
+2025-01-22 11:30:02,261 -  * Restarting with stat
+2025-01-22 11:30:02,459 -  * Debugger is active!
+2025-01-22 11:30:02,463 -  * Debugger PIN: 590-982-633
+2025-01-22 11:30:05,898 - 127.0.0.1 - - [22/Jan/2025 11:30:05] "GET / HTTP/1.1" 200 -
+2025-01-22 11:30:09,546 - 127.0.0.1 - - [22/Jan/2025 11:30:09] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-01-22 11:30:18,936 - 127.0.0.1 - - [22/Jan/2025 11:30:18] "[31m[1mGET /callback?state=random_state_string&code=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2ZGRiZmQ1Zi0yNTM5LTQ4MWUtYjUxYy1lODhjMjU4MWM4NTMiLCJzdWIiOiI3MTIwMjA6OTI3NDI1Y2UtY2YzYi00YTA4LWFhNDAtZjk4OTViODg3YzNhIiwibmJmIjoxNzM3NTc0Mjk3LCJpc3MiOiJhdXRoLmF0bGFzc2lhbi5jb20iLCJpYXQiOjE3Mzc1NzQyOTcsImV4cCI6MTczNzU3NDU5NywiYXVkIjoiUGNWOEhnUjkwa3FSSlMxMmV1QkxvWWhKOEo3anQxVE8iLCJjbGllbnRfYXV0aF90eXBlIjoiUE9TVCIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS92ZXJpZmllZCI6dHJ1ZSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL3VqdCI6IjZkZGJmZDVmLTI1MzktNDgxZS1iNTFjLWU4OGMyNTgxYzg1MyIsInNjb3BlIjpbInJlYWQ6amlyYS13b3JrIiwib2ZmbGluZV9hY2Nlc3MiLCJyZWFkOmNvbmZsdWVuY2UtY29udGVudC5hbGwiLCJyZWFkOmppcmEtdXNlciIsInJlYWQ6Y29uZmx1ZW5jZS1zcGFjZS5zdW1tYXJ5Il0sImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS9hdGxfdG9rZW5fdHlwZSI6IkFVVEhfQ09ERSIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS9oYXNSZWRpcmVjdFVyaSI6dHJ1ZSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL3Nlc3Npb25faWQiOiI0YTk0YjQ5Zi1kZWVkLTRiMWYtYTMzNS0zZDJjYWE4ZTgwODkiLCJodHRwczovL2lkLmF0bGFzc2lhbi5jb20vcHJvY2Vzc1JlZ2lvbiI6InVzLXdlc3QtMiJ9.KljFXD4NsVSei3lNMH4xd6PQO3Jwm_bg-Um0UU8nZU4 HTTP/1.1[0m" 403 -
+2025-01-22 11:30:49,794 -  * Detected change in '/Users/nityaarora/Downloads/new_auto_doc/auto_doc_temp/app/integration_files/qa_test/combined_server_new.py', reloading
+2025-01-22 11:30:49,836 -  * Restarting with stat
+2025-01-22 11:30:50,045 -  * Debugger is active!
+2025-01-22 11:30:50,049 -  * Debugger PIN: 590-982-633
+2025-01-22 11:31:08,669 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-22 11:31:08,669 - [33mPress CTRL+C to quit[0m
+2025-01-22 11:31:08,670 -  * Restarting with stat
+2025-01-22 11:31:08,790 -  * Debugger is active!
+2025-01-22 11:31:08,797 -  * Debugger PIN: 590-982-633
+2025-01-22 11:31:19,873 - 127.0.0.1 - - [22/Jan/2025 11:31:19] "GET / HTTP/1.1" 200 -
+2025-01-22 11:31:22,481 - 127.0.0.1 - - [22/Jan/2025 11:31:22] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-01-22 11:33:53,880 - 127.0.0.1 - - [22/Jan/2025 11:33:53] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-01-22 11:33:59,974 - 127.0.0.1 - - [22/Jan/2025 11:33:59] "GET /callback?state=random_state_string&code=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxOGVhZDcwOC1lM2YxLTQ5MTgtYmU4YS1mMzUzZjQ3YWE3NTEiLCJzdWIiOiI3MTIwMjA6OTI3NDI1Y2UtY2YzYi00YTA4LWFhNDAtZjk4OTViODg3YzNhIiwibmJmIjoxNzM3NTc0NTE4LCJpc3MiOiJhdXRoLmF0bGFzc2lhbi5jb20iLCJpYXQiOjE3Mzc1NzQ1MTgsImV4cCI6MTczNzU3NDgxOCwiYXVkIjoiUGNWOEhnUjkwa3FSSlMxMmV1QkxvWWhKOEo3anQxVE8iLCJjbGllbnRfYXV0aF90eXBlIjoiUE9TVCIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS92ZXJpZmllZCI6dHJ1ZSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL3VqdCI6IjE4ZWFkNzA4LWUzZjEtNDkxOC1iZThhLWYzNTNmNDdhYTc1MSIsInNjb3BlIjpbInJlYWQ6amlyYS13b3JrIiwib2ZmbGluZV9hY2Nlc3MiLCJyZWFkOmNvbmZsdWVuY2UtY29udGVudC5hbGwiLCJ3cml0ZTpqaXJhLXdvcmsiLCJyZWFkOmppcmEtdXNlciIsInJlYWQ6Y29uZmx1ZW5jZS1zcGFjZS5zdW1tYXJ5Il0sImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS9hdGxfdG9rZW5fdHlwZSI6IkFVVEhfQ09ERSIsImh0dHBzOi8vaWQuYXRsYXNzaWFuLmNvbS9oYXNSZWRpcmVjdFVyaSI6dHJ1ZSwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL3Nlc3Npb25faWQiOiI0YTk0YjQ5Zi1kZWVkLTRiMWYtYTMzNS0zZDJjYWE4ZTgwODkiLCJodHRwczovL2lkLmF0bGFzc2lhbi5jb20vcHJvY2Vzc1JlZ2lvbiI6InVzLXdlc3QtMiJ9.NnToLeRJJg2IrWO--So4aT6U_8w2z-t1Nv_vdjM31zU HTTP/1.1" 200 -
+2025-01-22 11:34:30,800 - Access token expired. Refreshing...
+2025-01-22 11:34:31,273 - Error processing test TC001: 401 Client Error: Unauthorized for url: https://pepprai.atlassian.net/rest/api/3/search?jql=summary+~+%27TC001%27+OR+description+~+%27Timeout+error+during+login+test.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 11:34:31,549 - Access token expired. Refreshing...
+2025-01-22 11:34:31,955 - Error processing test TC002: 401 Client Error: Unauthorized for url: https://pepprai.atlassian.net/rest/api/3/search?jql=summary+~+%27TC002%27+OR+description+~+%27Login+test+passed+successfully.%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 11:34:32,208 - Access token expired. Refreshing...
+2025-01-22 11:34:32,689 - Error processing test TC003: 401 Client Error: Unauthorized for url: https://pepprai.atlassian.net/rest/api/3/search?jql=summary+~+%27TC003%27+OR+description+~+%27NullPointerException+at+Checkout.java%3A42%27+OR+labels+in+%28%27automation%27%2C+%27QA%27%29
+2025-01-22 11:34:32,691 - 127.0.0.1 - - [22/Jan/2025 11:34:32] "GET /run-job HTTP/1.1" 200 -

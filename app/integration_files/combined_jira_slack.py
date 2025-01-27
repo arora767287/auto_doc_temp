@@ -8,12 +8,12 @@ app.secret_key = "a361b70d12e2d11d2fe6da2431b17e1a"
 
 SLACK_CLIENT_ID = "8021694719730.8287936828583"
 SLACK_CLIENT_SECRET = "a361b70d12e2d11d2fe6da2431b17e1a"
-REDIRECT_URI = os.getenv("REDIRECT_URI", "https://127.0.0.1:5000/callback")
+REDIRECT_URI = os.getenv("REDIRECT_URI", "http://127.0.0.1:5000/callback")
 BASE_URL = "https://slack.com/api"
 
 ATLASSIAN_CLIENT_ID = "PcV8HgR90kqRJS12euBLoYhJ8J7jt1TO"
 ATLASSIAN_CLIENT_SECRET = "ATOAylK_hlX9dbtyvg9tYHIV0t9IFjkPH8t2_7Z0SjtyeljhX5b64fSWKBbWaZm-MkG0520FF758"
-ATLASSIAN_REDIRECT_URI = os.getenv("ATLASSIAN_REDIRECT_URI", "https://127.0.0.1:5000/atlassian_callback")
+ATLASSIAN_REDIRECT_URI = os.getenv("ATLASSIAN_REDIRECT_URI", "http://127.0.0.1:5000/callback")
 
 # Temporary storage for tokens. Replace with a database in production.
 tokens = {}
@@ -331,4 +331,5 @@ def refresh_atlassian_token(user):
     return tokens[user]["access_token"]
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000, ssl_context=('cert.pem', 'key.pem'))
+    app.run(debug=True, port=5000)
+    # app.run(debug=True, port=5000, ssl_context=('cert.pem', 'key.pem'))

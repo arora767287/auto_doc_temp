@@ -1,0 +1,330 @@
+[
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T20:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The model is performing inconsistently with passengers wearing transparent masks. Do we have specific test cases for this?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "emily.chow"
+    },
+    "timestamps": {
+      "created": "2025-01-19T20:30:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T20:35:15Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Not yet, but I\u2019ll create synthetic examples and flag this for testing tomorrow."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-19T20:35:15Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T20:40:30Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "I\u2019ll check if we can source real-world samples from the airport\u2019s database."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "maria.garcia"
+        },
+        "timestamps": {
+          "created": "2025-01-19T20:40:30Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T20:50:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Quick note: Some passengers with beards are being flagged incorrectly. Could this be an edge case in the occlusion module?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "liam.tanaka"
+    },
+    "timestamps": {
+      "created": "2025-01-19T20:50:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T20:55:20Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "It\u2019s possible. I\u2019ll validate this against the misclassification logs."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-19T20:55:20Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:00:45Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Let\u2019s add more diversity to the training dataset for facial hair variations."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "emily.chow"
+        },
+        "timestamps": {
+          "created": "2025-01-19T21:00:45Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:10:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The airport staff mentioned delays in processing group photos at the boarding gates. Adding this as a priority for next week\u2019s sprint.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-19T21:10:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:15:30Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Would splitting group photos into individual frames improve processing times?"
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "liam.tanaka"
+        },
+        "timestamps": {
+          "created": "2025-01-19T21:15:30Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:20:45Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Yes, I\u2019ll prototype a script for that."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-19T21:20:45Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Reminder: The QA session tomorrow will focus on handling poor lighting conditions in terminal zones. Make sure your test scenarios are uploaded to Confluence by tonight.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "emily.chow"
+    },
+    "timestamps": {
+      "created": "2025-01-19T21:30:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:45:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Are we planning to evaluate passenger throughput after integrating the fallback mechanism?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "liam.tanaka"
+    },
+    "timestamps": {
+      "created": "2025-01-19T21:45:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:50:15Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Yes, that\u2019s already included in the next round of tests."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "maria.garcia"
+        },
+        "timestamps": {
+          "created": "2025-01-19T21:50:15Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:00:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The initial results from testing multi-person scenarios with overlapping bounding boxes show a 10% false positive rate. I\u2019ll adjust the IoU thresholds.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-19T22:00:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:15:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve flagged 15 cases where passengers with high-contrast facial features were misclassified. Adding them to the bug tracker for debugging.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-19T22:15:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:20:30Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Do these cases involve specific lighting conditions?"
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "emily.chow"
+        },
+        "timestamps": {
+          "created": "2025-01-19T22:20:30Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:25:45Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Yes, most were recorded in dimly lit zones."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "maria.garcia"
+        },
+        "timestamps": {
+          "created": "2025-01-19T22:25:45Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Do we have metrics on how facial recognition accuracy changes during peak vs. off-peak hours?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "liam.tanaka"
+    },
+    "timestamps": {
+      "created": "2025-01-19T22:30:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:35:15Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Not yet, but I\u2019ll run a comparison using the logs from Terminal 3."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-19T22:35:15Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:45:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The Confluence page for tracking thermal imaging integration is live: https://confluence.nvidia.com/pages/viewpage.action?pageId=223456. Let\u2019s populate it with initial results after this week\u2019s tests.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "emily.chow"
+    },
+    "timestamps": {
+      "created": "2025-01-19T22:45:00Z"
+    },
+    "replies": []
+  }
+]

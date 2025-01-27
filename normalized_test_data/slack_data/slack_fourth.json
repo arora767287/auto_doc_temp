@@ -1,0 +1,996 @@
+[
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T06:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve added initial results for low-light pedestrian detection with the adjusted preprocessing pipeline. The improvement in recall is about 10%, but false positives remain high.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-20T06:30:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T06:35:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Do the false positives tend to cluster in any particular scenarios, like near intersections or parked vehicles?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-20T06:35:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T06:40:30Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Mostly near intersections with complex backgrounds. I\u2019ll focus on these cases for the next round of debugging.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-20T06:40:30Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T06:50:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve uploaded a detailed analysis of crosswalk detection inconsistencies to Notion: https://notion.nvidia.com/crosswalk-detection-report. Feedback welcome.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-20T06:50:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T07:00:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Thermal imaging integration tests show improved accuracy for hidden pedestrians, but latency has increased. Could we explore hardware-specific optimizations?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-20T07:00:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T07:10:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "We could consider offloading some preprocessing to edge devices. I\u2019ll test this with the current pipeline.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-20T07:10:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T07:15:30Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Sounds good. Let me know if you need additional data for these tests.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-20T07:15:30Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T07:25:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The QA team flagged inconsistencies in pedestrian bounding boxes during sharp turns. This might be related to the camera calibration settings.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-20T07:25:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T07:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Do we have calibration logs from the latest camera setup?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-20T07:30:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T07:35:30Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Yes, I\u2019ll upload the calibration logs and share the link shortly.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-20T07:35:30Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T07:45:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The current model is struggling with partially occluded pedestrians near delivery trucks. Should we prioritize adding more occlusion data?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-20T07:45:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T07:50:30Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Yes, and we should also consider augmenting the dataset with varying truck sizes and positions.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-20T07:50:30Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T08:00:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve scheduled a QA session to validate shadow detection issues. Please send specific scenarios that need testing by end of day.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-20T08:00:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T08:10:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ll add examples with dynamic shadows caused by moving vehicles.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-20T08:10:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T08:15:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "We\u2019re seeing detection drops in rural environments where pedestrians are far from the roadside. Should we tweak the detection range?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-20T08:15:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T08:20:30Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "That could work. I\u2019ll analyze the current range thresholds and propose adjustments.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-20T08:20:30Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T08:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The fog simulation results are in. Accuracy improved by 12% after dataset augmentation, but edge cases remain in dense fog.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-20T08:30:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T08:35:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Let\u2019s refine the augmentation pipeline to include varying fog densities.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-20T08:35:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T08:40:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve drafted a Confluence page with findings from the latest suburban trials: https://confluence.nvidia.com/pages/viewpage.action?pageId=902344.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-20T08:40:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-person-detection-autonomous-vehicles-2025-01-20T08:50:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Thanks, Samantha. I\u2019ll review and add notes on how different vehicle speeds impacted detection.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "person-detection-autonomous-vehicles",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-20T08:50:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T20:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The model is performing inconsistently with passengers wearing transparent masks. Do we have specific test cases for this?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "emily.chow"
+    },
+    "timestamps": {
+      "created": "2025-01-19T20:30:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T20:35:15Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Not yet, but I\u2019ll create synthetic examples and flag this for testing tomorrow."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-19T20:35:15Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T20:40:30Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "I\u2019ll check if we can source real-world samples from the airport\u2019s database."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "maria.garcia"
+        },
+        "timestamps": {
+          "created": "2025-01-19T20:40:30Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T20:50:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Quick note: Some passengers with beards are being flagged incorrectly. Could this be an edge case in the occlusion module?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "liam.tanaka"
+    },
+    "timestamps": {
+      "created": "2025-01-19T20:50:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T20:55:20Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "It\u2019s possible. I\u2019ll validate this against the misclassification logs."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-19T20:55:20Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:00:45Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Let\u2019s add more diversity to the training dataset for facial hair variations."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "emily.chow"
+        },
+        "timestamps": {
+          "created": "2025-01-19T21:00:45Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:10:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The airport staff mentioned delays in processing group photos at the boarding gates. Adding this as a priority for next week\u2019s sprint.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-19T21:10:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:15:30Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Would splitting group photos into individual frames improve processing times?"
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "liam.tanaka"
+        },
+        "timestamps": {
+          "created": "2025-01-19T21:15:30Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:20:45Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Yes, I\u2019ll prototype a script for that."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-19T21:20:45Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Reminder: The QA session tomorrow will focus on handling poor lighting conditions in terminal zones. Make sure your test scenarios are uploaded to Confluence by tonight.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "emily.chow"
+    },
+    "timestamps": {
+      "created": "2025-01-19T21:30:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:45:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Are we planning to evaluate passenger throughput after integrating the fallback mechanism?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "liam.tanaka"
+    },
+    "timestamps": {
+      "created": "2025-01-19T21:45:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T21:50:15Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Yes, that\u2019s already included in the next round of tests."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "maria.garcia"
+        },
+        "timestamps": {
+          "created": "2025-01-19T21:50:15Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:00:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The initial results from testing multi-person scenarios with overlapping bounding boxes show a 10% false positive rate. I\u2019ll adjust the IoU thresholds.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-19T22:00:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:15:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve flagged 15 cases where passengers with high-contrast facial features were misclassified. Adding them to the bug tracker for debugging.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-19T22:15:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:20:30Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Do these cases involve specific lighting conditions?"
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "emily.chow"
+        },
+        "timestamps": {
+          "created": "2025-01-19T22:20:30Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:25:45Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Yes, most were recorded in dimly lit zones."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "maria.garcia"
+        },
+        "timestamps": {
+          "created": "2025-01-19T22:25:45Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Do we have metrics on how facial recognition accuracy changes during peak vs. off-peak hours?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "liam.tanaka"
+    },
+    "timestamps": {
+      "created": "2025-01-19T22:30:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:35:15Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Not yet, but I\u2019ll run a comparison using the logs from Terminal 3."
+        },
+        "metadata": {
+          "channel": "face-recognition-airports",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-19T22:35:15Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-face-recognition-airports-2025-01-19T22:45:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The Confluence page for tracking thermal imaging integration is live: https://confluence.nvidia.com/pages/viewpage.action?pageId=223456. Let\u2019s populate it with initial results after this week\u2019s tests.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "face-recognition-airports",
+      "user": "emily.chow"
+    },
+    "timestamps": {
+      "created": "2025-01-19T22:45:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T22:15:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve been testing the new dynamic opacity adjustments for the anomaly overlays. The results look promising so far!",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "safety-analysis-retail-stores",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-18T22:15:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T22:20:45Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "That\u2019s great to hear, Maria. Were there any unexpected edge cases?"
+        },
+        "metadata": {
+          "channel": "safety-analysis-retail-stores",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-18T22:20:45Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T22:25:30Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Not yet, but I want to run a few more tests in low-light conditions to be sure."
+        },
+        "metadata": {
+          "channel": "safety-analysis-retail-stores",
+          "user": "maria.garcia"
+        },
+        "timestamps": {
+          "created": "2025-01-18T22:25:30Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T22:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Just a heads-up: I added a new section to the deployment checklist on Notion for monitoring real-time anomalies. Please review: https://notion.nvidia.com/retail-safety/real-time-monitoring.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "safety-analysis-retail-stores",
+      "user": "james.wu"
+    },
+    "timestamps": {
+      "created": "2025-01-18T22:30:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T22:35:15Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Thanks, James. I\u2019ll cross-check it with our QA processes."
+        },
+        "metadata": {
+          "channel": "safety-analysis-retail-stores",
+          "user": "diana.lee"
+        },
+        "timestamps": {
+          "created": "2025-01-18T22:35:15Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T22:40:00Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "I\u2019ve added a few notes about latency thresholds. Let me know if they align with your expectations."
+        },
+        "metadata": {
+          "channel": "safety-analysis-retail-stores",
+          "user": "priya.sharma"
+        },
+        "timestamps": {
+          "created": "2025-01-18T22:40:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T22:45:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019m finalizing the parameter adjustments for the Kalman filter. Should we prioritize these changes for the next sprint?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "safety-analysis-retail-stores",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-18T22:45:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T22:50:30Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Yes, let\u2019s include them. Reducing the jitter in bounding boxes is a priority."
+        },
+        "metadata": {
+          "channel": "safety-analysis-retail-stores",
+          "user": "james.wu"
+        },
+        "timestamps": {
+          "created": "2025-01-18T22:50:30Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T22:55:45Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Agreed. This is one of the most noticeable issues during customer trials."
+        },
+        "metadata": {
+          "channel": "safety-analysis-retail-stores",
+          "user": "maria.garcia"
+        },
+        "timestamps": {
+          "created": "2025-01-18T22:55:45Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T23:00:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Do we have a timeline for integrating the fallback mechanisms into the Dallas deployment pipeline?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "safety-analysis-retail-stores",
+      "user": "diana.lee"
+    },
+    "timestamps": {
+      "created": "2025-01-18T23:00:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T23:05:10Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "I\u2019m estimating we can complete this by the end of the week, assuming no major blockers."
+        },
+        "metadata": {
+          "channel": "safety-analysis-retail-stores",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-18T23:05:10Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T23:10:25Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Let\u2019s schedule a code review on Friday to ensure everything\u2019s in place."
+        },
+        "metadata": {
+          "channel": "safety-analysis-retail-stores",
+          "user": "james.wu"
+        },
+        "timestamps": {
+          "created": "2025-01-18T23:10:25Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T23:15:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve been looking at ways to improve anomaly labeling accuracy. Has anyone considered using weighted loss functions?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "safety-analysis-retail-stores",
+      "user": "priya.sharma"
+    },
+    "timestamps": {
+      "created": "2025-01-18T23:15:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T23:20:45Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Interesting idea. We could weigh anomalies differently based on their criticality levels."
+        },
+        "metadata": {
+          "channel": "safety-analysis-retail-stores",
+          "user": "arjun.mehta"
+        },
+        "timestamps": {
+          "created": "2025-01-18T23:20:45Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T23:25:30Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "That approach could also help with edge cases like overlapping anomalies."
+        },
+        "metadata": {
+          "channel": "safety-analysis-retail-stores",
+          "user": "maria.garcia"
+        },
+        "timestamps": {
+          "created": "2025-01-18T23:25:30Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T23:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Has anyone gotten feedback from QA on the updated test cases for inconsistent lighting conditions?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "safety-analysis-retail-stores",
+      "user": "james.wu"
+    },
+    "timestamps": {
+      "created": "2025-01-18T23:30:00Z"
+    },
+    "replies": [
+      {
+        "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T23:35:15Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "Yes, they flagged a few scenarios where the detection fails completely. I\u2019ll share the detailed report shortly."
+        },
+        "metadata": {
+          "channel": "safety-analysis-retail-stores",
+          "user": "maria.garcia"
+        },
+        "timestamps": {
+          "created": "2025-01-18T23:35:15Z"
+        }
+      },
+      {
+        "id": "SLACK-nvidia-safety-analysis-retail-stores-2025-01-18T23:40:00Z",
+        "source": "slack",
+        "org": "nvidia",
+        "type": "slack_reply",
+        "content": {
+          "text": "We should prioritize fixing those before expanding the deployment."
+        },
+        "metadata": {
+          "channel": "safety-analysis-retail-stores",
+          "user": "diana.lee"
+        },
+        "timestamps": {
+          "created": "2025-01-18T23:40:00Z"
+        }
+      }
+    ]
+  }
+]

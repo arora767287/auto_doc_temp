@@ -1,0 +1,206 @@
+[
+  {
+    "id": "GITHUB-nvidia-safety-analysis-retail-107",
+    "source": "github",
+    "org": "nvidia",
+    "type": "github_issue",
+    "content": {
+      "title": "Thermal boundary inconsistencies in overlapping areas",
+      "description": "Thermal boundaries fail to merge consistently in retail environments with dynamic heat sources. Investigate overlapping boundary calibration."
+    },
+    "metadata": {
+      "repository": "safety-analysis-retail",
+      "status": "Open",
+      "linked_jira_ticket": "SAFETY-605"
+    },
+    "timestamps": {
+      "created": "2025-01-30T08:00:00Z"
+    }
+  },
+  {
+    "id": "GITHUB-nvidia-safety-analysis-retail-108",
+    "source": "github",
+    "org": "nvidia",
+    "type": "github_issue",
+    "content": {
+      "title": "Anomaly detection reports redundant alerts",
+      "description": "During peak hours, the anomaly detection system sends duplicate alerts for minor boundary overlaps. Review redundancy filters."
+    },
+    "metadata": {
+      "repository": "safety-analysis-retail",
+      "status": "Open",
+      "linked_jira_ticket": "SAFETY-606"
+    },
+    "timestamps": {
+      "created": "2025-01-30T09:00:00Z"
+    }
+  },
+  {
+    "id": "GITHUB-nvidia-safety-analysis-retail-x1y2z3a",
+    "source": "github",
+    "org": "nvidia",
+    "type": "github_commit",
+    "content": {
+      "message": "Reviewed calibration methods for merging thermal boundaries."
+    },
+    "metadata": {
+      "repository": "safety-analysis-retail",
+      "linked_jira_ticket": "SAFETY-605"
+    },
+    "timestamps": {
+      "created": "2025-01-30T08:45:00Z"
+    }
+  },
+  {
+    "id": "GITHUB-nvidia-safety-analysis-retail-b3c4d5e",
+    "source": "github",
+    "org": "nvidia",
+    "type": "github_commit",
+    "content": {
+      "message": "Added filters to reduce redundancy in anomaly detection alerts."
+    },
+    "metadata": {
+      "repository": "safety-analysis-retail",
+      "linked_jira_ticket": "SAFETY-606"
+    },
+    "timestamps": {
+      "created": "2025-01-30T09:30:00Z"
+    }
+  },
+  {
+    "id": "GITHUB-nvidia-deepfake-detection-207",
+    "source": "github",
+    "org": "nvidia",
+    "type": "github_issue",
+    "content": {
+      "title": "Dataset labeling inconsistencies",
+      "description": "Certain video samples in the deepfake dataset are incorrectly labeled, causing false positives. Review and correct labels."
+    },
+    "metadata": {
+      "repository": "deepfake-detection",
+      "status": "Open",
+      "linked_jira_ticket": "DEEPFAKE-210"
+    },
+    "timestamps": {
+      "created": "2025-01-31T10:00:00Z"
+    }
+  },
+  {
+    "id": "GITHUB-nvidia-deepfake-detection-208",
+    "source": "github",
+    "org": "nvidia",
+    "type": "github_issue",
+    "content": {
+      "title": "Random frame skipping during model inference",
+      "description": "Inference pipeline occasionally skips random frames in video samples. Debug frame scheduler logic."
+    },
+    "metadata": {
+      "repository": "deepfake-detection",
+      "status": "Open",
+      "linked_jira_ticket": "DEEPFAKE-211"
+    },
+    "timestamps": {
+      "created": "2025-01-31T11:00:00Z"
+    }
+  },
+  {
+    "id": "GITHUB-nvidia-deepfake-detection-h6i7j8k",
+    "source": "github",
+    "org": "nvidia",
+    "type": "github_commit",
+    "content": {
+      "message": "Corrected mislabeled samples in deepfake dataset."
+    },
+    "metadata": {
+      "repository": "deepfake-detection",
+      "linked_jira_ticket": "DEEPFAKE-210"
+    },
+    "timestamps": {
+      "created": "2025-01-31T10:30:00Z"
+    }
+  },
+  {
+    "id": "GITHUB-nvidia-deepfake-detection-l9m1n2o",
+    "source": "github",
+    "org": "nvidia",
+    "type": "github_commit",
+    "content": {
+      "message": "Fixed frame skipping in inference pipeline."
+    },
+    "metadata": {
+      "repository": "deepfake-detection",
+      "linked_jira_ticket": "DEEPFAKE-211"
+    },
+    "timestamps": {
+      "created": "2025-01-31T11:30:00Z"
+    }
+  },
+  {
+    "id": "GITHUB-nvidia-autonomous-vehicles-307",
+    "source": "github",
+    "org": "nvidia",
+    "type": "github_issue",
+    "content": {
+      "title": "False negatives in crosswalk scenarios with shadows",
+      "description": "Pedestrian detection model fails to detect individuals in shadowed areas of crosswalks during evening tests. Investigate shadow augmentations."
+    },
+    "metadata": {
+      "repository": "autonomous-vehicles",
+      "status": "Open",
+      "linked_jira_ticket": "PDAV-920"
+    },
+    "timestamps": {
+      "created": "2025-02-01T08:00:00Z"
+    }
+  },
+  {
+    "id": "GITHUB-nvidia-autonomous-vehicles-308",
+    "source": "github",
+    "org": "nvidia",
+    "type": "github_issue",
+    "content": {
+      "title": "High resource utilization during parallel camera streams",
+      "description": "Resource usage spikes when processing parallel camera streams in autonomous vehicle tests. Optimize resource allocation logic."
+    },
+    "metadata": {
+      "repository": "autonomous-vehicles",
+      "status": "Open",
+      "linked_jira_ticket": "PDAV-921"
+    },
+    "timestamps": {
+      "created": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "id": "GITHUB-nvidia-autonomous-vehicles-p3q4r5s",
+    "source": "github",
+    "org": "nvidia",
+    "type": "github_commit",
+    "content": {
+      "message": "Improved pedestrian detection in shadowed crosswalks with augmented datasets."
+    },
+    "metadata": {
+      "repository": "autonomous-vehicles",
+      "linked_jira_ticket": "PDAV-920"
+    },
+    "timestamps": {
+      "created": "2025-02-01T08:45:00Z"
+    }
+  },
+  {
+    "id": "GITHUB-nvidia-autonomous-vehicles-t6u7v8w",
+    "source": "github",
+    "org": "nvidia",
+    "type": "github_commit",
+    "content": {
+      "message": "Optimized resource allocation for parallel camera stream processing."
+    },
+    "metadata": {
+      "repository": "autonomous-vehicles",
+      "linked_jira_ticket": "PDAV-921"
+    },
+    "timestamps": {
+      "created": "2025-02-01T09:45:00Z"
+    }
+  }
+]

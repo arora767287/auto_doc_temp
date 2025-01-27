@@ -1,0 +1,380 @@
+[
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T08:00:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I noticed the issue with the bounding box jitter reappearing in the safety-analysis module under high-density scenarios. I\u2019ve reopened Jira ticket SAFETY-223.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T08:00:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T08:05:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Thanks for catching that, Arjun. Was it tied to specific hardware setups or software configurations?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-21T08:05:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T08:10:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Mostly on older Jetson Nano devices during simultaneous inference tasks.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T08:10:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T08:15:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve seen similar behavior in the face-recognition-airports module when processing partially occluded faces. Could it be related?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-21T08:15:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T08:20:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Possibly. I\u2019ll cross-check the alignment between these two modules and see if there\u2019s a shared dependency.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T08:20:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T08:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve updated the Confluence page with details on the fallback issue in person detection during thermal imaging tests: https://confluence.nvidia.com/pages/viewpage.action?pageId=911233.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-21T08:30:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T08:35:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Thanks, Maria. I\u2019ll check if those fallback edge cases are also triggering the jitter issue.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T08:35:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T08:40:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The automated deployment script for bug fixes in the face-recognition-airports project failed last night. I\u2019ve logged this as BUG-324.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-21T08:40:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T08:45:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ll rerun the script with additional logging to see where it\u2019s failing.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-21T08:45:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T08:50:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Could it be related to the recent update in the Jenkins pipeline for the airports module?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T08:50:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T08:55:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Potentially. I\u2019ll verify the configurations and report back.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-21T08:55:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T09:00:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The person-detection-autonomous-vehicles module is showing inconsistent latency during fog simulations. I\u2019ve flagged this in Jira as BUG-407.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-21T09:00:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T09:05:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Noted. I\u2019ll rerun those simulations and profile the preprocessing pipeline to isolate the bottleneck.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T09:05:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T09:15:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The GitHub repo for the deepfake-detection project is missing the latest dependency updates. I\u2019ll push a patch shortly.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-21T09:15:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T09:20:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Thanks, Michael. Let\u2019s ensure the CI/CD pipeline triggers validation checks after the patch.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T09:20:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T09:25:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The anomaly-detection script for the safety-analysis module is crashing when handling dense data streams. I\u2019ve logged it as BUG-431.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-21T09:25:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T09:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Could be a memory allocation issue. I\u2019ll monitor the runtime metrics and report back.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T09:30:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T09:40:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve updated the QA tracker with edge cases where person detection fails under overlapping shadows. QA results are available here: https://notion.nvidia.com/qa-results-tracker.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-21T09:40:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T09:45:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Thanks, Maria. I\u2019ll use these cases to test the latest preprocessing updates.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T09:45:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T09:50:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I noticed a recurring issue with the deepfake-detection dashboard not updating in real-time. I\u2019ll debug the front-end rendering scripts.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-21T09:50:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T10:00:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The latest bug fixes in the airports module have improved latency by 12%. Let\u2019s validate this in the next stakeholder demo.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T10:00:00Z"
+    },
+    "replies": []
+  }
+]

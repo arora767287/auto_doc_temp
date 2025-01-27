@@ -1,0 +1,7 @@
+{
+    "test_id": "TC-NOTIFICATIONS",
+    "testrail_case_id": 8,
+    "status": "ERROR",
+    "description": "Notifications service unreachable.",
+    "timestamp": "2025-01-23T19:31:21Z"
+}

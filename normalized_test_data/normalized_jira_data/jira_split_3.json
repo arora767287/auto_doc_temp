@@ -1,0 +1,218 @@
+[
+  {
+    "id": "JIRA-nvidia-DEEPFAKE-206",
+    "source": "jira",
+    "org": "nvidia",
+    "type": "jira_ticket",
+    "content": {
+      "title": "Overfitting in deepfake detection training pipeline",
+      "description": "Training pipeline for deepfake detection shows overfitting to certain video styles. Expand dataset and apply regularization techniques."
+    },
+    "metadata": {
+      "priority": "High",
+      "assignee": "arjun.mehta",
+      "status": "Open"
+    },
+    "timestamps": {
+      "created": "2025-01-20T13:00:00Z"
+    }
+  },
+  {
+    "id": "JIRA-nvidia-SAFETY-600",
+    "source": "jira",
+    "org": "nvidia",
+    "type": "jira_ticket",
+    "content": {
+      "title": "Edge case failures in anomaly detection",
+      "description": "Anomaly detection fails for edge cases involving overlapping reflective surfaces. Augment training and validate model behavior."
+    },
+    "metadata": {
+      "priority": "Medium",
+      "assignee": "arjun.mehta",
+      "status": "Open"
+    },
+    "timestamps": {
+      "created": "2025-01-20T13:10:00Z"
+    }
+  },
+  {
+    "id": "JIRA-nvidia-PDAV-916",
+    "source": "jira",
+    "org": "nvidia",
+    "type": "jira_ticket",
+    "content": {
+      "title": "Inaccurate bounding boxes for high-speed objects",
+      "description": "Bounding box predictions lose accuracy for fast-moving pedestrians in urban environments. Investigate model latency and tuning."
+    },
+    "metadata": {
+      "priority": "High",
+      "assignee": "arjun.mehta",
+      "status": "Open"
+    },
+    "timestamps": {
+      "created": "2025-01-20T13:20:00Z"
+    }
+  },
+  {
+    "id": "JIRA-nvidia-AIRPORT-328",
+    "source": "jira",
+    "org": "nvidia",
+    "type": "jira_ticket",
+    "content": {
+      "title": "Delayed response times for fallback mechanisms",
+      "description": "Fallback mechanisms in face recognition exhibit delays during high-traffic scenarios. Optimize logic and resource allocation."
+    },
+    "metadata": {
+      "priority": "High",
+      "assignee": "arjun.mehta",
+      "status": "Open"
+    },
+    "timestamps": {
+      "created": "2025-01-20T13:30:00Z"
+    }
+  },
+  {
+    "id": "JIRA-nvidia-DEEPFAKE-207",
+    "source": "jira",
+    "org": "nvidia",
+    "type": "jira_ticket",
+    "content": {
+      "title": "Increased latency for real-time deepfake detection",
+      "description": "Latency spikes occur during peak processing in real-time deepfake detection. Profile and optimize inference pipeline."
+    },
+    "metadata": {
+      "priority": "Critical",
+      "assignee": "arjun.mehta",
+      "status": "Open"
+    },
+    "timestamps": {
+      "created": "2025-01-20T13:40:00Z"
+    }
+  },
+  {
+    "id": "JIRA-nvidia-SAFETY-601",
+    "source": "jira",
+    "org": "nvidia",
+    "type": "jira_ticket",
+    "content": {
+      "title": "Anomaly detection crashes with large datasets",
+      "description": "The anomaly detection module crashes during batch processing of large datasets. Debug memory usage and optimize resource allocation."
+    },
+    "metadata": {
+      "priority": "Critical",
+      "assignee": "arjun.mehta",
+      "status": "Open"
+    },
+    "timestamps": {
+      "created": "2025-01-20T13:50:00Z"
+    }
+  },
+  {
+    "id": "JIRA-nvidia-SAFETY-602",
+    "source": "jira",
+    "org": "nvidia",
+    "type": "jira_ticket",
+    "content": {
+      "title": "Misaligned bounding boxes for thermal regions",
+      "description": "Bounding boxes are misaligned during thermal imaging in high-density environments. Review calibration and dataset augmentation."
+    },
+    "metadata": {
+      "priority": "Medium",
+      "assignee": "arjun.mehta",
+      "status": "Open"
+    },
+    "timestamps": {
+      "created": "2025-01-20T14:00:00Z"
+    }
+  },
+  {
+    "id": "JIRA-nvidia-PDAV-917",
+    "source": "jira",
+    "org": "nvidia",
+    "type": "jira_ticket",
+    "content": {
+      "title": "Pedestrian detection failures at curved crosswalks",
+      "description": "Model struggles to identify pedestrians at crosswalks with significant curves. Investigate curvature augmentation in training datasets."
+    },
+    "metadata": {
+      "priority": "High",
+      "assignee": "arjun.mehta",
+      "status": "Open"
+    },
+    "timestamps": {
+      "created": "2025-01-20T14:10:00Z"
+    }
+  },
+  {
+    "id": "JIRA-nvidia-AIRPORT-329",
+    "source": "jira",
+    "org": "nvidia",
+    "type": "jira_ticket",
+    "content": {
+      "title": "VIP gate processing delays under high load",
+      "description": "Face recognition at VIP gates exhibits delays during simultaneous processing of multiple passengers. Optimize threading logic."
+    },
+    "metadata": {
+      "priority": "Critical",
+      "assignee": "arjun.mehta",
+      "status": "Open"
+    },
+    "timestamps": {
+      "created": "2025-01-20T14:20:00Z"
+    }
+  },
+  {
+    "id": "JIRA-nvidia-DEEPFAKE-208",
+    "source": "jira",
+    "org": "nvidia",
+    "type": "jira_ticket",
+    "content": {
+      "title": "Model accuracy drops for synthesized audio-video pairs",
+      "description": "Deepfake detection shows reduced accuracy for synthesized audio-video combinations. Augment dataset and retrain models."
+    },
+    "metadata": {
+      "priority": "High",
+      "assignee": "arjun.mehta",
+      "status": "Open"
+    },
+    "timestamps": {
+      "created": "2025-01-20T14:30:00Z"
+    }
+  },
+  {
+    "id": "JIRA-nvidia-SAFETY-603",
+    "source": "jira",
+    "org": "nvidia",
+    "type": "jira_ticket",
+    "content": {
+      "title": "Thermal zone overlap errors during low-light tests",
+      "description": "Errors occur in safety analysis when thermal zones overlap under low-light conditions. Optimize preprocessing for boundary detection."
+    },
+    "metadata": {
+      "priority": "High",
+      "assignee": "arjun.mehta",
+      "status": "Open"
+    },
+    "timestamps": {
+      "created": "2025-01-20T14:40:00Z"
+    }
+  },
+  {
+    "id": "JIRA-nvidia-PDAV-918",
+    "source": "jira",
+    "org": "nvidia",
+    "type": "jira_ticket",
+    "content": {
+      "title": "Edge case latency for nighttime suburban scenarios",
+      "description": "Latency spikes observed in suburban tests during nighttime pedestrian detection. Profile bottlenecks and refine the pipeline."
+    },
+    "metadata": {
+      "priority": "Medium",
+      "assignee": "arjun.mehta",
+      "status": "Open"
+    },
+    "timestamps": {
+      "created": "2025-01-20T14:50:00Z"
+    }
+  }
+]

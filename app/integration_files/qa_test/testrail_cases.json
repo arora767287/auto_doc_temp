@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "title": "Login with Valid Credentials",
+      "template_id": 1,
+      "type_id": 1,
+      "priority_id": 2,
+      "refs": "REQ-LOGIN-001",
+      "custom_steps": "1. Navigate to the login page.\n2. Enter valid username and password.\n3. Click submit.\n4. Verify user is redirected to dashboard."
+    },
+    {
+      "id": 2,
+      "title": "Login with Invalid Password",
+      "template_id": 1,
+      "type_id": 1,
+      "priority_id": 3,
+      "refs": "REQ-LOGIN-002",
+      "custom_steps": "1. Navigate to the login page.\n2. Enter valid username and invalid password.\n3. Click submit.\n4. Verify 'Invalid Credentials' error is displayed."
+    },
+    {
+      "id": 3,
+      "title": "Checkout - Invalid Payment Info",
+      "template_id": 1,
+      "type_id": 1,
+      "priority_id": 2,
+      "refs": "REQ-CHECKOUT-010",
+      "custom_steps": "1. Add item to cart.\n2. Provide invalid credit card number.\n3. Click 'Pay'.\n4. Verify payment error message is shown."
+    },
+    {
+      "id": 4,
+      "title": "Checkout - Valid Payment Info",
+      "template_id": 1,
+      "type_id": 1,
+      "priority_id": 2,
+      "refs": "REQ-CHECKOUT-011",
+      "custom_steps": "1. Add item to cart.\n2. Provide valid credit card details.\n3. Click 'Pay'.\n4. Verify success message and order summary."
+    },
+    {
+      "id": 5,
+      "title": "Profile Update - Missing Fields",
+      "template_id": 1,
+      "type_id": 1,
+      "priority_id": 3,
+      "refs": "REQ-PROFILE-001",
+      "custom_steps": "1. Navigate to Profile page.\n2. Remove mandatory fields (e.g., email).\n3. Click 'Save'.\n4. Verify error message for required field."
+    },
+    {
+      "id": 6,
+      "title": "API Orders Endpoint",
+      "template_id": 1,
+      "type_id": 1,
+      "priority_id": 2,
+      "refs": "REQ-API-ORDERS",
+      "custom_steps": "1. Send GET request to /api/orders.\n2. Verify response status is 200.\n3. Validate response payload."
+    },
+    {
+      "id": 7,
+      "title": "Dashboard Load Performance",
+      "template_id": 1,
+      "type_id": 1,
+      "priority_id": 1,
+      "refs": "REQ-DASHBOARD-LOAD",
+      "custom_steps": "1. Navigate to the dashboard.\n2. Measure load time.\n3. Verify all widgets load correctly within 2 seconds."
+    },
+    {
+      "id": 8,
+      "title": "Notifications Service Availability",
+      "template_id": 1,
+      "type_id": 1,
+      "priority_id": 3,
+      "refs": "REQ-NOTIFICATIONS",
+      "custom_steps": "1. Trigger a notification event.\n2. Verify the notifications service is reachable.\n3. Confirm receipt of the notification."
+    },
+    {
+      "id": 9,
+      "title": "Search Feature Completeness",
+      "template_id": 1,
+      "type_id": 1,
+      "priority_id": 2,
+      "refs": "REQ-SEARCH-FEATURE",
+      "custom_steps": "1. Enter a search query in the search bar.\n2. Submit the search.\n3. Verify that all relevant results are returned and displayed correctly."
+    },
+    {
+      "id": 10,
+      "title": "Reports CSV Export",
+      "template_id": 1,
+      "type_id": 1,
+      "priority_id": 2,
+      "refs": "REQ-REPORTS-CSV",
+      "custom_steps": "1. Navigate to the Reports section.\n2. Select the desired report.\n3. Click 'Export as CSV'.\n4. Verify the CSV file is downloaded and data integrity is maintained."
+    }
+  ]
+  

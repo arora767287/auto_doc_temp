@@ -1,0 +1,380 @@
+[
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T10:10:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The person-detection-autonomous-vehicles module is showing edge case failures during low-light urban tests. I\u2019ve flagged this in BUG-512.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-21T10:10:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T10:15:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Does this involve scenarios with heavy pedestrian traffic or isolated subjects?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-21T10:15:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T10:20:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Both, but it seems more frequent with isolated subjects on dimly lit roads.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-21T10:20:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T10:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The fallback mechanism for the face-recognition-airports module isn\u2019t triggering in specific edge cases. Logged it as BUG-537.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-21T10:30:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T10:35:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ll review the fallback logic and see if any recent changes in thresholds affected it.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "liam.tanaka"
+    },
+    "timestamps": {
+      "created": "2025-01-21T10:35:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T10:40:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Has anyone else noticed latency spikes when processing dense datasets in the safety-analysis module?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-21T10:40:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T10:45:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Yes, it\u2019s particularly noticeable in scenarios with overlapping anomalies. I\u2019ll flag this for additional logging.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-21T10:45:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T10:50:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve run into a bug with the deepfake-detection model where video frames are occasionally skipped during preprocessing. Reporting as BUG-562.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T10:50:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T10:55:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Could this be related to the new parallelization changes in the preprocessing module?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-21T10:55:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T11:00:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Possibly. I\u2019ll check if reverting those changes resolves the issue.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T11:00:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T11:10:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The safety-analysis module failed during an overnight stress test. The logs suggest a potential memory leak. Logging this as BUG-577.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-21T11:10:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T11:15:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Memory leaks have been an issue with the anomaly overlay feature. Could this be related?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "liam.tanaka"
+    },
+    "timestamps": {
+      "created": "2025-01-21T11:15:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T11:20:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "I\u2019ve uploaded the detailed error logs from the stress test to Confluence: https://confluence.nvidia.com/pages/viewpage.action?pageId=911987.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-21T11:20:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T11:30:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The regression tests for the person-detection-autonomous-vehicles module have flagged an error with nighttime occlusion handling. Logging as BUG-583.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-21T11:30:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T11:35:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "This might be tied to the augmented dataset changes we pushed last week. I\u2019ll validate the new examples.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T11:35:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T11:40:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The CI/CD pipeline for the airports module failed again last night. BUG-589 has been reopened.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-21T11:40:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T11:45:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Does it seem to be breaking on a specific branch, or is this across all builds?",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "liam.tanaka"
+    },
+    "timestamps": {
+      "created": "2025-01-21T11:45:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T11:50:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "It\u2019s isolated to the feature branch for fallback improvements.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "samantha.kim"
+    },
+    "timestamps": {
+      "created": "2025-01-21T11:50:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T12:00:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The bug tracker is showing an increase in issues related to thermal imaging integration. I\u2019ve compiled a summary report for review.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "maria.garcia"
+    },
+    "timestamps": {
+      "created": "2025-01-21T12:00:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T12:05:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "Thanks, Maria. I\u2019ll prioritize addressing these in the next sprint.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "michael.chen"
+    },
+    "timestamps": {
+      "created": "2025-01-21T12:05:00Z"
+    },
+    "replies": []
+  },
+  {
+    "id": "SLACK-nvidia-bug-fixes-2025-01-21T12:10:00Z",
+    "source": "slack",
+    "org": "nvidia",
+    "type": "slack_message",
+    "content": {
+      "text": "The airports module\u2019s face recognition is showing occasional false positives when processing VIP lane entries. I\u2019ve logged this as BUG-594.",
+      "blocks": []
+    },
+    "metadata": {
+      "channel": "bug-fixes",
+      "user": "arjun.mehta"
+    },
+    "timestamps": {
+      "created": "2025-01-21T12:10:00Z"
+    },
+    "replies": []
+  }
+]
